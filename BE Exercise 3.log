@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.6.25)  4 JUN 2018 15:11
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.6.25)  5 JUN 2018 20:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -221,17 +221,21 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 7.91925pt on input line 19.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 6.25204pt on input line 19.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 7.30359pt on input line 35.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 5.76599pt on input line 35.
  [1
 
-]
+] [2]
 (./BE Exercise 3.aux) ) 
 Here is how much of TeX's memory you used:
- 1526 strings out of 493683
- 17247 string characters out of 6152642
- 76573 words of memory out of 5000000
- 5113 multiletter control sequences out of 15000+600000
- 23517 words of font info for 87 fonts, out of 8000000 for 9000
+ 1528 strings out of 493683
+ 17273 string characters out of 6152642
+ 79573 words of memory out of 5000000
+ 5115 multiletter control sequences out of 15000+600000
+ 23895 words of font info for 89 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 27i,7n,26p,231b,246s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,9n,26p,231b,379s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on "BE Exercise 3.dvi" (1 page, 2012 bytes).
+Output written on "BE Exercise 3.dvi" (2 pages, 6248 bytes).

@@ -32,6 +32,28 @@ D & $3-3\beta, -3\alpha$ & 1,1 \\ \hline
 
 \end{center}
 
+Let $\text{BR}_i(s_j)$ be the best response of player $i$ when her opponent $j$ chooses $s_j$, then for $i=1,2$,
+
+\[\text{BR}_i(C)=\begin{cases}
+C & \text{if } \beta \in \left[\dfrac{1}{3},1 \right] \\
+D & \text{if } \beta \in \left[ 0,\dfrac{1}{3} \right] 
+\end{cases}\]
+
+by solving $2=3-\beta$, and
+
+\[\text{BR}_i(D)=D \]
+
+since $-3\alpha < 1$ holds for all $\alpha \geq \beta \geq 0$.
+
+Thus, the equilibria are derived as follows :
+
+\[(s_1^*,s_2^*)=\begin{cases}
+\{(D,D)\}  & \text{if } \beta < \dfrac{1}{3} \\
+\{(D,D),(C,C) \} & \text{if } \beta \geq \dfrac{1}{3}
+\end{cases} \]
+
+Note that $\alpha \geq \beta \geq 0$.
+
 \item
 
 The rewritten matrix is :
@@ -46,15 +68,81 @@ D & $3(1-\rho),3\sigma$ & 1,1 \\ \hline
 
 \end{center}
 
+\newpage
+
 \begin{enumerate}
 
-\item[(i)]
+\item[(i)] $\sigma<0<\rho<1$
 
-\item[(ii)]
+Define $\rho=\beta$ and $\sigma=-\alpha$, then by $0< \rho <1$ and $3\sigma <1$, the rewritten matrix is identical as that in the question (b).
 
-\item[(iii)]
+Therefore, equilibria are :
 
-\item[(iv)]
+\[(s_1^*,s_2^*)=\begin{cases}
+\{(D,D)\}  & \text{if } \rho < \dfrac{1}{3} \\
+\{(D,D),(C,C) \} & \text{if } \rho \geq \dfrac{1}{3}
+\end{cases} \]
+
+for any $\sigma<0$.
+
+\item[(ii)] $\sigma \leq \rho <0$
+
+For each player, C is stictly dominated by D, since $2<3(1-\rho)$ for all $\rho<0$, and $3\sigma< 1$ for all $\sigma<0$.
+
+Thus, equilibrium is derived as:
+
+\[(s_1^*,s_2^*)=(D,D) \]
+
+for any $\sigma$ and $\rho$ satisfying the assumption.
+
+\item[(iii)] $\sigma=0, \rho=1$
+
+The matrix is rewritten as follows :
+
+\begin{center}
+
+\begin{tabular}{|c|c|c|} \hline
+1/2 & C & D \\ \hline
+C & 2,2 & 0,0 \\ \hline
+D & 0,0 & 1,1 \\ \hline
+\end{tabular} 
+
+\end{center}
+
+Then the best response for player $i$ is :
+
+\[\text{BR}_i(s_j)=\begin{cases}
+\text{C} & \text{if } s_j=C \\
+\text{D} & \text{if } s_j=D
+\end{cases} \]
+
+Therefore, equilibria are :
+
+\[ (s_1^*,s_2^*)=\{(C,C),(D,D) \} \]
+
+\item[(iv)] $\sigma=\rho=\dfrac{1}{2}$
+
+Again, the matrix is rewritten as follows :
+
+\begin{center}
+
+\begin{tabular}{|c|c|c|} \hline
+1/2 & C & D \\ \hline
+C & 2,2 & $\frac{3}{2},\frac{3}{2}$ \\ \hline
+D & $\frac{3}{2},\frac{3}{2}$ & 1,1 \\ \hline
+\end{tabular}
+
+\end{center}
+
+The best response for player $i$ given her opponent's strategy is
+
+\[ \text{BR}_i=C \]
+
+by $2>\dfrac{3}{2}$ and $\dfrac{3}{2}>1$.
+
+The equilibrium is :
+
+\[(s_1^*,s_2^*)=(C,C) \]
 
 \end{enumerate}
 
