@@ -18,7 +18,54 @@ Doi \& Ohashi (forthcoming)
 
 \item データ、産業
 
+2002年に起こったJAL (Japan Airline) と JAS (Japan Air System) の合併を利用。
+
+2000年4月から2005年10月の期間内に集計された3ケ月毎の統計をパネルデータとして利用。2000年は改正航空法が施行された年で、それ以前の期間には価格や参入について規制が存在していたこと、またJJ mergerの決行による市場への影響はJFTCによって合併から3年間、注意深く観察されており、この期間中のデータの入手が容易であったことから、この集計期間が選択されている。
+
+搭乗価格はTravel Survey for Domestic Air Passengers、石油価格はUS Department of Energy、搭乗者とフライト回数の増分による追加的なコストはMLITからそれぞれ入手し、それぞれCPIによる割引処理を行う。また、石油価格はドルから円への換算、限界費用は空港のウェブサイトや報道を元にした修正を行っている。
+
 \item モデル、推定方法
+
+\begin{itemize}
+
+\item Effect on Market outcomes
+
+DID分析を用いて、合併による市場への直接的な影響を推定する。time $t$における市場 $m$ の商品(便)$j$の価格、本数、乗員数を被説明変数 $y_{jmt}$ として、それぞれ以下の2つのモデル
+
+\[\ln(y_{jmt})=\gamma^A_1 \cdot \textit{JJ}_{jmt} + \gamma^A_2 + \cdot \textit{post}_t +\gamma_3^A \cdot \textit{JJ}_{jmt} \cdot \textit{post}_t + \mathbf{x}'_{jmt} \cdot \lambda^A +\kappa_{jmt}^A \]
+
+\begin{align*}
+\ln(y_{jmt}= &\gamma^B_1 \cdot \textit{JJ}_{jmt} + \gamma^B_2 + \cdot \textit{post}_t +\gamma_3^B \cdot \textit{JJ}_{jmt} \cdot \textit{post}_t \\
+ & + \textit{MtM}_{jmt} \cdot (\gamma^B_4 \cdot \textit{JJ}_{jmt} + \gamma^B_5 + \cdot \textit{post}_t +\gamma_6^B \cdot \textit{JJ}_{jmt} \cdot \textit{post}_t ) \\
+ & +\textit{MtO}_{jmt} \cdot (\gamma^B_7 \cdot \textit{JJ}_{jmt} + \gamma^B_8 + \cdot \textit{post}_t +\gamma_9^B \cdot \textit{JJ}_{jmt} \cdot \textit{post}_t) + \mathbf{x}'_{jmt} \cdot \lambda^A +\kappa_{jmt}^A 
+ \end{align*}
+
+について推定を行う。$\textit{JJ}_{jmt}$ はJAL、JAS、合併後の$t$ についてはJAGの便であること、$\textit{post}_t $は合併後であることをそれぞれ示すダミー変数であり、両者の交差項が興味のある係数である。$\mathbf{x}'_{jmt}$は $j, m, t$ の各要素について設定するダミー変数である。
+
+二番目のモデルは、合併によって独占市場に移行したことを示すダミー変数 $\textit{MtM}_{jmt}$ 、同じく寡占市場への移行を示す $\textit{MtO}_{jmt}$と一番目のモデルの各項との交差項を含めたモデルである。この項と先に述べた交差項との交差項の係数の推定値を確認することで、合併による効果が市場の構造に依存することを仮定したモデルを考える。
+
+\item Demand
+
+Nested logit モデルを用いる。
+
+消費者 $i$ の効用関数は
+
+\[u_{ijmt} = \alpha p_{jmt} +\beta f_{jmt}^{\rho} +\mathbf{x}^{D}_{jmt} ` \gamma + \xi_{jmt} +\epsilon _{ijmt} \]
+
+で定義される。Observable Quality として、この論文では価格のほかにFlight Frequencyを加えている。
+
+\begin{align*}
+s_{jmt}(\mathbf{p}_{mt},\mathbf{f}_{mt}) & \equiv s_{jmt|gt} \cdot s_{gt} \\
+ & = \dfrac{\exp \left( \frac{\alpha p_{jmt} +\beta f_{jmt}^{\rho} +\mathbf{x}^{D}_{jmt} ` \gamma + \xi_{jmt}}{1-\sigma} \right)}{V_{mt}^{\sigma}(1+V_{mt}^{1-\sigma})}
+\end{align*}
+
+\item Supply
+
+\item Marginal Cost
+
+
+
+\end{itemize}
 
 \item 推定結果
 
