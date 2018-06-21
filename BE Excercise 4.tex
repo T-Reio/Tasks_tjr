@@ -14,6 +14,218 @@ Exercise 4 Time Preferences}
 
 \item [Question 1]
 
+\begin{enumerate}
+
+\item
+
+Solve by backward induction.
+
+\begin{itemize}
+
+\item Period 2
+
+By $\beta = \delta = 1$, $t=2$ agent's intertemporal utility is :
+
+\begin{align*}
+-c(e_2) & + B(e_1,e_2) \\
+\text{where } &  e_1 \text{ is given}
+\end{align*}
+
+Then, the best-response of the $t=2$ agent, depending on the parameters is derived as follows :
+
+If $B \geq kc \Leftrightarrow c \leq \dfrac{B}{k}$
+
+\[\text{BR}(e_1) = \begin{cases}
+2 & \text{if } e_1=0 \\
+1 & \text{if } e_1=1 \\
+0 & \text{if } e_1=2
+\end{cases} \]
+
+and if $kc > B > 2c \Leftrightarrow c>\dfrac{B}{k}$
+
+\[\text{BR}(e_1) = \begin{cases}
+1 & \text{if } e_1=1 \\
+0 & \text{if } e_1=0, 2
+\end{cases}\]
+
+\item Period 1
+
+Now by $\beta = \delta = 1$, $t=1$ agent's intertemporal utility is :
+
+\[ -c(e_1) - c(\text{BR}(e_1)) + B( e_1, \text{BR}(e_1)) \]
+
+By the assumption $kc > 2c$ and $B>2c$ and the derived best-response of the $t=2$ agent, $e_1$ is the dominant strategy for each case of the parameters.
+
+\newpage
+
+Therefore, the perception-perfect equilibria is :
+
+If $c \leq \dfrac{B}{k}$
+
+\begin{align*}
+(e_1^*, e_2^*) & = (1,e_2) \\
+\text{where } & e_2=\begin{cases}
+2 & \text{if } e_1=0 \\
+1 & \text{if } e_1=1 \\
+0 & \text{if } e_1=2
+\end{cases}
+\end{align*}
+
+If $c > \dfrac{B}{k}$
+
+\begin{align*}
+(e_1^*, e_2^*) & = (1,e_2) \\
+\text{where } & e_2=\begin{cases}
+1 & \text{if } e_1=1 \\
+0 & \text{if } e_1=0, 2
+\end{cases}
+\end{align*}
+
+\end{itemize}
+
+\item 
+
+\begin{itemize}
+
+\item Period 2
+
+The intertemporal utility is :
+
+\[ -c(e_2) + \beta B(e_1,e_2) \]
+
+\begin{itemize}
+
+\item When $e_1=0$
+
+For $t=2$ agent, $e_2=1$ is strictly dominated by $e_2=0$, since both of them result in $B(0, e_2)=0$.
+
+Then, the agent prefer $e_2=2$ iff
+
+\begin{align*}
+- kc + \beta B & \geq 0 \\
+c & \leq \dfrac{\beta B}{k}
+\end{align*}
+
+Otherwise, $e_2=0$ is chosen.
+
+\item When $e_1=1$
+
+$e_2=2$ is strictly dominated by $e_2=1$, since $e_2=1$ is enough to satisfy $B(.,.)=B$.
+
+The agent prefer $e_2=1$ iff
+
+\begin{align*}
+-c + \beta B & \geq 0 \\
+c & \leq \beta B
+\end{align*}
+
+\end{itemize}
+
+\newpage
+
+\item Period 1
+
+\begin{itemize}
+
+\item When $c \leq \dfrac{\beta B}{k}$
+
+Even if $e_1=0$, $t=2$ agent choose $e_2=2$ and so $B(e_1, e_2)=B$ realizes.
+
+Then, $t=1$ agent prefer $e_1=2$ to $e_1=0$ iff
+
+\begin{align*}
+(1-\beta)kc \leq 0
+\end{align*}
+
+which never hold since $\beta<1$, so $e_1=2$ is stricly dominated by $e_1=0$.
+
+Then, $e_1=1$ is preferred iff
+
+\begin{align*}
+-c - \beta c + \beta B &\geq - kc + \beta B \\
+(1+\beta - \beta k)c &\leq 0 \\
+\text{ which holds iff }
+k &\geq \dfrac{1+\beta}{\beta}
+\end{align*}
+
+Otherwise, $e_1=0$ is chosen.
+
+\item When $\dfrac{\beta B}{k} < c \geq \beta B $
+
+$e_2=2$ is never chosen, which implies that if $e_1=0,B(.,.)=0$.
+
+$t=1$ agent prefer $e_1=2$ to $e_1=0$ iff
+
+\begin{align*}
+- kc + \beta B &\geq 0 \\
+c &\leq \dfrac{\beta B}{k}
+\end{align*}
+
+which never holds, by $c>\dfrac{\beta B}{k}$.
+
+$e_1=1$ is preferred to $e_1=0$ iff
+
+\begin{align*}
+-c - \beta c + \beta B &\geq 0 \\
+c & \leq \dfrac{\beta B}{1+\beta}
+\end{align*}
+
+Note that $\left( \dfrac{\beta B}{k}, \dfrac{\beta B}{1+\beta} \right]$ is not empty interval.
+
+\item $\beta B < c$
+
+Both $t=1,2$ agent choose $e_t=0$, rather than any positive $e_t$.
+
+\end{itemize}
+
+\newpage
+
+Therefore, the perception-perfect equilibria is:
+
+\[(e_1^*, e_2^*)=(e_1,e_2) \]
+
+If $c \in (\frac{\beta B}{k}, \frac{\beta B}{1+\beta})$,
+
+\begin{align*}
+e_1 &=1 \\
+e_2 &=\begin{cases}
+1 & \text{if } e_1=1 \\
+0 & \text{otherwise}
+\end{cases}
+\end{align*}
+
+If $(c \leq \frac{\beta B}{k}) \wedge (k \geq \frac{1+\beta}{\beta})$,
+
+\begin{align*}
+e_1 &=1 \\
+e_2 &=\begin{cases}
+2 & \text{if} e_1=0 \\
+1 & \text{if } e_1=1 \\
+0 & \text{otherwise}
+\end{cases}
+\end{align*}
+
+If $(c \leq \frac{\beta B}{k}) \wedge (k < \frac{1+\beta}{\beta})$, 
+
+\begin{align*}
+e_1 &=0 \\
+e_2 &=\begin{cases}
+2 & \text{if} e_1=0 \\
+0 & \text{otherwise}
+\end{cases}
+\end{align*}
+
+If $\beta B < c$,
+
+\begin{align*}
+e_1=0 \\
+e_2=0
+\end{align*}
+
+\end{itemize}
+
+\end{enumerate}
+
 \end{enumerate}
 
 \end{document}
