@@ -16,6 +16,8 @@ Doi \& Ohashi (forthcoming)
 
 \item 新規性
 
+旅客輸送業界の構造推定にあたって、
+
 \item データ、産業
 
 2002年に起こったJAL (Japan Airline) と JAS (Japan Air System) の合併を利用。
@@ -52,12 +54,17 @@ Nested logit モデルを用いる。
 
 \[u_{ijmt} = \alpha p_{jmt} +\beta f_{jmt}^{\rho} +\mathbf{x}^{D}_{jmt} ` \gamma + \xi_{jmt} +\epsilon _{ijmt} \]
 
-で定義される。Observable Quality として、この論文では価格のほかにFlight Frequencyを加えている。
+で定義される。Flight Frequency は消費者が希望する時刻により近い便を選択できる可能性の高さを示しており、当該ルートの観察可能なQualityと考えられる。観察されないQualityは$\xi_{jmt}$ で表現される。
+
+この効用関数の下で、商品$j$ の市場$m$ における時間$t$ 時点でのシェアは、以下のモデルによって記述される。ここで、$j \in J$ には当該ルートに就航する各キャリアに加え、いずれの商品も選択しない$j=0 $ : outside goods が存在することに注意する。
 
 \begin{align*}
 s_{jmt}(\mathbf{p}_{mt},\mathbf{f}_{mt}) & \equiv s_{jmt|gt} \cdot s_{gt} \\
  & = \dfrac{\exp \left( \frac{\alpha p_{jmt} +\beta f_{jmt}^{\rho} +\mathbf{x}^{D}_{jmt} ` \gamma + \xi_{jmt}}{1-\sigma} \right)}{V_{mt}^{\sigma}(1+V_{mt}^{1-\sigma})}
+\text{where} & V_{mt} \equiv \sum _{k \in J_{mt}} \exp \left( \dfrac{\alpha p_{kmt} + \beta f_{kmt}^{\rho} +\mathbf{x}^{D}_{jmt} ` \gamma + \xi_{jmt}}{1 - \sigma } \right)
 \end{align*}
+
+
 
 \item Supply
 
