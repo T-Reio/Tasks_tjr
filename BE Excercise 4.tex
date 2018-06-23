@@ -150,7 +150,7 @@ k &\geq \dfrac{1+\beta}{\beta}
 
 Otherwise, $e_1=0$ is chosen.
 
-\item When $\dfrac{\beta B}{k} < c \geq \beta B $
+\item When $\dfrac{\beta B}{k} < c \leq \beta B $
 
 $e_2=2$ is never chosen, which implies that if $e_1=0,B(.,.)=0$.
 
@@ -258,19 +258,62 @@ If $k \leq \frac{1}{\beta}$ holds, then $\frac{B}{k} \leq \beta B$ ; otherwise, 
  
  \item $c \leq \dfrac{\beta}{k}$
  
+ Same as (b), $t=1$ agent choose $e_1=1$ with belief that $t=2$ agent choose the following strategy
  
+ \[e_2 = \begin{cases}
+ 2 & \text{if } e_1=0 \\
+ 1 & \text{if } e_1=1 \\
+ 0 & \text{if } e_1=2
+ \end{cases} \]
+ 
+ iff
+ 
+ \[ k \geq \dfrac{1+\beta}{\beta} \]
+ 
+ and by $c \leq \dfrac{\beta}{k}$, the strategy above is realized as perception-perfect equilibrium.
+ 
+ $c > \dfrac{\beta}{k}$, then $t=1$ agent choose $e_1=0$, and the strategy of $t=2$ agent is same.
  
  \item $ \dfrac{\beta B}{k} < c \leq \dfrac{B}{k} $
  
+ By $c < \dfrac{B}{k}$, $t=1$ agent predicts that $t=2$ agent choose the following strategy :
  
+ \[e_2 = \begin{cases}
+ 2 & \text{if } e_1=0 \\
+ 1 & \text{if } e_1=1 \\
+ 0 & \text{if } e_1=2
+ \end{cases} \]
+ 
+ The realized strategy of $t=2$ agent, however, is below :
+ 
+ \[e_2 = \begin{cases}
+  1 & \text{if } e_1=1 \\
+ 0 & \text{if } e_1=0,2
+ \end{cases} \]
+ 
+ Thus, there does not exist any perception-perfect equilibrium.
  
  \item $\dfrac{B}{k} < c \leq \beta B$
  
+ $t=1$ agent predicts $t=2$ agent's strategy as follows, and it will be realized.
  
+  \[e_2 = \begin{cases}
+  1 & \text{if } e_1=1 \\
+ 0 & \text{if } e_1=0,2
+ \end{cases} \]
+ 
+ まだ完成じゃないぞ。
  
  \item $\beta B < c \leq \dfrac{B}{2}$
  
+ $t=1$ agent predicts $t=2$ strategy as :
  
+  \[e_2 = \begin{cases}
+  1 & \text{if } e_1=1 \\
+ 0 & \text{if } e_1=0,2
+ \end{cases} \]
+ 
+ While the realized strategy is $e_2=0$ for any $e_1$. Thus, there is no perception-perfect equilibrium.
  
  \end{enumerate}
 
@@ -280,19 +323,70 @@ If $k \leq \frac{1}{\beta}$ holds, then $\frac{B}{k} \leq \beta B$ ; otherwise, 
  
  \item $c \leq \dfrac{\beta B}{k}$
  
+ $t=1$ agent's belief :
  
+ \[e_2 = \begin{cases}
+ 2 & \text{if } e_1=0 \\
+ 1 & \text{if } e_1=1 \\
+ 0 & \text{if } e_1=2
+ \end{cases} \]
+ 
+ which realizes in period 2. Then, the perception-perfect equilibrium is :
+ 
+ \begin{center}
+ 
+ $e_1=1$ and $e_2 = \begin{cases}
+ 2 & \text{if } e_1=0 \\
+ 1 & \text{if } e_1=1 \\
+ 0 & \text{if } e_1=2
+ \end{cases} $.
+ 
+ \end{center}
  
  \item $\dfrac{\beta B}{k} < c \leq \beta B$
  
+ $t=1$ agent's belief is
+ \[e_2 = \begin{cases}
+ 2 & \text{if } e_1=0 \\
+ 1 & \text{if } e_1=1 \\
+ 0 & \text{if } e_1=2
+ \end{cases} \]
  
+ while $t=2$ agent's strategy is
+ 
+ \[e_2 = \begin{cases}
+ 1 & \text{if } e_1=1 \\
+ 0 & \text{if } e_1=0,2
+ \end{cases} \]
+ 
+ Thus, there is no perception-perfect equilibrium.
  
  \item $\beta B < c \leq \dfrac{\beta B}{k}$
  
+ $t=1$ agent predicts $t=2$ agent's strategy:
  
+ \[e_2 = \begin{cases}
+ 2 & \text{if } e_1=0 \\
+ 1 & \text{if } e_1=1 \\
+ 0 & \text{if } e_1=2
+ \end{cases} \]
+ 
+ $t=2$ agent's strategy is, however, 
+ 
+ \[e_2=0 \text{ for any } e_1 \]
+ 
+ Again, no perception-perfect equilibrium occurs.
  
  \item $\dfrac{\beta B}{k} < c \leq \dfrac{B}{2}$
  
+ $t=1$ agent's belief :
  
+ \[e_2 = \begin{cases}
+ 1 & \text{if } e_1=1 \\
+ 0 & \text{if } e_1=0,2
+ \end{cases} \]
+ 
+ while $e_2=0$ for any $e_1$ in period 2, which indicates there is no perception-perfect equilibrium.
  
   \end{enumerate}
 
