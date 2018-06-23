@@ -184,16 +184,6 @@ Therefore, the perception-perfect equilibria is:
 
 \[(e_1^*, e_2^*)=(e_1,e_2) \]
 
-If $c \in (\frac{\beta B}{k}, \frac{\beta B}{1+\beta})$,
-
-\begin{align*}
-e_1 &=1 \\
-e_2 &=\begin{cases}
-1 & \text{if } e_1=1 \\
-0 & \text{otherwise}
-\end{cases}
-\end{align*}
-
 If $(c \leq \frac{\beta B}{k}) \wedge (k \geq \frac{1+\beta}{\beta})$,
 
 \begin{align*}
@@ -215,6 +205,16 @@ e_2 &=\begin{cases}
 \end{cases}
 \end{align*}
 
+If $c \in (\frac{\beta B}{k}, \frac{\beta B}{1+\beta})$,
+
+\begin{align*}
+e_1 &=1 \\
+e_2 &=\begin{cases}
+1 & \text{if } e_1=1 \\
+0 & \text{otherwise}
+\end{cases}
+\end{align*}
+
 If $\beta B < c$,
 
 \begin{align*}
@@ -228,75 +228,211 @@ e_2=0
 
 \item
 
-
-$t=2$ agent's intertemporal utility is same as (b). So her/his response would be same, too. Namely,
-
-If $c \leq \dfrac{\beta B}{k}$ ,
-
-\[\textit{BR}(e_1) = \begin{cases}
-2 & \text{if } e_1 = 0 \\
-1 & \text{if } e_1 = 1 \\
-0 & \text{if } e_1 = 2
-\end{cases} \]
-
-and if $\dfrac{\beta B}{k} \leq \beta B$ ,
-
-\[\textit{BR}(e_1) = \begin{cases}
-1 & \text{if } e_1 = 1 \\
-0 & \text{if } e_1 = 0,2
-\end{cases} \]
-
-And otherwise, $\textit{BR}(e_1) =0$ for any $e_1$.
-
-$t=1$ agent, on the other hand, predicts as if $t=2$ agent has intertemporal utility with $\beta=1$ : $\Hat{\beta} = 1$. This is same as (a), so s/he predicts $t=2$ agent's response as follows.
-
-\begin{align*}
-\Hat{\textit{BR}}(2) &= 0 \\
-\Hat{\textit{BR}}(1) &= 1 \\
-\Hat{\textit{BR}}(0) &= \begin{cases}
-2 & \text{if } c \leq \frac{B}{k} \\
-0 & \text{if } c > \frac{B}{k}
-\end{cases}
-\end{align*}
-
-\begin{enumerate}
-
-\item $c \leq \dfrac{\beta B}{k} < \dfrac{B}{k}$
-
-$t=1$ agent prefer $(e_1,e_2) = (2,0)$ iff
-
-\begin{align*}
-- kc +\beta B &\geq -\beta kc + \beta B \\
-(1 - \beta)kc &\leq 0
-\end{align*}
-
-which never holds.
-
-Then, s/he choose $e_1=1$ to realize (1,1) rather than (0,2) iff
-
-\begin{align*}
-- c + \beta c +\beta B &\geq - \beta kc + \beta B \\
-k & \geq \dfrac{1+\beta}{\beta}
-\end{align*}
-
-and by $c \leq \dfrac{\beta B}{k}$ , $e_2 = 1$ is chosen and (1,1) is the perception-perfect equilibrium.
-
-If $k< \dfrac{1+\beta}{\beta}$ , then (0,2) is the perception-perfect equilibrium.
-
-\item $\frac{\beta B}{k} \leq c \leq \frac{B}{k}$
-
-Similarly to 
-
-\item $ \frac{B}{k} < c \leq \frac{\beta B}{1+\beta}$
-
-\item $\frac{\beta B}{1+\beta} < \frac{\beta}{k} <c$
+$t=2$ agent decides her/his behavior with $\beta<1$, while $t=1$ agent predicts it with $\Hat{\beta}=1$. Then, the agent's prediction and the acual strategy depending on the parameters are summerized as follows :
 
 
-\end{enumerate}
+\begin{center}
+
+ \begin{tabular}{cccc} \hline
+ \multicolumn{2}{c}{Parametrical condition} & & \\
+ \multicolumn{1}{c}{Belief} & \multicolumn{1}{c}{Actual choice} & $e_1$ & BR$(e_1)$ \\ \hline
+ $c \leq \dfrac{B}{k}$ & $c \leq \dfrac{\beta B}{k}$ & 0 &2 \\
+  & & 1 & 1 \\
+  & & 2 & 0 \\
+ $\dfrac{B}{k} < c \leq B$ & $\dfrac{\beta B}{k} < c \leq \beta B$ & 1 &1 \\
+  & & 0,2 & 0 \\
+ $B < c$ & $\beta B < c$ & any & 0 \\ \hline
+ \end{tabular}
+
+\end{center}
+
+\vspace{1zw}
+
+If $k \leq \frac{1}{\beta}$ holds, then $\frac{B}{k} \leq \beta B$ ; otherwise, $\frac{B}{k} \leq \beta B$.
+
+\begin{itemize}
+
+\item $k \geq \frac{1}{\beta}$
+
+ \begin{enumerate}
+ 
+ \item $c \leq \dfrac{\beta}{k}$
+ 
+ 
+ 
+ \item $ \dfrac{\beta B}{k} < c \leq \dfrac{B}{k} $
+ 
+ 
+ 
+ \item $\dfrac{B}{k} < c \leq \beta B$
+ 
+ 
+ 
+ \item $\beta B < c \leq \dfrac{B}{2}$
+ 
+ 
+ 
+ \end{enumerate}
+
+\item $k<\dfrac{1}{\beta}$
+
+ \begin{enumerate}
+ 
+ \item $c \leq \dfrac{\beta B}{k}$
+ 
+ 
+ 
+ \item $\dfrac{\beta B}{k} < c \leq \beta B$
+ 
+ 
+ 
+ \item $\beta B < c \leq \dfrac{\beta B}{k}$
+ 
+ 
+ 
+ \item $\dfrac{\beta B}{k} < c \leq \dfrac{B}{2}$
+ 
+ 
+ 
+  \end{enumerate}
+
+\end{itemize}
+
+\item 
+
+$t=2$ agent decides her/his behavior with $\beta<1$, while $t=1$ agent predicts it with $\Hat{\beta} \in (\beta, 1)$. Then, the agent's prediction and the acual strategy depending on the parameters are summerized as follows :
+
+
+\begin{center}
+
+ \begin{tabular}{cccc} \hline
+ \multicolumn{2}{c}{Parametrical condition} & & \\
+ \multicolumn{1}{c}{Belief} & \multicolumn{1}{c}{Actual choice} & $e_1$ & BR$(e_1)$ \\ \hline
+ $c \leq \dfrac{\Hat{\beta} B}{k}$  & $c \leq \dfrac{\beta B}{k}$ & 0 &2 \\
+  & & 1 & 1 \\
+  & & 2 & 0 \\
+ $\dfrac{\Hat{\beta} B}{k} < c \leq \Hat{\beta} B$ & $\dfrac{\beta B}{k} < c \leq \beta B$ & 1 &1 \\
+  & & 0,2 & 0 \\
+ $\Hat{\beta} B < c$ & $\beta B < c$ & any & 0 \\ \hline
+ \end{tabular}
+
+\end{center}
+
+\vspace{1zw}
+
+If $k \geq \dfrac{\Hat{\beta}}{\beta}$, then $\beta B \geq \dfrac{\Hat{\beta}B}{k}$ ; otherwise, $\beta B < \dfrac{\Hat{\beta}B}{k}$.
+
+ \begin{itemize}
+ 
+ \item $k \geq \dfrac{\Hat{\beta}}{\beta}$
+ 
+  \begin{enumerate}
+  
+  \item $c \leq \dfrac{\beta B}{k}$
+  
+  
+  
+  \item $\dfrac{\beta B}{k} < c \leq \dfrac{\Hat{\beta B}}{k}$
+  
+  
+  
+  \item $\dfrac{\Hat{\beta B}}{k} < c \leq \beta B$
+  
+  
+  
+  \item $\beta B < c \leq \Hat{\beta} B $
+  
+  
+ 
+  \item $\Hat{\beta} B < c$
+  
+  
+  
+  \end{enumerate}
+ 
+ \item $k < \dfrac{\Hat{\beta}}{\beta}$
+ 
+ \begin{enumerate}
+  
+  \item $c \leq \dfrac{\beta B}{k}$
+  
+  
+  
+  \item $\dfrac{\beta B}{k} < c \leq \beta B $
+  
+  
+  
+  \item $\beta B < c \leq \dfrac{\Hat{\beta} B}{k}$
+  
+  
+  
+  \item $\dfrac{\Hat{\beta} B}{k} < c \leq \Hat{\beta}B$
+  
+  
+  
+  \item $\Hat{\beta}B < c$
+  
+  
+  
+  \end{enumerate}
+ 
+ \end{itemize}
+
 
 \item
 
-\item
+ \begin{itemize}
+ 
+ \item Period 2
+ 
+ When $e_1=0$, then $t=2$ agent has no incentive to take any choice other than $e_2=0$, since $B(0,e_2)=0$ for any $e_2$.
+ 
+ When $e_1=1$, $t=2$ agent prefer $e_2=1$ to $e_2=0$ iff
+ 
+ \begin{align*}
+ - c + \beta B &\geq 0 \\
+ c & \leq \beta B
+ \end{align*}
+ 
+ otherwise, $e_2=0$ for any $e_1$
+ 
+ \item Period 1
+ 
+ $t=1$ agent predicts her/his behavior in period 2 with $\Hat{\beta} \in (\beta, 1)$.
+ 
+ Then, the agent's prediction and the acual strategy depending on the parameters are summerized as follows :
+ 
+  \begin{center}
+  
+  \begin{tabular}{cccc} \hline
+ \multicolumn{2}{c}{Parametrical condition} & & \\
+ \multicolumn{1}{c}{Belief} & \multicolumn{1}{c}{Actual choice} & $e_1$ & BR$(e_1)$ \\ \hline
+ $c \leq \Hat{\beta}$ & $c \leq \beta B$ & 1 & 1 \\
+  & & 0 & 0 \\
+ $\Hat{\beta} B < c $ & $\beta B <c$ & any & 0 \\ \hline
+  \end{tabular}
+  
+  \end{center}
+  
+  \vspace{1zw}
+ 
+ \end{itemize}
+
+ \begin{enumerate}
+ 
+ \item $c \leq \beta B$
+ 
+ 
+ 
+ \item $\beta B < c \leq \Hat{\beta} B$
+ 
+ 
+ 
+ \item $\Hat{\beta} B < c < \dfrac{B}{2}$
+ 
+ 
+ 
+ \end{enumerate}
 
 \end{enumerate}
 
