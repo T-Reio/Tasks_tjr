@@ -83,6 +83,8 @@ If $c > \dfrac{B}{k}$
 
 \end{itemize}
 
+\dotfill
+
 \item 
 
 \begin{itemize}
@@ -224,6 +226,8 @@ e_2=0
 
 \end{itemize}
 
+\dotfill
+
 \newpage
 
 \item
@@ -302,7 +306,57 @@ If $k \leq \frac{1}{\beta}$ holds, then $\frac{B}{k} \leq \beta B$ ; otherwise, 
  0 & \text{if } e_1=0,2
  \end{cases} \]
  
- まだ完成じゃないぞ。
+ $(e_1=0) \succsim (e_1=2)$, since
+ 
+  \begin{align*}
+  0 \geq -kc + \beta B \\
+  c \geq \dfrac{\beta B}{k}
+  \end{align*}
+ 
+ and $ \dfrac{B}{k} > \dfrac{\beta B}{k}$.
+ 
+ $t=1$ agent prefer $e_1=1$ to $e_1=0$ iff
+ 
+  \begin{align*}
+  -c - \beta c + B \geq 0 \\
+  c \leq \dfrac{B}{1+\beta}
+  \end{align*}
+  
+  $\dfrac{B}{1 + \beta} < \beta B$ if $\dfrac{1}{1 + \beta} < \beta$.
+  
+  \begin{enumerate}
+  
+  \item $\dfrac{1}{1 + \beta} < \beta$
+  
+  The perception-perfect equilibrium depends on the parameter.
+  
+  If $\dfrac{B}{k} < c \leq \dfrac{B}{1+\beta}$ ,
+  
+  $t=1$ agent choose $e_1=1$, and $e_2 = \begin{cases}
+  1 & \text{if } e_1=1 \\
+  0 & \text{if } e_1=0,2
+  \end{cases}$.
+  
+  Then, if $\dfrac{B}{1+\beta} < c \leq \beta B$,
+  
+  $e_1=0$ and $e_2 = \begin{cases}
+  1 & \text{if } e_1=1 \\
+  0 & \text{if } e_1=0,2
+  \end{cases}$.
+  
+  \item $\dfrac{1}{1 + \beta} \geq \beta$
+  
+  Then, for $\dfrac{B}{k} < c \leq \beta B$,
+  
+   $t=1$ agent choose $e_1=1$, and $e_2 = \begin{cases}
+  1 & \text{if } e_1=1 \\
+  0 & \text{if } e_1=0,2
+  \end{cases}$.
+ 
+  
+  \end{enumerate}
+ 
+ \newpage
  
  \item $\beta B < c \leq \dfrac{B}{2}$
  
@@ -367,6 +421,8 @@ If $k \leq \frac{1}{\beta}$ holds, then $\frac{B}{k} \leq \beta B$ ; otherwise, 
  
  Thus, there is no perception-perfect equilibrium.
  
+ \newpage
+ 
  \item $\beta B < c \leq \dfrac{\beta B}{k}$
  
  $t=1$ agent predicts $t=2$ agent's strategy:
@@ -398,10 +454,13 @@ If $k \leq \frac{1}{\beta}$ holds, then $\frac{B}{k} \leq \beta B$ ; otherwise, 
 
 \end{itemize}
 
+\dotfill
+
 \item 
 
 $t=2$ agent decides her/his behavior with $\beta<1$, while $t=1$ agent predicts it with $\Hat{\beta} \in (\beta, 1)$. Then, the agent's prediction and the acual strategy depending on the parameters are summerized as follows :
 
+\vspace{1.5zw}
 
 \begin{center}
 
@@ -421,6 +480,8 @@ $t=2$ agent decides her/his behavior with $\beta<1$, while $t=1$ agent predicts 
 \vspace{1zw}
 
 If $k \geq \dfrac{\Hat{\beta}}{\beta}$, then $\beta B \geq \dfrac{\Hat{\beta}B}{k}$ ; otherwise, $\beta B < \dfrac{\Hat{\beta}B}{k}$.
+
+\newpage
 
  \begin{itemize}
  
@@ -463,7 +524,70 @@ If $k \geq \dfrac{\Hat{\beta}}{\beta}$, then $\beta B \geq \dfrac{\Hat{\beta}B}{
    
   \item $\dfrac{\Hat{\beta }B}{k} < c \leq \beta B$
   
-  ここがまだ出来ていません!!!
+   $t=1$ agent predicts $t=2$ agent's strategy as follows, and it will be realized.
+ 
+  \[e_2 = \begin{cases}
+  1 & \text{if } e_1=1 \\
+ 0 & \text{if } e_1=0,2
+ \end{cases} \]
+ 
+ $(e_1=0) \succsim (e_1=2)$, since
+ 
+  \begin{align*}
+  0 \geq -kc + \beta B \\
+  c \geq \dfrac{\beta B}{k}
+  \end{align*}
+ 
+ and $ \dfrac{B}{k} > \dfrac{\beta B}{k}$.
+ 
+ \newpage
+ 
+ $t=1$ agent prefer $e_1=1$ to $e_1=0$ iff
+ 
+  \begin{align*}
+  -c - \beta c + B \geq 0 \\
+  c \leq \dfrac{B}{1+\beta}
+  \end{align*}
+  
+  Note that $\dfrac{\beta B}{k} < \dfrac{\Hat{\beta} B}{k}$.
+  
+  $\dfrac{B}{1 + \Hat{\beta}} < \beta B$ if $\dfrac{1}{1 + \Hat{\beta}} < \beta$.
+  
+  \vspace{1.5zw}
+  
+  \begin{enumerate}
+  
+  \item $\dfrac{1}{1 + \Hat{\beta}} < \beta$
+  
+  The perception-perfect equilibrium depends on the parameter.
+  
+  If $\dfrac{B}{k} < c \leq \dfrac{B}{1+\Hat{\beta}}$ ,
+  
+  $t=1$ agent choose $e_1=1$, and $e_2 = \begin{cases}
+  1 & \text{if } e_1=1 \\
+  0 & \text{if } e_1=0,2
+  \end{cases}$.
+  
+  Then, if $\dfrac{B}{1+\Hat{\beta}} < c \leq \beta B$,
+  
+  $e_1=0$ and $e_2 = \begin{cases}
+  1 & \text{if } e_1=1 \\
+  0 & \text{if } e_1=0,2
+  \end{cases}$.
+  
+  \vspace{1.5zw}
+  
+  \item $\dfrac{1}{1 + \Hat{\beta}} \geq \beta$
+  
+  Then, for $\dfrac{\Hat{\beta}B}{k} < c \leq \beta B$,
+  
+   $t=1$ agent choose $e_1=1$, and $e_2 = \begin{cases}
+  1 & \text{if } e_1=1 \\
+  0 & \text{if } e_1=0,2
+  \end{cases}$.
+ 
+  
+  \end{enumerate}
   
   \item $\beta B < c \leq \Hat{\beta} B $
   
@@ -483,6 +607,8 @@ If $k \geq \dfrac{\Hat{\beta}}{\beta}$, then $\beta B \geq \dfrac{\Hat{\beta}B}{
   \[e_1=0, \text{ and } e_2=0 \text{ for all }e_1 \]
   
   \end{enumerate}
+ 
+ \newpage
  
  \item $k < \dfrac{\Hat{\beta}}{\beta}$
  
@@ -546,6 +672,7 @@ If $k \geq \dfrac{\Hat{\beta}}{\beta}$, then $\beta B \geq \dfrac{\Hat{\beta}B}{
  
  \end{itemize}
 
+\newpage
 
 \item
 

@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.6.25)  23 JUN 2018 21:49
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.6.25)  24 JUN 2018 20:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -236,17 +236,17 @@ LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
 
 ]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 98.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 100.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 98.
+(Font)              scaled to size 9.60999pt on input line 100.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 98.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 100.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 98.
+(Font)              scaled to size 9.60999pt on input line 100.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 98.
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 100.
  [2] [3] [4]
-[5] [6] [7] [8] [9] [10] (./BE Excercise 4.aux) ) 
+[5] [6] [7] [8] [9] [10] [11] [12] (./BE Excercise 4.aux) ) 
 Here is how much of TeX's memory you used:
  1550 strings out of 493683
  17629 string characters out of 6152642
@@ -254,6 +254,6 @@ Here is how much of TeX's memory you used:
  5133 multiletter control sequences out of 15000+600000
  24556 words of font info for 92 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 27i,16n,26p,250b,447s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,16n,26p,250b,445s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on "BE Excercise 4.dvi" (10 pages, 25808 bytes).
+Output written on "BE Excercise 4.dvi" (12 pages, 32808 bytes).
