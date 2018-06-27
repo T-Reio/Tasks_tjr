@@ -22,7 +22,7 @@ Doi \& Ohashi (forthcoming)
 
 2002年に起こったJAL (Japan Airline) と JAS (Japan Air System) の合併を利用。
 
-2000年4月から2005年10月の期間内に集計された3ケ月毎の統計をパネルデータとして利用。2000年は改正航空法が施行された年で、それ以前の期間には価格や参入について規制が存在していたこと、またJJ mergerの決行による市場への影響はJFTCによって合併から3年間、注意深く観察されており、この期間中のデータの入手が容易であったことから、この集計期間が選択されている。
+2000年4月から2005年10月の期間内に集計された3ケ月毎の統計をパネルデータとして利用(Market level data)。2000年は改正航空法が施行された年で、それ以前の期間には価格や参入について規制が存在していたこと、またJJ mergerの決行による市場への影響はJFTCによって合併から3年間、注意深く観察されており、この期間中のデータの入手が容易であったことから、この集計期間が選択されている。
 
 搭乗価格はTravel Survey for Domestic Air Passengers、石油価格はUS Department of Energy、搭乗者とフライト回数の増分による追加的なコストはMLITからそれぞれ入手し、それぞれCPIによる割引処理を行う。また、石油価格はドルから円への換算、限界費用は空港のウェブサイトや報道を元にした修正を行っている。
 
@@ -48,15 +48,15 @@ DID分析を用いて、合併による市場への直接的な影響を推定�
 
 \item Demand
 
-Nested logit モデルを用いる。
+Market levelのNested logit モデルを用いる。
 
 消費者 $i$ の効用関数は
 
 \[u_{ijmt} = \alpha p_{jmt} +\beta f_{jmt}^{\rho} +\mathbf{x}^{D}_{jmt} ` \gamma + \xi_{jmt} +\epsilon _{ijmt} \]
 
-で定義される。Flight Frequency は消費者が希望する時刻により近い便を選択できる可能性の高さを示しており、当該ルートの観察可能なQualityと考えられる。観察されないQualityは$\xi_{jmt}$ で表現される。
+で定義される。Flight Frequency $f_{jmt}$ は消費者が希望する時刻により近い便を選択できる可能性の高さを示しており、当該ルートの観察可能なQualityと考えられる。観察されないQualityは$\xi_{jmt}$ で表現される。
 
-この効用関数の下で、商品$j$ の市場$m$ における時間$t$ 時点でのシェアは、以下のモデルによって記述される。ここで、$j \in J$ には当該ルートに就航する各キャリアに加え、いずれの商品も選択しない$j=0 $ : outside goods が存在することに注意する。
+この効用関数の下で、商品$j$ の市場$m$ における時間$t$ 時点でのシェアは、以下のモデルによって記述される。ここで、$j \in J$ には当該ルートに就航する各キャリアに加え、いずれの商品も選択しない$j=0 $ : outside goods が存在することに注意する。outside goodsがもたらす効用は0に標準化される。
 
 \begin{align*}
 s_{jmt}(\mathbf{p}_{mt},\mathbf{f}_{mt}) & \equiv s_{jmt|gt} \cdot s_{gt} \\
@@ -64,9 +64,31 @@ s_{jmt}(\mathbf{p}_{mt},\mathbf{f}_{mt}) & \equiv s_{jmt|gt} \cdot s_{gt} \\
 \text{where} & V_{mt} \equiv \sum _{k \in J_{mt}} \exp \left( \dfrac{\alpha p_{kmt} + \beta f_{kmt}^{\rho} +\mathbf{x}^{D}_{jmt} ` \gamma + \xi_{jmt}}{1 - \sigma } \right)
 \end{align*}
 
+Nest はoutside goods のみを含むものと、それ以外のすべての航路を含むものとの2種類としている。$\sigma$はNest間の相関を表し、0の場合、モデルはoutside goods を含めたsimple logit model とみなすことになる。
 
+ここから、推定を行う線形回帰式は
+
+\[\ln (s_{jmt}) - \ln (s_{0mt}) = \alpha p_{jmt} + \beta f_{jmt}^{\rho} + \mathbf{x}_{jmt}^D ` \gamma
+ + \sigma \ln (s_{jmt | gt}) + \xi_{jmt} \]
+ 
+ となる。
 
 \item Supply
+
+各企業の利潤最大化問題は
+
+\[ \max_{p_{jmt},f_{jmt}} \sum _{s \in F_l} 
+[(p_{smt} - mc_{smt}^q ) \cdot q_{smt} 
+( \mathbf{p}_{mt}, \mathbf{f}_{mt}) - mc_{smt}^f \cdot f_{smt}] \]
+
+で記述される。企業がコントロールする変数として、価格に加えて Flight Frequencyが導入されていることに留意する。ここから、最大化の一階の必要条件
+
+ \begin{align*}
+ \mathbf{s} + D^{\tau} \cdot B^p (\mathbf{p},\mathbf{f})(\mathbf{p} - \mathbf{MC}^q) &=0 \\
+ D^{\tau} \cdot B^f (\mathbf{p},\mathbf{f})(\mathbf{p}-\mathbf{MC}^q) &= \mathbf{MC}^f
+ \end{align*}
+
+が導かれる。これを解いて、価格、Flight Frequency に対する限界費用$\mathbf{MC}^x$を導出する。$\$B^x$は各商品のシェア$s_{jmt}$をそれぞれ要素$x$で偏微分した行列、$D$は各商品が同一企業によって販売されている場合に1、そうでない時に0をとるownership matrixである。添字$\tau$はJJ merger の前後で起こる$D$の変化を捕捉している。この$D$を変化させることで、市場がそれぞれ競争的であるか、寡占、独占的であるかを仮定することができる。
 
 \item Marginal Cost
 
