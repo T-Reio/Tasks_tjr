@@ -16,7 +16,7 @@ Doi \& Ohashi (forthcoming)
 
 \item 新規性
 
-旅客輸送業界の構造推定にあたって、
+旅客輸送業界の構造推定にあたって、企業が価格だけでなく、Flight Frequency をコントロールできる状態をモデルに組み込んでいる。
 
 \item データ、産業
 
@@ -88,11 +88,16 @@ Nest はoutside goods のみを含むものと、それ以外のすべての航�
  D^{\tau} \cdot B^f (\mathbf{p},\mathbf{f})(\mathbf{p}-\mathbf{MC}^q) &= \mathbf{MC}^f
  \end{align*}
 
-が導かれる。これを解いて、価格、Flight Frequency に対する限界費用$\mathbf{MC}^x$を導出する。$\$B^x$は各商品のシェア$s_{jmt}$をそれぞれ要素$x$で偏微分した行列、$D$は各商品が同一企業によって販売されている場合に1、そうでない時に0をとるownership matrixである。添字$\tau$はJJ merger の前後で起こる$D$の変化を捕捉している。この$D$を変化させることで、市場がそれぞれ競争的であるか、寡占、独占的であるかを仮定することができる。
+が導かれる。これを解いて、乗客人数$q$、Flight Frequency $f$ に対する限界費用$\mathbf{MC}^x$を導出する。$B^x$は各商品のシェア$s_{jmt}$をそれぞれ要素$x$で偏微分した行列、$D$は各商品が同一企業によって販売されている場合に1、そうでない時に0をとるownership matrixである。添字$\tau$はJJ merger の前後で起こる$D$の変化を捕捉している。この$D$を変化させることで、市場がそれぞれ競争的であるか、寡占、独占的であるかを仮定することができる。
 
 \item Marginal Cost
 
-marginal cost は供給量、Flight Frequencyによらず一定であると仮定する。
+marginal cost は供給量、Flight Frequencyによらず一定であると仮定する。この時、要素$x=p,q$に対するMarginal Cost に空港への支払金を加算し、対数をとった費用関数は
+
+\[ \ln(mc_{jmt}^x + apc_{jmt}^x) = b_W^x \ln (w_{jmt}^x) 
++ b_N^x \ln(\textit{nroute}_{jmt}) + e_{jmt} \]
+
+で記述される。$w_{jmt}$には航空機の特性を表す項が含まれる。関心がある項は、各期の各市場において、企業$j$が提供する航路の数$\textit{nroute}_{jmt}$で、これが合併による効率性改善を測る判断材料になるとしている。誤差項$e$は一階の自己相関モデル$e_{jmt}^x = \phi e_{jmt-1}^x + \nu_{jmt}$に従うと仮定する。
 
 \end{itemize}
 

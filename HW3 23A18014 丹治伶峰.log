@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.6.25)  27 JUN 2018 18:38
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.6.25)  28 JUN 2018 16:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -246,6 +246,6 @@ Here is how much of TeX's memory you used:
  5102 multiletter control sequences out of 15000+600000
  26556 words of font info for 98 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 27i,14n,26p,456b,332s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,14n,26p,465b,332s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on "HW3 23A18014 丹治伶峰.dvi" (3 pages, 10976 bytes).
+Output written on "HW3 23A18014 丹治伶峰.dvi" (3 pages, 12304 bytes).
