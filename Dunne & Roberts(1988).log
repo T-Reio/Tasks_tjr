@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.6.25)  28 JUN 2018 21:19
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.6.25)  29 JUN 2018 10:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1010,47 +1010,51 @@ Overfull \vbox (10.43808pt too high) detected at line 140
 
 [8
 
+] [9
+
 ]
 File: DRS_T2.pdf Graphic file (type pdf)
- <DRS_T2.pdf> [9
+ <DRS_T2.pdf> [10
+
+] [11
 
 ]
 File: DRS_T3.pdf Graphic file (type pdf)
- <DRS_T3.pdf> [10
+ <DRS_T3.pdf> [12
 
 ]
 File: DRS_T4.pdf Graphic file (type pdf)
- <DRS_T4.pdf> [11
+ <DRS_T4.pdf> [13
 
 ]
 File: DRS_T5a.pdf Graphic file (type pdf)
- <DRS_T5a.pdf> [12
+
+<DRS_T5a.pdf> [14
 
 ]
 File: DRS_T5b.pdf Graphic file (type pdf)
-
-<DRS_T5b.pdf> [13
+ <DRS_T5b.pdf> [15
 
 ]
 File: DRS_T6.pdf Graphic file (type pdf)
- <DRS_T6.pdf> [14
+ <DRS_T6.pdf> [16
 
 ]
 File: DRS_T7.pdf Graphic file (type pdf)
- <DRS_T7.pdf> [15
+ <DRS_T7.pdf> [17
 
 ]
 File: DRS_T8.pdf Graphic file (type pdf)
- <DRS_T8.pdf> [16
+
+<DRS_T8.pdf> [18
 
 ]
 File: DRS_T9.pdf Graphic file (type pdf)
-
-<DRS_T9.pdf> [17
+ <DRS_T9.pdf> [19
 
 ]
 File: DRS_T10.pdf Graphic file (type pdf)
- <DRS_T10.pdf> [18
+ <DRS_T10.pdf> [20
 
 ]
 \tf@nav=\write6
@@ -1062,28 +1066,29 @@ File: DRS_T10.pdf Graphic file (type pdf)
 \tf@snm=\write8
 \openout8 = `"Dunne & Roberts(1988).snm"'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 241.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 241.
- (./Dunne & Roberts(1988).aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 241.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 241.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 266.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 266.
+
+(./Dunne & Roberts(1988).aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 266.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 266.
 Package rerunfilecheck Info: File `"Dunne & Roberts(1988)".out' has not changed
 .
-(rerunfilecheck)             Checksum: 7C4DD75C639744BD661E60B78336DCA8;86.
+(rerunfilecheck)             Checksum: 7FBD53C5CE9EDCE01E3F2D077727BF1A;154.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 241.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 266.
  ) 
 Here is how much of TeX's memory you used:
- 16680 strings out of 493683
- 322254 string characters out of 6152642
+ 16685 strings out of 493683
+ 322294 string characters out of 6152642
  398841 words of memory out of 5000000
- 19817 multiletter control sequences out of 15000+600000
+ 19822 multiletter control sequences out of 15000+600000
  22855 words of font info for 81 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  56i,17n,60p,405b,789s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on "Dunne & Roberts(1988).dvi" (18 pages, 172816 bytes).
+Output written on "Dunne & Roberts(1988).dvi" (20 pages, 192928 bytes).
