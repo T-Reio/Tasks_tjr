@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.6.25)  7 JUL 2018 16:07
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.6.25)  9 JUL 2018 21:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -124,7 +124,7 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-No file "HW4 23A18014 丹治伶峰".aux.
+(./HW4 23A18014 丹治伶峰.aux)
 \openout1 = `"HW4 23A18014 丹治伶峰.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
@@ -143,10 +143,11 @@ LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
 LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
-(I search kanjifont definition file: . . ) (I search font definition file: . .
-. . . . . )
+ (I search kanjifont definition file: . . )
+(I search font definition file: . . . . . . . )
 LaTeX Font Info:    Try loading font information for OT1+ppl on input line 4.
- (c:/texlive/2016/texmf-dist/tex/latex/psnfss/ot1ppl.fd
+
+(c:/texlive/2016/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
@@ -198,12 +199,12 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 ]
 (./HW4 23A18014 丹治伶峰.aux) ) 
 Here is how much of TeX's memory you used:
- 1458 strings out of 493683
- 16419 string characters out of 6152642
- 73573 words of memory out of 5000000
+ 1460 strings out of 493683
+ 16471 string characters out of 6152642
+ 75573 words of memory out of 5000000
  5050 multiletter control sequences out of 15000+600000
  16866 words of font info for 65 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 27i,6n,26p,237b,240s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,6n,26p,656b,240s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on "HW4 23A18014 丹治伶峰.dvi" (1 page, 792 bytes).
+Output written on "HW4 23A18014 丹治伶峰.dvi" (1 page, 4416 bytes).

@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.6.25)  7 JUL 2018 16:47
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.6.25)  9 JUL 2018 18:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -132,7 +132,7 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \extratabsurround=\skip47
 \backup@length=\skip48
 )
-No file Term_Paper_23A18014_Reio_TANJI.aux.
+(./Term_Paper_23A18014_Reio_TANJI.aux)
 \openout1 = `Term_Paper_23A18014_Reio_TANJI.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
@@ -151,10 +151,11 @@ LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
 LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
-(I search kanjifont definition file: . . ) (I search font definition file: . .
-. . . . . )
+ (I search kanjifont definition file: .
+. ) (I search font definition file: . . . . . . . )
 LaTeX Font Info:    Try loading font information for OT1+ppl on input line 5.
- (c:/texlive/2016/texmf-dist/tex/latex/psnfss/ot1ppl.fd
+
+(c:/texlive/2016/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
@@ -213,17 +214,27 @@ LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 12.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 12.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 14.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 14.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 14.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 14.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 14.
  [1
 
 ]
 (./Term_Paper_23A18014_Reio_TANJI.aux) ) 
 Here is how much of TeX's memory you used:
- 1511 strings out of 493683
- 17128 string characters out of 6152642
+ 1518 strings out of 493683
+ 17261 string characters out of 6152642
  73573 words of memory out of 5000000
- 5098 multiletter control sequences out of 15000+600000
- 18162 words of font info for 71 fonts, out of 8000000 for 9000
+ 5102 multiletter control sequences out of 15000+600000
+ 18823 words of font info for 74 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  27i,6n,26p,246b,239s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Term_Paper_23A18014_Reio_TANJI.dvi (1 page, 672 bytes).
+Output written on Term_Paper_23A18014_Reio_TANJI.dvi (1 page, 788 bytes).
