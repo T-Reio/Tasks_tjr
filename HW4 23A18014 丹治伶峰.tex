@@ -18,7 +18,7 @@ Berry, Levinsohn \& Pakes(1999)
 
 \item 新規性
 
-著者が1995年の論文で発表した、市場レベルのデータについて、消費者の選好の違いを組み込んだRandom Coefficient Model (BLP) モデルをApplyしている。
+著者が1995年の論文で発表した、市場レベルのデータについて、消費者の選好の違いを組み込んで需要を推定するRandom Coefficient Model (BLP) モデルの実証利用。日米間のVERによる効果を推定する実証研究はこの論文以前にもいくつか存在し、様々な仮定の下で多様な研究結果が得られている。この論文では、静学寡占モデルを仮定し、VERによる厚生水準の変化を描写している。
 
 \item データ、産業
 
@@ -36,11 +36,34 @@ VERは日本の対アメリカ乗用車輸出を年間1.68百万ドル(1981年�
 
 \item モデル、推定方法
 
+BLPモデルを用いる。消費者が異なる質的特性をもつ製品(J種類、製品を購入しないoutside goodsの存在を許す)の中から、自らの所得制約や質的特性に対する感応度を勘案して効用を最大化する、離散選択モデルを仮定する。また、質的特性に対する感応度は個人間で異なることを許す、Random Coefficient モデルを用いる。消費者の効用関数は
 
+\[U(v_i, p_j, x_j, \xi_j ; \theta ) \]
+
+で与えられる。$v_i$は消費者$i$の所得、世帯人数などの特性、$p_j$は製品$j$の価格、$x_j$、$\xi_j$は製品$j$のそれぞれ観察可能/不可能な特性を表す。$\theta$は推定されるパラメータである。
+
+ここで、製品$j$から得られる効用が他のどの製品$r$から得られるそれよりも高くなる、即ち製品$j$を選択するような個人属性$\mathbf{v}$の集合を$\mathbf{A}_j$とおくと、製品$j$が市場に占めるシェア$s_j$は、以下のように定義される。
+
+\[s_j(\mathbf{p}, \mathbf{x}, \xi ; \theta ) 
+= \int_{\mathbf{v} \in \mathbf{A}_j(\theta)} P_0 (d \mathbf{v}) \]
+
+$P_0$は$\mathbf{v}$の分布を表す。
+
+効用関数は、各消費者の、製品の質的特性に対する嗜好の多様性を考慮したRandom Coefficientモデルを用いて
+
+ \begin{align*}
+ u_{ij} = x_j \Bar{\beta} &+ \xi_j - \alpha p_j + \sum_k \sigma_k x_{jk} v_{ik} + \epsilon_{ij} \\
+ \text{for} & \hspace{1.5zw}j = 1,...,J \\
+ \text{while} & \hspace{1.5zw} u_{i0} = \sigma_0 v_0 + \epsilon
+ \end{align*}
+
+で表される。
 
 \item 推定結果
  
 \item コメント
+
+
 
 \end{enumerate}
 
