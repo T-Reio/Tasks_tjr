@@ -26,7 +26,7 @@ VERは日本の対アメリカ乗用車輸出を年間1.68百万ドル(1981年�
 
 \vspace{1zw}
 
-データについては、1971年から1990年までの期間における、自動車産業の製品レベルのモデルの数、額面価格、販売数と製品の性能に関する特性を集計。またマクロ経済指標として為替レート、消費者物価指標等、家計に関するデータとして家計数と所得の分布をそれぞれ集計し、時系列データを生成する。
+データについては、1971年から1990年までの期間における、自動車産業の製品レベルのモデルの数、額面価格、販売数と製品の性能に関する特性を集計。またマクロ経済指標として為替レート、消費者物価指標等、家計に関するデータとして家計数と所得の分布をそれぞれ集計し、時間$t$と製品$m$によるパネルデータを生成する。製品価格は、消費者が個別に追加したオプションに係る費用が観察出来ないため、基本的なモデルの価格を用いている。
 
 製品の質の代理変数としては、馬力を重量で除したエンジン性能、車体の長さと幅の積で表すサイズ、エアコンが搭載されているかどうか(ダミー変数)、ガソリン1ドル分当たりの走行距離で表す燃費を用いる。
 
@@ -54,12 +54,64 @@ $P_0$は$\mathbf{v}$の分布を表す。
  \begin{align*}
  u_{ij} = x_j \Bar{\beta} &+ \xi_j - \alpha p_j + \sum_k \sigma_k x_{jk} v_{ik} + \epsilon_{ij} \\
  \text{for} & \hspace{1.5zw}j = 1,...,J \\
- \text{while} & \hspace{1.5zw} u_{i0} = \sigma_0 v_0 + \epsilon
+ \text{while} & \hspace{1.5zw} u_{i0} = \sigma_0 v_0 + \epsilon_{i0}
  \end{align*}
 
-で表される。
+で表される。$\epsilon$は誤差項を表す。$x_j \Bar{\beta} + \xi_j $は個人$i$に依存しない部分で、$\Bar{\beta}$、$\alpha_i$を推定する。但し、$\alpha_i$は個人$i$の所得によって変動する、需要の価格弾力性を示しており、$\alpha_i = \dfrac{\alpha}{y_i}$で表され、実際には$\alpha$を推定することになる。
+
+\vspace{2zw}
+
+次に、供給サイドの限界費用を推定する。
+
+$J$種類の製品に対して、企業数は$F$で表され、一つの企業が複数の製品を生産することを仮定する。限界費用は製品の観察可能な特性によって変動し、Cost Shifter $w_j$に対して線形の
+
+\[ \ln (mc)_j = w_j \gamma + \omega_j \]
+
+で記述される。
+
+この時、企業$f$の利潤関数は
+
+ \begin{align*}
+ \pi_f = & \sum_{j \in J_f} (p_j -mc -\lambda \textit{VER}_j) \times \\
+  & \times Ms(\mathbf{p}, \mathbf{x}, \xi ; \theta) - \sum_{j \in J_f} \textit{Fixed Costs}_j
+ \end{align*}
+
+VERの効果は、生産に対して定率の関税が課された場合と同様の方法でモデルに組み込まれている。シェアは需要推定によって求められたパラメータを用いて算出される。
+
+各企業のマークアップ$\mathbf{b}$を、ownership matrix を内包する行列$\Delta_{jr}$を用いて
+
+\[\mathbf{b}(\mathbf{p}, \mathbf{x}, \xi ; \theta) 
+= \Delta(\mathbf{p}, \mathbf{x}, \xi ; \theta)^{-1} \mathbf{s}(\mathbf{p}, \mathbf{x}, \xi ; \theta) \]
+
+と表される。以上から、企業$f$の利潤最大化の一階条件は
+
+ \begin{align*}
+ \ln( &mc_j) \\
+  & = \ln (p_j - b_j (\mathbf{p}, \mathbf{x}, \xi ; \theta ) - \lambda \textit{VER}_j ) \\
+  & = w_j \gamma + \omega
+ \end{align*}
+
+\vspace{2zw}
+
+推定にはGMMを用いる。パラメータ$\theta$に依存して変動する$xi_j$,$\omega_j$と、操作変数の関数$H(.)$によって定義されるモーメント条件は、
+
+\[G^J(\theta) = \dfrac{1}{J} \sum ^J_{j=1} E \left[ H_j(z) \begin{pmatrix}
+\xi_j(\theta) \\
+\omega_j(\theta)
+\end{pmatrix}
+ \right] = 0\]
+
+パラメータの最適化条件は
+
+\[  \min ||G_J (\theta) ||_{A_j} \]
+
+操作変数には製品の観察可能な特性$\mathbf{x}$、及びCost shifter $w_j$の内、賃金や生産要素価格など、$\mathbf{x}$に含まれないものを用いる。
 
 \item 推定結果
+ 
+
+
+\item シミュレーション
  
 \item コメント
 

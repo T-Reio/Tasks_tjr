@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.6.25)  11 JUL 2018 18:34
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.6.25)  13 JUL 2018 15:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -124,14 +124,7 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(./HW4 23A18014 丹治伶峰.aux
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-)
+(./HW4 23A18014 丹治伶峰.aux)
 \openout1 = `"HW4 23A18014 丹治伶峰.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
@@ -150,10 +143,11 @@ LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
 LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
- (I search kanjifont definition file: . . ) (I search font definition file: .
-. . . . . . )
+ (I search kanjifont definition file: . . )
+(I search font definition file: . . . . . . . )
 LaTeX Font Info:    Try loading font information for OT1+ppl on input line 4.
- (c:/texlive/2016/texmf-dist/tex/latex/psnfss/ot1ppl.fd
+
+(c:/texlive/2016/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
@@ -200,25 +194,25 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 9.37807pt on input line 9.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 7.29405pt on input line 9.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 7.30359pt on input line 29.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 5.76599pt on input line 29.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 29.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 7.91925pt on input line 29.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 6.25204pt on input line 29.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 29.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.91925pt on input line 29.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 6.25204pt on input line 29.
  [1
 
 ]
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 7.30359pt on input line 41.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 41.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 41.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 41.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 41.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 41.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 41.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 41.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 45.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
@@ -229,19 +223,23 @@ LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
 (Font)              scaled to size 7.30359pt on input line 58.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
 (Font)              scaled to size 5.76599pt on input line 58.
- [2]
-(./HW4 23A18014 丹治伶峰.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+LaTeX Font Info:    Font shape `JT1/mc/m/it' in size <10> not available
+(Font)              Font shape `JT1/mc/m/n' tried instead on input line 77.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 77.
+LaTeX Font Info:    Font shape `JY1/mc/m/it' in size <10> not available
+(Font)              Font shape `JY1/mc/m/n' tried instead on input line 77.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 77.
+ [2] [3]
+(./HW4 23A18014 丹治伶峰.aux) ) 
 Here is how much of TeX's memory you used:
- 1492 strings out of 493683
- 16890 string characters out of 6152642
- 75573 words of memory out of 5000000
- 5080 multiletter control sequences out of 15000+600000
- 25329 words of font info for 95 fonts, out of 8000000 for 9000
+ 1501 strings out of 493683
+ 17024 string characters out of 6152642
+ 78573 words of memory out of 5000000
+ 5088 multiletter control sequences out of 15000+600000
+ 26556 words of font info for 98 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 27i,10n,26p,656b,308s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,10n,26p,656b,328s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on "HW4 23A18014 丹治伶峰.dvi" (2 pages, 7932 bytes).
+Output written on "HW4 23A18014 丹治伶峰.dvi" (3 pages, 11820 bytes).
