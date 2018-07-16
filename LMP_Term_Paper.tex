@@ -66,7 +66,7 @@
  
  \item 過剰診療問題
  
- 受診者の支払い能力に関わらず、かかった医療費が全額支払われることを見越して、過剰な診療 $\cdot$ 検査を実施
+ 医療サービス提供者が、受診者の支払い能力に関わらず医療費が全額支払われることを見越して、過剰な診療 $\cdot$ 検査を実施
  
  \end{itemize}
 
@@ -78,9 +78,106 @@
  
  \item 受給者本人への直接給付 : 正負の効果が共存
  
- 現実的には、各システムによる厚生への損失が最小化される制度を採用すべき
+ 現実的には、システム設計による社会的損失が最小化される制度を採用
  
- $\Rightarrow$各制度による効果の可視化が必要
+ 監視費用の検討
+ 
+ $\Rightarrow$制度設計による影響の可視化
+ 
+ 
+ \end{itemize}
+
+\end{frame}
+
+\begin{frame}\frametitle{先行研究}
+
+ \begin{itemize}
+ 
+ \item 
+ 
+ \end{itemize}
+
+\end{frame}
+
+\begin{frame}\frametitle{モデル}
+
+ \begin{itemize}
+ 
+ \item 公的医療保険$\cdot$医療扶助の給付実績から、年あたり$\cdot$診療あたりの平均診療費を導出
+ 
+ \item 個人属性$\cdot$収入$\cdot$生活環境を導入し、疾病リスクをコントロールして、過剰診療の効果を測る
+ 
+ : 症例、診療所別の固定効果
+ 
+ \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Framework}
+
+固定効果モデル
+
+ \begin{align*}
+  y_{itk} = \beta_0 &+ \beta_1 \mathbf{X}_{it} + \beta_2 \textit{Recipient}_{it}  \\
+ & + \beta_3 \textit{Hospital}_{it} + \beta_4  \textit{Recipient}_{it} \times \textit{Hospital}_{itk}  \\
+    \\
+    & \text{where} \\
+  y_{itk} &: \text{Individual expenditure for medical service} \\
+  \mathbf{X} &: \text{Individual charactaristics} \\
+  \textit{Recipient} & : \text{Indicater for recipient} \\
+  \textit{Hospital} & : \text{Hospital-specific dummy}
+  \end{align*}
+
+\end{frame}
+
+\section{Data processing}
+\begin{frame}\frametitle{データ}
+
+ \begin{itemize}
+ 
+ \item 医療扶助実態調査 : 厚生労働省
+ 
+  : 傷病名、診療実日数、診療行為別点数等の事項及び調剤報酬明細書の記入事項のうち、受付回数、処方調剤、調剤点数の事項を調査
+  
+  症例別、都道府県レベル、年齢別、入院日あたり
+  
+\item 社会医療診療行為別統計 : 厚生労働省
+
+\item 医療費の地域差分析 : 厚生労働省
+
+非受給者の医療費データ(症例、都道府県、年齢別、入院1日あたり)
+ 
+ \end{itemize}
+
+\end{frame}
+
+\begin{frame}\frametitle{修正モデル}
+
+\begin{align*}
+  y_{itk} &= \beta_0 + \beta_1 \mathbf{X}_{it} + \beta_2 \textit{Recipient}_{itk} \\
+    \\
+    & \text{where} \\
+   y_{itk} &: \text{Cohort expenditure for medical service} \\
+  \mathbf{X} &: \text{Cohort charactaristics} \\
+  \textit{Recipient} &: \text{Dummy for recipient}
+  \end{align*}
+
+\end{frame}
+
+\section{Challenge}
+\begin{frame}\frametitle{課題}
+
+ \begin{itemize}
+ 
+ \item 個人レベル/診療所レベルデータの入手可能性
+ 
+ : 所得水準による受診回数の変動 ; 内生性の問題
+ 
+ $\Rightarrow$ 一次データ生成の可能性
+ 
+ アンケート調査による個人レベルデータの取得?
+ 
+ 厚生労働省のデータ利用可能性
  
  \end{itemize}
 
