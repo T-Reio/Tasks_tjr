@@ -52,6 +52,8 @@
  
  $\Rightarrow$サービス提供者(大家)に対価が支払われない
  
+ : 代理納付制度の導入
+ 
  \end{itemize}
 
 \end{frame}
@@ -80,7 +82,11 @@
  
  現実的には、システム設計による社会的損失が最小化される制度を採用
  
- 監視費用の検討
+ 監視費用の最適化
+ 
+ \item 社会保障審議会生活困窮者自立支援及び生活保護部会 : 厚生労働省
+ 
+ 医療扶助総額は年々増加傾向 : 高齢化を考慮
  
  $\Rightarrow$制度設計による影響の可視化
  
@@ -93,7 +99,25 @@
 
  \begin{itemize}
  
- \item 
+ \item 生活保護の給付水準、給付条件に関する研究は多数
+ 
+  \begin{itemize}
+  
+  \item Lemieux \& Milligan(2008), Bargain \& Doorley(2011)
+  
+  給付水準の上昇が特定コーホートの就業インセンティブを低下させる : RDD
+  
+  労働供給の端点解へのジャンプ
+  
+  \end{itemize}
+ 
+ \item 給付方法のデザイン、受給者にサービスを提供する主体の行動に焦点を当てた研究は少ない
+ 
+  \begin{itemize}
+  
+  \item ``生活保護の経済分析''(東京大学出版会)
+  
+  \end{itemize}
  
  \end{itemize}
 
@@ -114,8 +138,6 @@
 \end{frame}
 
 \begin{frame}{Framework}
-
-固定効果モデル
 
  \begin{align*}
   y_{itk} = \beta_0 &+ \beta_1 \mathbf{X}_{it} + \beta_2 \textit{Recipient}_{it}  \\
@@ -164,8 +186,26 @@
 
 \end{frame}
 
+\begin{frame}\frametitle{代替的な分析方法}
+
+ \begin{itemize}
+ 
+ \item DID分析 : 給付方法の変化に地域差$\Rightarrow$ 方法による給付額の変化を捕捉
+ 
+ \item 一次データ生成の可能性
+ 
+ アンケート調査による個人レベルデータの取得可能性
+ 
+ \item 医療扶助のみを受給している世帯との比較
+ 
+ : 支給額に制限
+ 
+ \end{itemize}
+
+\end{frame}
+
 \section{Challenge}
-\begin{frame}\frametitle{課題}
+\begin{frame}\frametitle{課題と発展}
 
  \begin{itemize}
  
@@ -173,11 +213,9 @@
  
  : 所得水準による受診回数の変動 ; 内生性の問題
  
- $\Rightarrow$ 一次データ生成の可能性
- 
- アンケート調査による個人レベルデータの取得?
- 
  厚生労働省のデータ利用可能性
+ 
+ \item 医療扶助と同様の支払い形態を持つ扶助 : 介護扶助への応用 
  
  \end{itemize}
 
