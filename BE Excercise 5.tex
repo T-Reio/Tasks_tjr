@@ -18,6 +18,59 @@ Exercise 5 Behavioral Game Theory}
  
  \item
  
+ Every type of seller chooses to disclose her own type $i = {L, M, H}$, and $p = v_i$.
+ 
+ If the seller disclosed her type, the buyer purchases iff $v_i \geq p$, otherwise purchase iff $\epsilon \geq p$.
+ 
+ \vspace{0.7zw}
+ 
+ \hspace{2zw}When the type is concealed, rational buyer evaluates lemon by its expected value : 
+ 
+ \[ E(v) = v_L \cdot q_L + v_M \cdot q_M + (1 - q_L - q_M) > v_H = 1 \]
+ 
+ and buy only if $E(v) \geq p$.
+ 
+ Then, type-H seller raise her profit by disclosing and set $p = 1$, and the buyer revises her belief
+ 
+ \[ E(v) = v_L \cdot q_L + v_M \cdot q_M > v_M \]
+ 
+ Again, there is an incentive for type-M seller to disclose and set $p = v_M$, and finally, the buyer predicts the expected value $E(v) = v_L = \epsilon$, which makes type-L seller to disclose and set $p = \epsilon$.
+ 
+ \vspace{1zw}
+ 
+  \item \hspace{2zw} When the buyer  is fully cursed, she predicts the predicts the expected value if the private information was hidden is :
+  
+  \[E(v) = v_L \cdot q_L + v_M \cdot q_M + (1 - q_L - q_M) \equiv E \]
+ 
+ and purchase iff $E(v) > p$.
+ 
+ Note that when the type was disclosed, the buyer purchase iff $v_i > p$.
+ 
+ \hspace{2zw} In Stage 1, then, 
+ 
+  \begin{itemize}
+  
+  \item Type-H seller : $v_H =1 > E $
+  
+  She discloses her type and set $p = 1$.
+  
+  \item Type-L seller : $v_L = \epsilon < E$
+  
+  She conceal her private information and set $p = E$.
+  
+  \item Type-M seller : $v_M \in (\epsilon, 1)$
+  
+  Her strategy is conditional on the value of $v_M$.
+  
+  If $v_M \geq E$, then she disclose her type and set $p = v_M$.
+  
+  Otherwise, $v_M < E$, she conceal and set $p = E$.
+  
+  \end{itemize}
+ 
+ \newpage 
+
+ \item 
  
  
  \end{enumerate}
