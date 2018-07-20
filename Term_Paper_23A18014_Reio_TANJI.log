@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.6.25)  20 JUL 2018 13:10
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.6.25)  20 JUL 2018 20:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -224,17 +224,25 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 16.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 16.
+LaTeX Font Info:    Font shape `JT1/mc/m/it' in size <12> not available
+(Font)              Font shape `JT1/mc/m/n' tried instead on input line 36.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 11.53198pt on input line 36.
+LaTeX Font Info:    Font shape `JY1/mc/m/it' in size <12> not available
+(Font)              Font shape `JY1/mc/m/n' tried instead on input line 36.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 11.53198pt on input line 36.
  [1
 
-]
+] [2]
 (./Term_Paper_23A18014_Reio_TANJI.aux) ) 
 Here is how much of TeX's memory you used:
- 1518 strings out of 493683
- 17269 string characters out of 6152642
- 74573 words of memory out of 5000000
- 5102 multiletter control sequences out of 15000+600000
- 18542 words of font info for 72 fonts, out of 8000000 for 9000
+ 1522 strings out of 493683
+ 17319 string characters out of 6152642
+ 75573 words of memory out of 5000000
+ 5105 multiletter control sequences out of 15000+600000
+ 18951 words of font info for 73 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 27i,6n,26p,351b,239s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,6n,26p,567b,239s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Term_Paper_23A18014_Reio_TANJI.dvi (1 page, 1272 bytes).
+Output written on Term_Paper_23A18014_Reio_TANJI.dvi (2 pages, 2920 bytes).
