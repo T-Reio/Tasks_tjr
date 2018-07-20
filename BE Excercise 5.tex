@@ -15,7 +15,7 @@ Exercise 5 Behavioral Game Theory}
 \item [Question 1]
 
  \begin{enumerate}
- 
+ %Question (a)
  \item
  
  Every type of seller chooses to disclose her own type $i = {L, M, H}$, and $p = v_i$.
@@ -37,7 +37,7 @@ Exercise 5 Behavioral Game Theory}
  Again, there is an incentive for type-M seller to disclose and set $p = v_M$, and finally, the buyer predicts $\Hat{q}_L = 1$, and the expected value $E(v) = v_L = \epsilon$, which makes type-L seller to disclose and set $p = \epsilon$.
  
  \vspace{1zw}
- 
+ %Question (b)
   \item \hspace{2zw} When the buyer  is fully cursed, she predicts the expected value if the private information was hidden is : $\Hat{q}_i = q_i$ for each $i \in {L,M,H}$
   
   \[E(v) = v_L \cdot q_L + v_M \cdot q_M + (1 - q_L - q_M) \equiv E \]
@@ -69,13 +69,15 @@ Exercise 5 Behavioral Game Theory}
   \end{itemize}
  
 \vspace{1zw}
-
- \item By the assumption, in this question, $\chi$-cursed buyer's belief is:
+%Question (c)
+ \item By the assumption, in this question, $\chi$-cursed buyer's belief and action is:
  
  \[ \begin{cases}
- \Hat{q}_L = 1 & \text{ if ``rational''} \\
- \Hat{q}_i = q_i & \text{ if ``cursed''}
+ \Hat{q}_L = 1 \text{ and purchase iff } p \leq \epsilon & \text{ if ``rational''} \\
+ \Hat{q}_i = q_i \text{ and purchase iff } p \leq E & \text{ if ``cursed''}
  \end{cases} \]
+   
+  \[\text{where } p = E = v_L \cdot q_L + v_M \cdot q_M + (1 - q_L - q_M) \]
    
   Note that if $p > v_L = \epsilon$, then ``rational'' buyer revises her belief same as ``cursed.''
   
@@ -105,7 +107,102 @@ Exercise 5 Behavioral Game Theory}
    
    \end{itemize}
  
- \item 
+ \vspace{1zw} 
+ %Question (d)
+ \item Buyer's belief and action is same as (c), except for that if $p < E$, ``cursed'' buyer behave as if she is ``rational.''
+ 
+ First, suppose the buyer is type-L.
+ 
+  \begin{itemize}
+  
+  \item disclose and $p = \epsilon$
+  
+  The seller's expexted payoff is $\epsilon$.
+  
+  \item conceal and $p = \epsilon$
+  
+  The ``cursed'' buyer revises her belief. Seller's expected payoff is :
+  
+  \[ (1 - \chi) \epsilon + \chi \epsilon = \epsilon \]
+  
+  \item conceal and $p = E$
+  
+  The expexted payoff is :
+  
+  \[ (1 - \chi) \cdot 0 + \chi E = \chi E \]
+  
+  \end{itemize}
+ 
+ By the assumption that $\epsilon$ is sufficiently small, type-L seller choose to conceal and set $p = E$.
+ 
+ \newpage
+ 
+ Next, suppose type-M seller.
+ 
+  \begin{itemize}
+  
+  \item disclose and $p = v_M$
+  
+  The seller's expected payoff is $v_M$.
+  
+  \item conceal and $p = \epsilon$ 
+  
+ ``Cursed'' buyer revises her belief, and the expected payoff is :
+  
+  \[ (1-\chi) \epsilon + \chi \epsilon = \epsilon < v_M \]
+  
+  \item conceal and $p = v_M$
+  
+  Again, ``cursed'' buyer revises her belief, and the expected payoff is :
+  
+  \[ (1 - \chi) \cdot 0 + \chi \cdot 0 = 0 \]
+  
+  \item conceal and $p = E$
+  
+  \[ (1 - \chi ) \cdot 0 + \chi E = \chi E \]
+  
+  Thus, type-M seller's decision is conditional :
+  
+  \[\begin{cases} 
+  \text{disclose and set } p = v_M & \text{ if } \chi > \frac{v_M}{E} \\
+  \text{conceal and set } p = E & \text { otherwise}
+  \end{cases} \]
+    
+  \end{itemize}
+ 
+ Finally, consider type-H seller.
+ 
+  \begin{itemize}
+  
+  \item disclose and $p = 1$
+  
+  The seller's expected payoff is 1.
+  
+  \item conceal and $p= \epsilon$
+  
+  The buyer revises her belief, and so the expected payoff is :
+  
+  \[ (1 - \chi) \epsilon + \chi \epsilon = \epsilon \]
+  
+  \item conceal and $p = v_M$
+  
+  Again, the buyer revises her belief, and the expected payoff is :
+  
+  \[ (1- \chi) \cdot 0 + \chi v_M = \chi v_M \]
+  
+  \item conceal and $p = E$
+  
+  The expected payoff is :
+  
+  \[ (1 - \chi) \cdot 0 + \chi E = \chi E \]
+  
+  \item conceal and $p = 1$
+  
+  \[ (1 - \chi) \cdot 0 + \chi \cdot 0 = 0 \]
+  
+  Summerizing this, type-H seller unconditionally discloses her own type, and set $p = 1$.
+  
+  \end{itemize}
  
  \end{enumerate}
 
