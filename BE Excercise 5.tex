@@ -26,19 +26,19 @@ Exercise 5 Behavioral Game Theory}
  
  \hspace{2zw}When the type is concealed, rational buyer evaluates lemon by its expected value : 
  
- \[ E(v) = v_L \cdot q_L + v_M \cdot q_M + (1 - q_L - q_M) > v_H = 1 \]
+ \[ E(v) = v_L \cdot \Hat{q}_L + v_M \cdot \Hat{q}_M + (1 - \Hat{q}_L - \Hat{q}_M) > v_H = 1 \]
  
- and buy only if $E(v) \geq p$.
+ where $\Hat{q}_i$ denotes her belief about each $q_i$, and buy only if $E(v) \geq p$.
  
- Then, type-H seller raise her profit by disclosing and set $p = 1$, and the buyer revises her belief
+ Then, type-H seller raise her profit by disclosing and set $p = 1$, and the buyer revises her belief : If the seller did not disclose her type, then $\Hat{q}_H = 0$, and so
  
- \[ E(v) = v_L \cdot q_L + v_M \cdot q_M > v_M \]
+ \[ E(v) = v_L \cdot \Hat{q}_L + v_M \cdot \Hat{q}_M > v_M \]
  
- Again, there is an incentive for type-M seller to disclose and set $p = v_M$, and finally, the buyer predicts the expected value $E(v) = v_L = \epsilon$, which makes type-L seller to disclose and set $p = \epsilon$.
+ Again, there is an incentive for type-M seller to disclose and set $p = v_M$, and finally, the buyer predicts $\Hat{q}_L = 1$, and the expected value $E(v) = v_L = \epsilon$, which makes type-L seller to disclose and set $p = \epsilon$.
  
  \vspace{1zw}
  
-  \item \hspace{2zw} When the buyer  is fully cursed, she predicts the predicts the expected value if the private information was hidden is :
+  \item \hspace{2zw} When the buyer  is fully cursed, she predicts the expected value if the private information was hidden is : $\Hat{q}_i = q_i$ for each $i \in {L,M,H}$
   
   \[E(v) = v_L \cdot q_L + v_M \cdot q_M + (1 - q_L - q_M) \equiv E \]
  
@@ -68,10 +68,44 @@ Exercise 5 Behavioral Game Theory}
   
   \end{itemize}
  
- \newpage 
+\vspace{1zw}
 
- \item 
+ \item By the assumption, in this question, $\chi$-cursed buyer's belief is:
  
+ \[ \begin{cases}
+ \Hat{q}_L = 1 & \text{ if ``rational''} \\
+ \Hat{q}_i = q_i & \text{ if ``cursed''}
+ \end{cases} \]
+   
+  Note that if $p > v_L = \epsilon$, then ``rational'' buyer revises her belief same as ``cursed.''
+  
+  Suppose the seller is type-L. Then, there are some possible strategies as follows :
+  
+   \begin{itemize}
+   
+   \item disclose, and set $p = \epsilon$
+   
+   The seller's expected payoff is:
+   
+   \[ (1 - \chi ) \epsilon + \chi \epsilon = \epsilon \]
+   
+   \item conceal, and $p = \epsilon$
+   
+   \[ (1 - \chi) \epsilon + \chi \epsilon = \epsilon \]
+   
+   \item conceal, and $p = E = v_L \cdot q_L + v_M \cdot q_M + (1 - q_L - q_M)$
+   
+   The ``rational'' buyer behave as if she is ``cursed,'' since $p=E$ is off-path. Then ,the seller's expected payoff is :
+   
+   \[(1- \chi ) E + \chi E = E \]
+   
+   which yields the best response for the seller. This strategy, however, cannot be a perfect Bayesian Nash equilibrium, since the buyer's bilief is not consistent.
+   
+   Thus, there is no equilibrium strategies.
+   
+   \end{itemize}
+ 
+ \item 
  
  \end{enumerate}
 
