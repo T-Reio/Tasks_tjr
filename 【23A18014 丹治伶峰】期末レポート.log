@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.6.25)  7 JUL 2018 16:50
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.6.25)  20 JUL 2018 20:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -124,7 +124,7 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-No file "【23A18014 丹治伶峰】期末レポート".aux.
+(./【23A18014 丹治伶峰】期末レポート.aux)
 \openout1 = `"【23A18014 丹治伶峰】期末レポート.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
@@ -143,67 +143,81 @@ LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
 LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
-(I search kanjifont definition file: . . ) (I search font definition file: . .
-. . . . . )
+ (I search kanjifont definition file:
+. . ) (I search font definition file: . . . . . . . )
 LaTeX Font Info:    Try loading font information for OT1+ppl on input line 4.
- (c:/texlive/2016/texmf-dist/tex/latex/psnfss/ot1ppl.fd
+
+(c:/texlive/2016/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 16.60605pt on input line 9.
+(Font)              scaled to size 16.60605pt on input line 10.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 16.60605pt on input line 9.
+(Font)              scaled to size 16.60605pt on input line 10.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 9.
+(Font)              scaled to size 11.53198pt on input line 10.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 9.
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 9.
+(Font)              scaled to size 11.53198pt on input line 10.
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 10.
+
 
 (c:/texlive/2016/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 9.
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 10.
+
 
 (c:/texlive/2016/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 9.
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 10.
+
 
 (c:/texlive/2016/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 9.
+(Font)              scaled to size 8.64899pt on input line 10.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 9.
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 9.
+(Font)              scaled to size 6.72699pt on input line 10.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 10.
+
 
 (c:/texlive/2016/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 9.
+(Font)              scaled to size 12.50409pt on input line 10.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 9.
+(Font)              scaled to size 9.37807pt on input line 10.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 9.
+(Font)              scaled to size 7.29405pt on input line 10.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 9.
+(Font)              scaled to size 12.50409pt on input line 10.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 9.
+(Font)              scaled to size 9.37807pt on input line 10.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 9.
+(Font)              scaled to size 7.29405pt on input line 10.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 13.83836pt on input line 14.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 13.83836pt on input line 14.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 13.83836pt on input line 14.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 13.83836pt on input line 14.
  [1
 
 ]
 (./【23A18014 丹治伶峰】期末レポート.aux) ) 
 Here is how much of TeX's memory you used:
- 1458 strings out of 493683
- 16503 string characters out of 6152642
+ 1469 strings out of 493683
+ 16688 string characters out of 6152642
  73573 words of memory out of 5000000
- 5050 multiletter control sequences out of 15000+600000
- 16866 words of font info for 65 fonts, out of 8000000 for 9000
+ 5057 multiletter control sequences out of 15000+600000
+ 18162 words of font info for 71 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 27i,6n,26p,249b,240s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,6n,26p,274b,240s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on "【23A18014 丹治伶峰】期末レポート.dvi" (1 page, 460 bytes).
+Output written on "【23A18014 丹治伶峰】期末レポート.dvi" (1 page, 1140 bytes).
+
