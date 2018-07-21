@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.6.25)  7 JUL 2018 16:54
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.6.25)  21 JUL 2018 12:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -206,24 +206,34 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 7.29405pt on input line 11.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 13.
+(Font)              scaled to size 13.83836pt on input line 15.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 13.
+(Font)              scaled to size 13.83836pt on input line 15.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 13.
+(Font)              scaled to size 13.83836pt on input line 15.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 13.
+(Font)              scaled to size 13.83836pt on input line 15.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 19.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 13.83836pt on input line 19.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 19.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 13.83836pt on input line 19.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 19.
  [1
 
 ]
 (./23A18014 丹治伶峰 期末課題.aux) ) 
 Here is how much of TeX's memory you used:
- 1511 strings out of 493683
- 17102 string characters out of 6152642
- 73573 words of memory out of 5000000
- 5098 multiletter control sequences out of 15000+600000
- 18162 words of font info for 71 fonts, out of 8000000 for 9000
+ 1516 strings out of 493683
+ 17173 string characters out of 6152642
+ 74573 words of memory out of 5000000
+ 5102 multiletter control sequences out of 15000+600000
+ 18542 words of font info for 72 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  27i,6n,26p,244b,239s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on "23A18014 丹治伶峰 期末課題.dvi" (1 page, 688 bytes).
+Output written on "23A18014 丹治伶峰 期末課題.dvi" (1 page, 976 bytes).
