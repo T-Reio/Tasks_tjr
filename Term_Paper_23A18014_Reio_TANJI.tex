@@ -67,7 +67,7 @@ Following Allen, et al. (2017), I define the reference-dependent utility functio
  
  \end{enumerate}
 
-based on Kahneman and Tverssky (1979)'s primary gain-loss payoff function
+based on Kahneman and Tversky (1979)'s primary gain-loss payoff function
 
 \[n(x|r) = \mu ( m(x) - m(r) ) \]
 
@@ -105,18 +105,38 @@ and its extensive study about loss aversion and diminishing sensitivity (Tversky
  Apply regerssion discontinuity design (RDD) to specify whether there exists any monetary incentives for making especially much effort to achieve their goals.
  
   \begin{align*}
-   y_{it} = \beta_0 + &\beta_1 \mathbf{X}_{it} + \beta_2 \textit{Above}_{it} + u_{it} \\
-   \text{where } & \\
+    & y_{it} = \beta_0 + \beta_1 \mathbf{X}_{it} + \beta_2 \textit{Above}_{it} + u_{it} \\
+   & \text{where }  \\
    y_{it} : & \text{ player } i's \text{ salary in the season } t \\
-   \mathbf{X} : & \text{ Controls - performance, age, position and so on..} \\
+   \mathbf{X}_{it} : & \text{ Controls} \\
    \text{Above}_{it} : & \text{ whether their performance index is above the possible reference point}
    \end{align*}
+ 
+ Controls include players' performance, and individual charactaristics such as age, position, contract length, presence of conditional bonus, posession of the right to arbitration or free agency.
+ 
+ If the coeffient $\beta$ is significant, then there is some monetary incentive for achieving their goals, which rationalizes the players' unnaturally high aspiration. 
+ 
+ Also in this section, distinguishing `Before' with `After' \textit{Moneyball} will be suggestive analysis. Specifically, I conduct year-specifying analysis.
  
 \section{Referances and Definitions}
 
  \subsection{References}
  
- 
+  \begin{itemize}
+  
+  \item Pope and Simonsohn(2011) `Round Numbers as Goals : Evidence From Baseball, SAT Takers,
+and the Lab'  \textit{Association for Psychological Science}
+  
+  \item Hakes and Sauer(2006) `An Economic Evaluation of the Moneyball Hypothesis' \textit{Journal of Economic Perspectives}
+  
+  \item Allen,Dechow, Pope \& Wu(2017) `Reference-Dependent Preferences: Evidence from
+Marathon Runners' \textit{Management Science}
+  
+  \item Kahneman and Tversky (1979, ECTA)
+  
+  \item Kahneman and Tverssky (1992) `Advances in Prospect Theory:Cumulative Representation of Uncertainty'  \textit{Journal of Risk and Uncertainty}
+  
+  \end{itemize}
  
  \subsection{Definitions}
  
@@ -127,5 +147,7 @@ and its extensive study about loss aversion and diminishing sensitivity (Tversky
 \text{OBP} &= \dfrac{\text{base-hits} + \text{walks} + \text{hit-by-pitches}} 
 {\text{at-bats} + \text{walks} + \text{hit-by-pitches} + \text{sacrifice-flies}} \\
 \end{align*}
+
+OBP counts walks(四球) and hit-by-pitches(死球) as the element to raise the index, while AVG only includes base-hits(安打) as them. Studies have show that OBP is more correlated with winning average and total scores of the team he belongs to, which indicates that for the team manager OBP should be evaluated than AVG.
 
 \end{document}
