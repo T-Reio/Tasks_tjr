@@ -31,7 +31,7 @@ Exploiting these specification to design optimal contracts with the professional
 
 \hspace{1zw} There are many empirical research that test the existence of a certain reference points in individuals' preference.
 
-\hspace{1zw} Pope and Simonsohn(2011) specified that round numbers act as a reference point, expoiting three empirical researches. One of these studies, they utilized the case of professional baseball players in Major League Baseball (MLB).According to this, batters prefer finishing their season with their batting average just above .300 to just below that number, which makes the distribution of their batting averages at the end of each season has a discontinuity around .300. Roughly, I follow this method of specification.
+\hspace{1zw} Pope and Simonsohn(2011) specified that round numbers act as a reference point, exploiting three empirical researches. One of these studies, they utilized the case of professional baseball players in Major League Baseball (MLB).According to this, batters prefer finishing their season with their batting average just above .300 to just below that number, which makes the distribution of their batting averages at the end of each season has a discontinuity around .300. Roughly, I follow this method of specification.
 
 \hspace{1zw}On the other hand, however, there are some alternative interpretation to the discontinuity, such as the existence of monetary incentives. I have to make some analysis on the evaluation by the team managers. Hakes and Sauer(2006) measured the impact of the pulication of `\textit{Moneyball}' (Michael Lewis, 2003), which points out that they underestimates the contribution of on-base percentage , rather than batting average, to increasing their scores, and raising winning percentage.  Hakes and Sauer utilized statistical methods to find that the underestimation leads to inefficient contracts in the labour market in MLB, and that this inefficiency was relaxed after the publication of `\textit{Moneyball}.'
 
@@ -49,11 +49,44 @@ Exploiting these specification to design optimal contracts with the professional
 
 \section{Key Assumtions}
 
+\hspace{1zw} Following Allen, et al. (2017), I define the reference-dependent utility function, $v(.)_r$, by three primary forms :
 
+ \begin{enumerate}
+ 
+ \item A jump : discontinuity at reference point $r$
+ 
+ \[ \lim_{\epsilon \to 0} v_r (r+ \epsilon) \neq \lim_{\epsilon \to 0} v_r (r -\epsilon) \]
+ 
+ \item A kink (1) : discontinuity in the first derivative at $r$
+ 
+ \[ \lim_{\epsilon \to 0} v_r ` (r+ \epsilon) \neq \lim_{\epsilon \to 0} v_r ` (r -\epsilon) \]
+ 
+ \item A kink (2) : discontinuity in the second derivative at $r$
+ 
+ \[ \lim_{\epsilon \to 0} v_r `` (r+ \epsilon) \neq \lim_{\epsilon \to 0} v_r `` (r -\epsilon) \]
+ 
+ \end{enumerate}
+
+based on Kahneman and Tverssky (1979)'s primary gain-loss payoff function
+
+\[n(x|r) = \mu ( m(x) - m(r) ) \]
+
+and its extensive study about loss aversion and diminishing sensitivity (Tversky and Kahneman 1992).
 
 \section{Model \& Data}
 
-
-
+ \subsection{Existence of reference-dependent preference}
+ 
+ 
+ 
+ \subsection{Background : Monetary incentives}
+ 
+ 
+ 
+ \subsection{Data}
+ 
+ Team-level and player-level panel batting stats of MLB players can be obtained by officialy disclosed data statistics to get panel data. Also, player-level information about contracts can be obtained, covering to some details such as contract length or stats-dependent (incentive) contracts.
+ 
+ In Pope and Simonsohn (2011), they aggregated the data from 1974 to 2008. 
 
 \end{document}
