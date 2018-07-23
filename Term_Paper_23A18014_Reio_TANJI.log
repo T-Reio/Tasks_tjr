@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.6.25)  23 JUL 2018 12:52
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.6.25)  23 JUL 2018 16:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -243,18 +243,27 @@ File: omsppl.fd
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 44.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 78.
+(Font)              scaled to size 11.53198pt on input line 77.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 78.
+(Font)              scaled to size 11.53198pt on input line 77.
  [2] [3]
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 113.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 113.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 113.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 113.
+ [4]
 (./Term_Paper_23A18014_Reio_TANJI.aux) ) 
 Here is how much of TeX's memory you used:
- 1540 strings out of 493683
- 17629 string characters out of 6152642
- 77573 words of memory out of 5000000
- 5121 multiletter control sequences out of 15000+600000
- 19796 words of font info for 77 fonts, out of 8000000 for 9000
+ 1552 strings out of 493683
+ 17783 string characters out of 6152642
+ 76573 words of memory out of 5000000
+ 5132 multiletter control sequences out of 15000+600000
+ 22334 words of font info for 86 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 27i,6n,26p,777b,239s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,12n,26p,798b,255s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Term_Paper_23A18014_Reio_TANJI.dvi (3 pages, 5860 bytes).
+Output written on Term_Paper_23A18014_Reio_TANJI.dvi (4 pages, 9608 bytes).
