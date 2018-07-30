@@ -1,5 +1,0 @@
-\beamer@endinputifotherversion {3.36pt}
-\beamer@sectionintoc {1}{Research Topic}{2}{0}{1}
-\beamer@sectionintoc {2}{Model}{3}{0}{2}
-\beamer@sectionintoc {3}{Data processing}{9}{0}{3}
-\beamer@sectionintoc {4}{Challenge}{12}{0}{4}
