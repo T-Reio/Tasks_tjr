@@ -18,6 +18,8 @@
  
  \item
  
+ (1)
+ 
  
  
  \item
@@ -88,7 +90,7 @@
  
  Consider the regression model
  
- \[ \ln y_i = \beta_0 + \beta_1 t_i + \beta_2 + x_i + \epsilon \]
+ \[ \ln y_i = \beta_0 + \beta_1 t_i + \beta_2 + x_i + \epsilon_i \]
  
  Then, excluded variable $Z_i$ is introduced to the following regression :
  
@@ -98,11 +100,24 @@
  
   \begin{itemize}
   
-  \item $\gamma_1$ is statistically significant.
+  \item $\gamma_1$ is statistically significant, and not close to zero.
   
-  \item $Z_i$ and $\epsilon_i$ are independent
+  \item $Z_i$ is independent of any variables that determines $y_i$, except for $t_i$.
+  
+  : $Cov(Z_i, \epsilon_i) = 0$.
   
   \end{itemize} 
+ 
+ In order to find a valid instruments, we should pay attention to legal engagement that make individuals to apply some choice, regardless of charactaristics of each individual. 
+ 
+ (4)
+ 
+ In this paper, they utilized birth-month of the students, to identify the effect of compulsory school attendance on their ability and wages.
+ 
+ In the U.S., those who were born early in the calender year receive compulsory education for shorter duration than those who were born late. This law is guaranteed by legal regulation about compulsory education, and there is no correlation between birth-month and their ability. Thus, using this as an instrument variable, they can limit the estimation bias.
+ 
+ (5)
+ 
  
  
  \end{enumerate}
