@@ -1,6 +1,8 @@
-\documentclass{jsarticle}
+\documentclass[dvipdfmx]{jsarticle}
 \usepackage{mathpazo}
 \usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{tikz}
 \begin{document}
 
 \title{労働経済I 期末レポート}
@@ -19,8 +21,8 @@
  
   \begin{align*}
   \textit{MRTS} &= \dfrac{\partial y / \partial L_a}{\partial y / \partial L_b} \\
-  &= \dfrac{A (\frac{L_b}{L_a})^{1-\alpha}}{A (\frac{L_a}{L_b})^\alpha} \\
-  &= \dfrac{L_b}{L_a}
+  &= \dfrac{\alpha A (\frac{L_b}{L_a})^{1-\alpha}}{(1-\alpha) A (\frac{L_a}{L_b})^\alpha} \\
+  &= \dfrac{\alpha L_b}{(1-\alpha) L_a}
   \end{align*}
  
  (2)
@@ -39,8 +41,8 @@
  \[ \mathcal{L} = w_a L_a+ w_b L_b + \lambda(\bar{y} - y) \]
  
   \begin{align*}
-  w_a - \lambda A \left( \dfrac{L_b}{L_a} \right)^{1-\alpha} &=0 \\
-  w_b - \lambda A \left( \dfrac{L_b}{L_a} \right)^{\alpha} &=0 \\
+  w_a - \lambda \alpha A \left( \dfrac{L_b}{L_a} \right)^{1-\alpha} &=0 \\
+  w_b - \lambda (1-\alpha) A \left( \dfrac{L_b}{L_a} \right)^{\alpha} &=0 \\
   A (L_a)^{\alpha} (L_b)^{1- \alpha} = \bar{y}
   \end{align*}
  
@@ -48,14 +50,14 @@
  
   \begin{align*}
   \bar{L_a}(w_a, w_b, \bar{y}) &
-  = \dfrac{\bar{y}}{A} \left( \dfrac{w_b}{w_a} \right)^{1-\alpha} \\
+  = \dfrac{\bar{y}}{A} \left( \dfrac{\alpha w_b}{(1-\alpha) w_a} \right)^{1-\alpha} \\
   \bar{L_b}(w_a, w_b, \bar{y}) &
-  = \dfrac{\bar{y}}{A} \left( \dfrac{w_a}{w_b} \right)^{\alpha}
+  = \dfrac{\bar{y}}{A} \left( \dfrac{(1-\alpha) w_a}{\alpha w_b} \right)^{\alpha}
   \end{align*}
  
  (3)
  
- By the conditional demand function obtained in (3), $\bar{L_a}(w_a,w_b,\bar{y})$ is decreasing in $w_a$, while $\bar{L_b}(w_a,w_b,\bar{y})$ increasing in $w_a$, since $\bar{y}, A >0$, $\left( \dfrac{w_b}{w_a} \right) > 0$ and $\left( \dfrac{w_a}{w_b} \right)>0$ for any positive $w_a$ and $w_b$.
+ By the conditional demand function obtained in (3), $\bar{L_a}(w_a,w_b,\bar{y})$ is decreasing in $w_a$, while $\bar{L_b}(w_a,w_b,\bar{y})$ increasing in $w_a$, since $\bar{y}, A >0$,$\alpha \in (0,1)$, $\left( \dfrac{w_b}{w_a} \right) > 0$ and $\left( \dfrac{w_a}{w_b} \right)>0$ for any positive $w_a$ and $w_b$.
  
  Thus, for $\bar{w_a} > w_a$,
  
@@ -70,22 +72,76 @@
  
   \begin{align*}
   \max_{y} \Pi(y) &= p(y) \cdot y - w_a L_a - w_b L_b \\
-  &= y^{\frac{1+\beta}{\beta}} - \dfrac{2y}{A} w_a^{\alpha} w_b^{1-\alpha} 
+  &= y^{\frac{1+\beta}{\beta}} 
+  - \dfrac{y}{A} \cdot \left( \dfrac{\alpha}{1-\alpha} \right)^{1-\alpha} w_a^{\alpha} w_b^{1-\alpha}
+  - \dfrac{y}{A} \cdot \left( \dfrac{1-\alpha}{\alpha} \right)^{\alpha} w_a^{\alpha} w_b^{1-\alpha} \\ 
   \end{align*} 
  
  FOC yields
  
   \begin{align*}
-  \dfrac{1+\beta}{\beta} y^{\dfrac{1}{\beta}} - \dfrac{2}{A} w_a^{\alpha} w_b^{1-\alpha} &=0 \\
-  y^{\dfrac{1}{\beta}} &= \dfrac{2\beta}{A(1+\beta)}w_a^{\alpha} w_b^{1-\alpha} \\
-  y^* (w_a, w_b) &= \left[ \dfrac{2\beta}{A(1+\beta)}w_a^{\alpha} w_b^{1-\alpha} \right]^{\beta}
+  \dfrac{1+\beta}{\beta} y^{\dfrac{1}{\beta}} 
+  - \frac{1}{A} \left( \dfrac{\alpha^{1-\alpha}}{(1-\alpha)^{1-\alpha}}
+  + \dfrac{(1-\alpha)^{\alpha}}{\alpha^\alpha} \right)
+  w_a^{\alpha} w_b^{1-\alpha} &=0 \\
+  \\
+  y^* (w_a, w_b) &= \left[ \dfrac{\beta}{A(1+\beta)(1-\alpha)^{1-\alpha} \alpha^\alpha}
+  w_a^{\alpha} w_b^{1-\alpha} \right]^{\beta}
   \end{align*}
  
  (5)
  
- When $y$ is normal goods, $p(y)$ should be decreasing in $y$. Also, by the optimal output obtained in (4), It is required that $\beta < -1$ or $\beta \geq 0$, for y being positive value. So, I assume that $\beta < -1$.
+ When $y$ is normal goods, $p(y)$ should be decreasing in $y$, which requires that $p'(y) = \dfrac{1}{\beta} y^{\frac{1-\beta}{\beta}} < 0.$ Also, by the optimal output obtained in (4), $y^* \geq 0$ iff $\beta < -1$ or $\beta \geq 0$. 
  
- Then, 
+ So, I assume that $\beta < -1$. Then, as $\beta < 0$, $y^*$ is decreasing in $w_a$. By (2), conditional demand for both $L_a$ and $L_b$ is increaseing in $\bar{y}$, which indicate that for any $\bar{w_a} > w_a$, $\bar{y^*} < y^*$ holds and so
+ 
+  \begin{align*}
+  \bar{L_a}(\bar{w_a}, w_b, \bar{y^*}) &< \bar{L_a}(w_a, w_b, y^*) \\
+  \end{align*}
+ 
+ Note that the relationship between $\bar{L_b}(\bar{w_a}, w_b, \bar{y^*})$ and $\bar{L_b}(w_a, w_b, y^*)$ is parametrical.
+ 
+ (6)
+ 
+ Summing up (2) and (4), the unconditional demand for $L_a$ and $L_b$ is obtained as follows :
+ 
+  \begin{align*}
+  L^*_a(w_a, w_b) &= \bar{L_a}(w_a, w_b, y^*) \\
+  &= \dfrac{y^*}{A} \left( \dfrac{\alpha w_b}{(1-\alpha) w_a} \right)^{1-\alpha}
+  L^*_b(w_a, w_b) &= \bar{L_b}(w_a, w_b, y^*) \\
+  &= \dfrac{y^*}{A} \left( \dfrac{(1-\alpha) w_a}{\alpha w_b} \right)^{\alpha}
+  \end{align*}
+ 
+ Note that $y^* = y^* (w_a, w_b) = \left[ \dfrac{\beta}{A(1+\beta)(1-\alpha)^{1-\alpha} \alpha^\alpha}
+  w_a^{\alpha} w_b^{1-\alpha} \right]^{\beta}$.
+  
+ (7)
+ 
+ There are two effects by the change in $w_a$.
+ 
+ \begin{itemize}
+ 
+  \item Scale effect decreases both $L_a$ and $L_b$.
+ 
+  \item Substitution effect decreases $L_a$, while raising $L_b$.
+ 
+ \end{itemize}
+ 
+ The Illustration below shows the case that scale effect  on $L_b$ exceeds the substitution effect.
+ 
+ \begin{center}
+ 
+ \newpage
+ 
+ Illustration : $\bar{w_a} > w_a$
+ 
+  \begin{tikzpicture}[domain=0:4,samples=200, >=stealth]
+   \draw[->] (-0.5,0) -- (7.2,0) node[right] {$L_a$} ;
+   \draw[->] (0,-0.5) -- (0,6.2) node[above] {$L_b$} ;
+   \draw (0,0) node[below left] {O};
+  \end{tikzpicture}
+ 
+ \end{center}
  
  \item
  
