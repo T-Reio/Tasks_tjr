@@ -14,13 +14,185 @@
  
  \item
  
+ (1)
+  For any $(L_a, L_b)$, marginal rate of technical rate of substitution of $L_a$ to $L_b$ is :
  
+  \begin{align*}
+  \textit{MRTS} &= \dfrac{\partial y / \partial L_a}{\partial y / \partial L_b} \\
+  &= \dfrac{A (\frac{L_b}{L_a})^{1-\alpha}}{A (\frac{L_a}{L_b})^\alpha} \\
+  &= \dfrac{L_b}{L_a}
+  \end{align*}
+ 
+ (2)
+ 
+ For arbitrary target output, $\bar{y}$, the cost minimization problem of the planner is
+ 
+  \begin{align*}
+  \min_{L_a, L_b} &= w_a L_a + w_b + L_b \\
+  \text{sub to } & \bar{y} \leq y
+  \end{align*}
+ 
+ Since $y = A(L_a)^{\alpha} (L_b)^{1-\alpha}$ produce no output if either $L_a$ or $L_b$ is zero, there cannot be any corner solution.
+ 
+ Then, the Lagrangian function and Kuhn-Tucker condition are described as follows.
+ 
+ \[ \mathcal{L} = w_a L_a+ w_b L_b + \lambda(\bar{y} - y) \]
+ 
+  \begin{align*}
+  w_a - \lambda A \left( \dfrac{L_b}{L_a} \right)^{1-\alpha} &=0 \\
+  w_b - \lambda A \left( \dfrac{L_b}{L_a} \right)^{\alpha} &=0 \\
+  A (L_a)^{\alpha} (L_b)^{1- \alpha} = \bar{y}
+  \end{align*}
+ 
+ Solving this, the conditional demand funcion for $L_a$ and $L_b$ are derived as follows :
+ 
+  \begin{align*}
+  \bar{L_a}(w_a, w_b, \bar{y}) &
+  = \dfrac{\bar{y}}{A} \left( \dfrac{w_b}{w_a} \right)^{1-\alpha} \\
+  \bar{L_b}(w_a, w_b, \bar{y}) &
+  = \dfrac{\bar{y}}{A} \left( \dfrac{w_a}{w_b} \right)^{\alpha}
+  \end{align*}
+ 
+ (3)
+ 
+ By the conditional demand function obtained in (3), $\bar{L_a}(w_a,w_b,\bar{y})$ is decreasing in $w_a$, while $\bar{L_b}(w_a,w_b,\bar{y})$ increasing in $w_a$, since $\bar{y}, A >0$, $\left( \dfrac{w_b}{w_a} \right) > 0$ and $\left( \dfrac{w_a}{w_b} \right)>0$ for any positive $w_a$ and $w_b$.
+ 
+ Thus, for $\bar{w_a} > w_a$,
+ 
+  \begin{align*}
+  \bar{L_a}(\bar{w_a}, w_b, \bar{y}) &< \bar{L_a}(w_a, w_b, \bar{y}) \\
+  \bar{L_b}(\bar{w_a}, w_b, \bar{y}) & >\bar{L_b}(w_a, w_b, \bar{y})
+  \end{align*}
+ 
+ (4)
+ 
+ Planner's profit maximization problem is :
+ 
+  \begin{align*}
+  \max_{y} \Pi(y) &= p(y) \cdot y - w_a L_a - w_b L_b \\
+  &= y^{\frac{1+\beta}{\beta}} - \dfrac{2y}{A} w_a^{\alpha} w_b^{1-\alpha} 
+  \end{align*} 
+ 
+ FOC yields
+ 
+  \begin{align*}
+  \dfrac{1+\beta}{\beta} y^{\dfrac{1}{\beta}} - \dfrac{2}{A} w_a^{\alpha} w_b^{1-\alpha} &=0 \\
+  y^{\dfrac{1}{\beta}} &= \dfrac{2\beta}{A(1+\beta)}w_a^{\alpha} w_b^{1-\alpha} \\
+  y^* (w_a, w_b) &= \left[ \dfrac{2\beta}{A(1+\beta)}w_a^{\alpha} w_b^{1-\alpha} \right]^{\beta}
+  \end{align*}
+ 
+ (5)
+ 
+ When $y$ is normal goods, $p(y)$ should be decreasing in $y$. Also, by the optimal output obtained in (4), It is required that $\beta < -1$ or $\beta \geq 0$, for y being positive value. So, I assume that $\beta < -1$.
+ 
+ Then, 
  
  \item
  
  (1)
  
+ The individual's maximization problem is :
  
+ \[ \max U(C,l) \]
+ 
+  \begin{align*}
+  \text{ sub to} \\
+  C &= c_D + c_M \\
+  c_D &= f(h_D) \\
+  c_M & \leq w h_M + R
+  \end{align*}
+ 
+ Note that for the third restriction, equation holds in the static case
+ 
+ : Saving is irrational choice.
+ 
+ Then, define $R_0$ be the potential income
+ 
+ \[R_0 \equiv w L_0 + R \]
+ 
+ where $L_0 \equiv = l + h_D + h_M$ stands for net time available.
+ 
+ Then, by $c_M = w h_M + R$, 
+ 
+  \begin{align*}
+  c_M &= w (L_0 - l - h_D) + R_0 - w L_0 \\
+  c_M &= R_0 - wl - wh_D
+  \end{align*}
+ 
+ By $C = c_D + c_M$ and $c_D = f(h_D)$,
+ 
+  \begin{align*}
+  c_M + wl &= R_0 - w h_D \\
+  c_M + f(h_D) + wl &= R_0 - w h_D \\
+  C - f(h_D) + wl &= R_0 - w h_D \\
+  C + wl &= [f(h_D) - w h_D] + R_0
+  \end{align*}
+ 
+ These discussion rewrite the UMP as follows
+ 
+ \[\max u (C, l)\]
+ 
+  \begin{align*}
+  \text{ sub to} \\
+  C + wl &= [f(h_D) - w h_D] + R_0
+  \end{align*}
+ 
+ Finally, we derive the Kuhn-Tucker condition. The Lagrangian function is :
+ 
+ \[ \mathcal{L} = u(C,l) + \lambda \{ R_0 + [f(h_D) - w h_D] - c -wl \} \]
+ 
+ $\lambda$ is the Lagrangian multiplier.
+ 
+ Kuhn-Tucker condition is derived as follows :
+ 
+  \begin{align*}
+  \dfrac{\partial u}{\partial C} - \lambda \leq 0, & 
+  \hspace{1zw}C \left( \dfrac{\partial u}{\partial C} - \lambda \right) = 0 \\
+  \dfrac{\partial u}{\partial l} - \lambda w \leq 0,  &
+  \hspace{1zw}l \left( \dfrac{\partial u}{\partial l} - \lambda w \right) = 0 \\
+  \lambda [ f'(h_D) - w h_D] \leq 0, & \hspace{1zw}\lambda [f'(h_D) - w] = 0 \\
+  R_0 + [f(h_D) - w h_D] -c -wl \geq 0, &
+  \hspace{1zw}\lambda \{ R_0 + [f(h_D) - w h_D] - c -wl \} = 0
+  \end{align*}
+ 
+ where $R_0 = w (l + h_D + h_M) + R$.
+ 
+ (2)
+ 
+ By the assumption, $l > 0$ and $h_M >0$,
+ 
+  \begin{align*}
+  \dfrac{\partial u}{\partial l} &= 0 \\
+  \dfrac{\partial u}{\partial C} & = 0 \\
+  \end{align*} 
+ 
+ holds. Then, assume u(.) is monotonic in $l$, 
+ 
+ \[0 < \frac{\partial u}{\partial l} \leq \lambda \]
+ 
+ which indicates that
+ 
+ \[ R_0 + [f(h_D) - w h_D - C - wl] = 0 \]
+ 
+ and
+ 
+ \[ f'(h_D) - w  = 0 \]
+ 
+ Deriving marginal rate of substitution, 
+ 
+ \[ \textit{MRS} \equiv \dfrac{\partial u / \partial l}{\partial u / \partial C} 
+ = \dfrac{\lambda w}{\lambda} = w \]
+ 
+ First, by $f'(h_D) - w  = 0$,  optimal $h_D$ is determined, and then, $R_0 + [f(h_D) - w h_D - C - wl] = 0$ and $\textit{MRS} = w$ yields the optimal $h_M$ and $l$.
+ 
+ (3)
+ 
+ By the assumption $h_M = 0$,
+ 
+  \begin{align*}
+  L_0 &= l + h_M \\
+  R_0 &= 
+  \end{align*}
  
  \item
  
@@ -118,7 +290,9 @@
  
  (5)
  
- 
+This article specifies the marginal return to length of education on their wage, using dataset of identical twins.
+
+They conducted a questionnaire, by twins, asking their schooling level. The important point is they requested each of them to answer the difference in education between the twins. Then, they used this sibling-report as instrument variable of the schooling level of the individuals. Correlation between self and sibling report, caused by person-specific component of mesurement error is controlled in this method, and we can see the actual effect of the difference in education on that of wage.
  
  \end{enumerate}
 
