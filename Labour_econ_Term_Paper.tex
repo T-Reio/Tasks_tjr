@@ -143,6 +143,8 @@
  
  \end{center}
  
+ \dotfill
+ 
  \item
  
  (1)
@@ -179,7 +181,6 @@
  
   \begin{align*}
   c_M + wl &= R_0 - w h_D \\
-  c_M + f(h_D) + wl &= R_0 - w h_D \\
   C - f(h_D) + wl &= R_0 - w h_D \\
   C + wl &= [f(h_D) - w h_D] + R_0
   \end{align*}
@@ -246,9 +247,47 @@
  By the assumption $h_M = 0$,
  
   \begin{align*}
-  L_0 &= l + h_M \\
-  R_0 &= 
+  L_0 &= l + h_D \\
+  R_0 &= wl + w h_D + R
   \end{align*}
+ 
+ Then, the maximization problem is rewritten as follows :
+ 
+ \[\max u (C, L_0 - h_D)\]
+ 
+  \begin{align*}
+  \text{ sub to} \\
+  C + wl &= [f(h_D) - w h_D] + R_0 \\
+  \Rightarrow C &= f(h_D) + R
+  \end{align*}
+ 
+ Lagrangian function and Kuhn-Tucker condition are :
+ 
+ \newpage
+ 
+ \[ \mathcal{L} = u(C, L_0 - h_D) + \lambda [ f(h_D) + R - C] \]
+ 
+  \begin{align*}
+  \dfrac{\partial u}{\partial C} - \lambda \leq 0 & 
+  \hspace{1zw} c \left(\dfrac{\partial u}{\partial C} -\lambda \right) = 0 \\
+  - \dfrac{\partial u}{\partial (h_D)} + \lambda f'(h_D) \leq 0 & 
+  \hspace{1zw} (L_0 - h_D) \left( -\dfrac{\partial u}{\partial h_D} +\lambda f'(h_D) \right) = 0 \\
+  f(h_D) + R -C \geq 0 & \hspace{1zw} \lambda [ f(h_D) + R - C] = 0
+  \end{align*}
+  
+  By the assumption, the individual never save, so $C>0$ as long as $R>0$. Moreover, by $l>0$ and $h_D>0$, $L_0 - h_D > 0$. Moreover, when $u(.)$ is monotonically increasing in C, $\dfrac{\partial u}{\partial C} > 0$, indicating that $\lambda > 0$.
+  
+  Therefore, each inequalty condition holds equation,
+  
+   \begin{align*}
+   \dfrac{\partial u}{\partial C} - \lambda &= 0 \\
+   - \dfrac{\partial u}{\partial (h_D)} + \lambda f'(h_D) &= 0 \\
+   f(h_D) + R -C &= 0
+   \end{align*}
+ 
+ Solving this, optimal $h_D$ is derived, which also derives $l$ by $l = L_0 - h_D$.
+ 
+ \dotfill
  
  \item
  
@@ -336,7 +375,7 @@
   
   \end{itemize} 
  
- In order to find a valid instruments, we should pay attention to legal engagement that make individuals to apply some choice, regardless of charactaristics of each individual. 
+ In order to find a valid instruments, we should pay attention to legal engagement that force individuals to apply some choice, regardless of charactaristics of each individual. 
  
  (4)
  
