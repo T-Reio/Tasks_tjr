@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.6.25)  6 AUG 2018 12:16
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.6.25)  7 AUG 2018 22:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -219,63 +219,62 @@ LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 13.
  [1
 
-]
+] [2]
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 38.
+(Font)              scaled to size 8.64899pt on input line 40.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 7.30359pt on input line 40.
+(Font)              scaled to size 7.30359pt on input line 42.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 40.
+(Font)              scaled to size 5.76599pt on input line 42.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 40.
+(Font)              scaled to size 10.42007pt on input line 42.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 40.
+(Font)              scaled to size 7.91925pt on input line 42.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 40.
+(Font)              scaled to size 6.25204pt on input line 42.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 40.
+(Font)              scaled to size 10.42007pt on input line 42.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 40.
+(Font)              scaled to size 7.91925pt on input line 42.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 40.
+(Font)              scaled to size 6.25204pt on input line 42.
 
-Overfull \hbox (65.1314pt too wide) in paragraph at lines 40--53
+Overfull \hbox (65.1314pt too wide) in paragraph at lines 42--55
  [][][][] 
  []
 
-[2]
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 62.
+(Font)              scaled to size 11.53198pt on input line 64.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 62.
+(Font)              scaled to size 8.64899pt on input line 64.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 62.
+(Font)              scaled to size 6.72699pt on input line 64.
 LaTeX Font Info:    Font shape `JT1/mc/m/it' in size <12> not available
-(Font)              Font shape `JT1/mc/m/n' tried instead on input line 62.
+(Font)              Font shape `JT1/mc/m/n' tried instead on input line 64.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 62.
+(Font)              scaled to size 11.53198pt on input line 64.
 LaTeX Font Info:    Font shape `JY1/mc/m/it' in size <12> not available
-(Font)              Font shape `JY1/mc/m/n' tried instead on input line 62.
+(Font)              Font shape `JY1/mc/m/n' tried instead on input line 64.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 62.
+(Font)              scaled to size 11.53198pt on input line 64.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 62.
+(Font)              scaled to size 6.72699pt on input line 64.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 84.
+(Font)              scaled to size 4.805pt on input line 86.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 4.805pt on input line 84.
+(Font)              scaled to size 4.805pt on input line 86.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 84.
+(Font)              scaled to size 5.21004pt on input line 86.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 84.
- [3] [4] [5] [6]
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 257.
+(Font)              scaled to size 5.21004pt on input line 86.
+[3] [4] [5] [6]
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 259.
 
  (c:/texlive/2016/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 257.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 259.
 
 [7] (./Data_Management_Term_Paper.aux)
 
@@ -285,10 +284,10 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  1539 strings out of 493683
  17616 string characters out of 6152642
- 102573 words of memory out of 5000000
+ 105573 words of memory out of 5000000
  5122 multiletter control sequences out of 15000+600000
  31357 words of font info for 116 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  27i,12n,26p,1331b,317s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Data_Management_Term_Paper.dvi (7 pages, 21556 bytes).
+Output written on Data_Management_Term_Paper.dvi (7 pages, 23500 bytes).

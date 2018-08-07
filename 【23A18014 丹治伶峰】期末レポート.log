@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.6.25)  31 JUL 2018 16:59
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.6.25)  7 AUG 2018 22:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -208,16 +208,42 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 14.
  [1
 
-]
+] [2]
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 11.53198pt on input line 42.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 42.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 42.
+LaTeX Font Info:    Font shape `JT1/mc/m/it' in size <12> not available
+(Font)              Font shape `JT1/mc/m/n' tried instead on input line 42.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 11.53198pt on input line 42.
+LaTeX Font Info:    Font shape `JY1/mc/m/it' in size <12> not available
+(Font)              Font shape `JY1/mc/m/n' tried instead on input line 42.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 11.53198pt on input line 42.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 42.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 42.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 70.
+
+(c:/texlive/2016/texmf-dist/tex/latex/psnfss/omsppl.fd
+File: omsppl.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 70.
+ [3] [4]
 (./【23A18014 丹治伶峰】期末レポート.aux) ) 
 Here is how much of TeX's memory you used:
- 1469 strings out of 493683
- 16688 string characters out of 6152642
- 73573 words of memory out of 5000000
- 5057 multiletter control sequences out of 15000+600000
- 18162 words of font info for 71 fonts, out of 8000000 for 9000
+ 1502 strings out of 493683
+ 17187 string characters out of 6152642
+ 78573 words of memory out of 5000000
+ 5086 multiletter control sequences out of 15000+600000
+ 21458 words of font info for 83 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 27i,6n,26p,274b,240s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,12n,26p,1332b,255s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on "【23A18014 丹治伶峰】期末レポート.dvi" (1 page, 1140 bytes).
-
+Output written on "【23A18014 丹治伶峰】期末レポート.dvi" (4 pages, 14556 bytes
+).
