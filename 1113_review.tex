@@ -3,12 +3,16 @@
 \usepackage{bxdpx-beamer}
 \usepackage{pxjahyper}
 \usepackage{minijs}
-\usetheme{Annarbor}
+\usetheme{AnnArbor}
 \usepackage{mathpazo}
 \usepackage{amsmath,amssymb}
 \usepackage{graphicx}
 \usepackage{array}
 \usepackage{tikz}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{here}
+\setbeamertemplate{navigation symbols}{}
 
 \title{Quantifying Loss-Averse Tax Manipulation}
 \subtitle{Alex Ress-Jones}
@@ -140,13 +144,31 @@
 \end{frame}
 
 \begin{frame}\frametitle{Gain-Loss Function}
-  \begin{tikzpicture}[domain = -3:3, samples = 200, >= stealth]
-    \draw[->] (-3,0) -- (3,0) node[right]{$x$};
-    \draw[->] (0,-3) -- (0,3) node[above]{$V(x)$};
-    \draw plot[domain = 0:2.8] (\x, \x);
-    \draw plot[domain = -1.5:0] (\x, {2 * \x});
-    \draw (0,0) node [below right] {$r$};
-  \end{tikzpicture}
-\end{frame}
 
+  \begin{tabular}{cr}
+      \begin{minipage}[H]{0.5\textwidth}
+        \begin{itemize}
+          \item If there remains tax due after reduction, then
+          all the value of the manipulation is evaluated as loss.
+
+          \item When, on the other hand, manipulation cancels out the due
+          before, the margin to be refunded is evaluated as gain.
+
+          \item If s/he does not have to pay more, then the reduction by the
+          manipulation is fully counted as gain.
+        \end{itemize}
+      \end{minipage} &
+      \begin{minipage}[H]{0.5\textwidth}
+        \begin{tikzpicture}[domain = -2:2, samples = 200, >= stealth]
+          \draw[->] (-2,0) -- (2,0) node[right]{$b$};
+          \draw[->] (0,-2) -- (0,2) node[above]{$V(b)$};
+          \draw plot[domain = 0:1.7] (\x, {0.6 * \x});
+          \draw plot[domain = -1.2:0] (\x, {1.5 * \x});
+          \draw (0,0) node [below right] {$r$};
+        \end{tikzpicture}
+      \end{minipage}
+
+  \end{tabular}
+
+\end{frame}
 \end{document}

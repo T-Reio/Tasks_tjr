@@ -228,8 +228,8 @@ INPUT c:/texlive/2016/texmf-dist/tex/platex/jsclasses/minijs.sty
 INPUT c:/texlive/2016/texmf-dist/tex/platex/jsclasses/minijs.sty
 INPUT c:/texlive/2016/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
 INPUT c:/texlive/2016/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
-INPUT c:/texlive/2016/texmf-dist/tex/latex/beamer/themes/theme/beamerthemeAnnarbor.sty
-INPUT c:/texlive/2016/texmf-dist/tex/latex/beamer/themes/theme/beamerthemeAnnarbor.sty
+INPUT c:/texlive/2016/texmf-dist/tex/latex/beamer/themes/theme/beamerthemeAnnArbor.sty
+INPUT c:/texlive/2016/texmf-dist/tex/latex/beamer/themes/theme/beamerthemeAnnArbor.sty
 INPUT c:/texlive/2016/texmf-dist/tex/latex/beamer/themes/inner/beamerinnerthemerounded.sty
 INPUT c:/texlive/2016/texmf-dist/tex/latex/beamer/themes/inner/beamerinnerthemerounded.sty
 INPUT c:/texlive/2016/texmf-dist/tex/latex/beamer/themes/outer/beamerouterthemeinfolines.sty
@@ -270,6 +270,12 @@ INPUT c:/texlive/2016/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandler
 INPUT c:/texlive/2016/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 INPUT c:/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 INPUT c:/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+INPUT c:/texlive/2016/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+INPUT c:/texlive/2016/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+INPUT c:/texlive/2016/texmf-dist/tex/latex/float/float.sty
+INPUT c:/texlive/2016/texmf-dist/tex/latex/float/float.sty
+INPUT c:/texlive/2016/texmf-dist/tex/latex/here/here.sty
+INPUT c:/texlive/2016/texmf-dist/tex/latex/here/here.sty
 INPUT 1113_review.aux
 INPUT 1113_review.aux
 OUTPUT 1113_review.aux
