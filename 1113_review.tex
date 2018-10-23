@@ -8,6 +8,7 @@
 \usepackage{amsmath,amssymb}
 \usepackage{graphicx}
 \usepackage{array}
+\usepackage{tikz}
 
 \title{Quantifying Loss-Averse Tax Manipulation}
 \subtitle{Alex Ress-Jones}
@@ -74,10 +75,78 @@
     \item Estimate the impact of loss-aversion measured in dollers.
 
     \item Specify the way to apply similar settings:
-    
+
     loss-averse individual is able to manipulate an observable outcome.
   \end{enumerate}
 \end{frame}
 
+\section{Framework}
+\begin{frame}\frametitle{Sequential Manipulation}
+  \begin{itemize}
+
+    \item Given $b_{\text{PM}}$: balance due prior to manipulation,
+    taxpayers face a sequense of manipulation opportunities,
+    each of which is charactarized by the parameters
+    : $\{ m_i, c_i \} _{i=1} ^{J}$
+
+    $m_i$ denotes the tax reduction by the $i$th manipulation
+
+    $c_i$ is the intrinsic cost
+
+    \begin{block}{Cost by manipulation}
+      \footnotesize
+      Taxpayers consider their benefits and costs to decide whether to
+      make efforts to tax manipulation.
+
+      \begin{itemize}
+        \scriptsize
+        \item Blumenthel and Slemrod (1992)
+
+        It spend on average 27 hours documenting and reporting for tax
+        reduction
+
+        \item Benzarti (2015)
+
+        They dislike tasks for tax 4.2 times as that for working with
+        same time length
+      \end{itemize}
+
+    \end{block}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \begin{itemize}
+    \item Ordinary gain-loss function:
+    \[
+    \Phi(x|r) = \begin{cases}
+    x-r & \text{ if } x \geq r \\
+    \lambda (x-r) & \text{ if } x < r
+  \end{cases}
+  \]
+
+    \item Applying this structure, loss-averse taxpayers' evaluattion
+    of the benefit from each manipulation:
+
+    \begin{align*}
+      V(m_i | b, r) &= \Phi(-b + m_i | r) - \Phi(-b | r) \\
+       &= \begin{cases}
+       m_i & \text{ if } -b \geq r \\
+       \lambda(r+b)+(m_i -b -r) & \text{ if } -b \in [r-m_i, r] \\
+       \lambda m_i & \text{ if } -b \leq r - m_i
+       \end{cases}
+    \end{align*}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Gain-Loss Function}
+  \begin{tikzpicture}[domain = -3:3, samples = 200, >= stealth]
+    \draw[->] (-3,0) -- (3,0) node[right]{$x$};
+    \draw[->] (0,-3) -- (0,3) node[above]{$V(x)$};
+    \draw plot[domain = 0:2.8] (\x, \x);
+    \draw plot[domain = -1.5:0] (\x, {2 * \x});
+    \draw (0,0) node [below right] {$r$};
+  \end{tikzpicture}
+\end{frame}
 
 \end{document}
