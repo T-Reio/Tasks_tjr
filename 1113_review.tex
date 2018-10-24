@@ -65,10 +65,6 @@
   \end{itemize}
 \end{frame}
 
-\begin{frame}
-  %payment確定までの流れを図にしたいね
-\end{frame}
-
 \begin{frame}\frametitle{contribution}
   This paper contributes in three ways:
 
@@ -81,6 +77,30 @@
     \item Specify the way to apply similar settings:
 
     loss-averse individual is able to manipulate an observable outcome.
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}\frametitle{Procedure of the Manipulation}
+  Every April, taxpayers go through the process below:
+  \begin{enumerate}
+    \item Report their taxable income, such as wages, salaries,
+    tips, business income, investment income, and so on.
+
+    \item Report ``adjustments,'' to claim for things such as donations or
+    payments for alimony
+
+    $\Rightarrow$ Adjusted Gross Income (AGI) is calculated: balance due
+    before manipulation.
+
+    \item Accept AGI or complete an additional form of reduction: Itemization
+
+    --Report deductable activities such as charitable contributions, medical
+    and dental expenses, home mortgage interest payments.
+
+    \item Final balance due is confirmed:
+
+    Claim credits for pursuing tax incentivised behaviour and report other
+    taces paid, payments already made to IRS .
   \end{enumerate}
 \end{frame}
 
@@ -140,6 +160,8 @@
        \lambda m_i & \text{ if } -b \leq r - m_i
        \end{cases}
     \end{align*}
+
+    \item Taxpayers continue to manipulate iff $m_i < c_i$.
   \end{itemize}
 \end{frame}
 
@@ -165,10 +187,50 @@
           \draw plot[domain = 0:1.7] (\x, {0.6 * \x});
           \draw plot[domain = -1.2:0] (\x, {1.5 * \x});
           \draw (0,0) node [below right] {$r$};
+          \draw (0, -2.5) node [below] {gain-loss function};
         \end{tikzpicture}
       \end{minipage}
 
   \end{tabular}
 
+\end{frame}
+\begin{frame}\frametitle{Assumption}
+  Tax filers consders the most efficient manipulation.
+
+  \begin{itemize}
+    \item For $i<j$, $m_i/c_i \geq m_j/c_j$.
+
+    : They considers each oppoturnity of manipulation, in the most efficient
+    order.
+
+    \item $m_1/c_1 > 1$.
+
+    : There exists at least one desirable manipulaton oppoturnity.
+
+    \item As $n \to \infty$, $m_n/c_n \to 0$.
+
+    : The number of desirable opportunity is finite.
+  \end{itemize}
+
+  Taxpayers continue manipulating as long as $V(m_i|b, r) \geq c_i$,
+  and stop when $V(m_i|b, r) < c_i$.
+\end{frame}
+
+\begin{frame}\frametitle{Thresholds}
+  They define two thresholds of $i \in J$ that stop the manipulation depending
+  on the gain-loss situation.
+
+  \begin{align*}
+    L &= \max \left \{ i: \dfrac{m_i}{c_i} > 1 \right \} \\
+    H &= \max \left \{ i: \dfrac{m_i}{c_i} > \dfrac{1}{\lambda} \right \}
+  \end{align*}
+
+  \begin{itemize}
+    \item $L$ is the threshold for gain phase, while $H$ is the
+     one for loss phase.
+
+     \item $L \leq H$, where equality holds if there is no $i$ s.t.
+     $m_i/c_i \in (1/\lambda , 1]$.
+  \end{itemize}
 \end{frame}
 \end{document}
