@@ -355,6 +355,10 @@ INPUT c:/texlive/2016/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssi8.
 INPUT c:/texlive/2016/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
 INPUT c:/texlive/2016/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
 INPUT c:/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmss10.tfm
+INPUT fig_tab/ARJ_T1.png
+INPUT extractbb -O fig_tab/ARJ_T1.png
+INPUT fig_tab/ARJ_F1.png
+INPUT extractbb -O fig_tab/ARJ_F1.png
 OUTPUT 1113_review.nav
 OUTPUT 1113_review.toc
 OUTPUT 1113_review.snm

@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.6.25)  24 OCT 2018 16:11
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.6.25)  27 OCT 2018 15:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -908,6 +908,16 @@ Overfull \hbox (24.0pt too wide) in paragraph at lines 196--196
 ] [10
 
 ]
+File: fig_tab/ARJ_T1.png Graphic file (type bmp)
+ <fig_tab/ARJ_T1.png> [11
+
+]
+File: fig_tab/ARJ_F1.png Graphic file (type bmp)
+ <fig_tab/ARJ_F1.png> [12
+
+] [13
+
+]
 \tf@nav=\write6
 \openout6 = `1113_review.nav'.
 
@@ -917,11 +927,11 @@ Overfull \hbox (24.0pt too wide) in paragraph at lines 196--196
 \tf@snm=\write8
 \openout8 = `1113_review.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 236.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 236.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 284.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 284.
  (./1113_review.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 236.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 236.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 284.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 284.
 Package rerunfilecheck Info: File `1113_review.out' has not changed.
 (rerunfilecheck)             Checksum: 85DA5F4534202CA395C6C162E05D9E3F;91.
 
@@ -932,15 +942,15 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 236.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 284.
  ) 
 Here is how much of TeX's memory you used:
- 20154 strings out of 493683
- 401742 string characters out of 6152642
- 481817 words of memory out of 5000000
- 23252 multiletter control sequences out of 15000+600000
+ 20170 strings out of 493683
+ 401958 string characters out of 6152642
+ 481958 words of memory out of 5000000
+ 23262 multiletter control sequences out of 15000+600000
  22048 words of font info for 76 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  56i,18n,59p,393b,1002s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on 1113_review.dvi (10 pages, 71936 bytes).
+Output written on 1113_review.dvi (13 pages, 82404 bytes).
