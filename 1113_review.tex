@@ -281,4 +281,66 @@
    + \sum_{i=1}^{L+j-1} m_j, r \right) \leq c_{L+j} \right \}
    \]
 \end{frame}
+\begin{frame}\frametitle{Distribution after Manipulation}
+  \begin{itemize}
+    \item $f^{\text{PM}}(b)$ denotes the ditribution of the pre-manipulation
+    balance due, while $f(b)$ is that of post-manipulation.
+
+    \item All the taxpayers make manipulation of $i=1$ to $L$, so the
+    distribution at least shift to the left uniformly, denoted with $g(b)$.
+
+    \item Furthermore, those with positive balance due after the $L$th
+    manipulation continue to reduce tax, until $H$ or when their balance due
+    is in the stop range.
+  \end{itemize}
+\end{frame}
+\begin{frame}
+  \small
+  \[
+  f(b) = f^{\text{PM}}(b+m^*) = \begin{cases}
+  g(b) &\text{ if } b \leq B_1 \\
+  g(b) + E_1 (b) &\text{ if } b \in (r - B_1, r] \\
+  g(b + \tilde{m}) + E_2(b) &\text{ if } b \in (r, r + B_2) \\
+  g(b + \tilde{m}) &\text{ if } b \geq r + B_2
+\end{cases}
+  \]
+  \normalsize
+  where $\tilde{m} = \sum_{i = L+1}^{H}m_i$, and
+  \scriptsize
+  \begin{align*}
+    E_1(b) = g(b + \tilde{m})& \times I
+    \left( b + \sum_{i = 1}^{H}m_i > T_J \right )\\
+    & + \sum_{j=1}^{J-1}g \left( b + \sum_{j=1}^{L+j}m_i \right)
+    \times I \left( \left( b + \sum_{i = L+1}^{L+j}m_i \right)
+    \in (T_j, T_{j+1}) \right) \\
+    E_2(b) = g(b) \times I &
+    \left( b + \sum_{i = 1}^{L}m_i \leq T_1 \right )\\
+    & + \sum_{j=1}^{J-1}g \left( b + \sum_{j=1}^{L+j}m_i \right)
+    \times I \left( \left( b + \sum_{i = L+1}^{L+j}m_i \right)
+    \in (T_j, T_{j+1}) \right)
+  \end{align*}
+  \normalsize
+
+  $E_1, E_2$ generates the excess mass.
+\end{frame}
+\section{Data and specification}
+\begin{frame}\frametitle{Data}
+  \begin{itemize}
+    \item Satatistics of Income Panel of Individual Returns
+
+    \begin{itemize}
+      \item Random sample of tax filers, according to the Social Security
+      Numbers
+
+      \item contain many line items reported on the tax return allowing
+      the direct observation of balance due and many steps of its calculation
+
+      \item Data years:1979-1990
+
+      \item 229,116 tax returns filed by 53,177 taxpayers:
+      exculudeing those with zero-tax liability, in order to eliminate
+      the excess mass owing to non-preference-based discontinuities.
+    \end{itemize}
+  \end{itemize}
+\end{frame}
 \end{document}

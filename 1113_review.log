@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.6.25)  27 OCT 2018 15:53
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2017.6.25)  29 OCT 2018 17:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -917,6 +917,29 @@ File: fig_tab/ARJ_F1.png Graphic file (type bmp)
 
 ] [13
 
+] [14
+
+]
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 12.50409pt on input line 325.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 325.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 325.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 12.50409pt on input line 325.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 325.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 325.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 5.21004pt on input line 325.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 5.21004pt on input line 325.
+ [15
+
+] [16
+
 ]
 \tf@nav=\write6
 \openout6 = `1113_review.nav'.
@@ -927,13 +950,13 @@ File: fig_tab/ARJ_F1.png Graphic file (type bmp)
 \tf@snm=\write8
 \openout8 = `1113_review.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 284.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 284.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 346.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 346.
  (./1113_review.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 284.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 284.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 346.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 346.
 Package rerunfilecheck Info: File `1113_review.out' has not changed.
-(rerunfilecheck)             Checksum: 85DA5F4534202CA395C6C162E05D9E3F;91.
+(rerunfilecheck)             Checksum: 8BBE054DC911555368B81CEBA2F4E88A;148.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -942,15 +965,15 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 284.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 346.
  ) 
 Here is how much of TeX's memory you used:
- 20170 strings out of 493683
- 401958 string characters out of 6152642
- 481958 words of memory out of 5000000
- 23262 multiletter control sequences out of 15000+600000
- 22048 words of font info for 76 fonts, out of 8000000 for 9000
+ 20212 strings out of 493683
+ 402507 string characters out of 6152642
+ 482184 words of memory out of 5000000
+ 23301 multiletter control sequences out of 15000+600000
+ 31732 words of font info for 106 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  56i,18n,59p,393b,1002s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on 1113_review.dvi (13 pages, 82404 bytes).
+Output written on 1113_review.dvi (16 pages, 95728 bytes).
