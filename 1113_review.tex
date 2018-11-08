@@ -343,4 +343,238 @@
     \end{itemize}
   \end{itemize}
 \end{frame}
+\begin{frame}\frametitle{Quantification}
+  \begin{itemize}
+    \item Fitting Distribution
+
+    \[
+    \min_{(\tilde{m}, B_1, B_2, \theta_g, \theta_e)}
+    \sum_k \left( C_k - \hat{C}(k | \tilde{m}, -B_1, -B_2, \theta_e,
+    \theta_g) \right)^2
+    \]
+
+    where
+
+    \begin{align*}
+      \hat{C}(k| \tilde{m}, -B_1, -B_2, \theta_e, \theta_g)
+      = v_g \cdot g(k + \tilde{m} &\cdot I(k>0) | \theta_g) \\
+      &+ v_E \cdot E(k | \theta_e, -B_1, B_2)
+    \end{align*}
+
+    \begin{align*}
+      v_E &= \dfrac{N}{\sum_k E(k|\theta_e, -B_1, B_2)}
+      \cdot \int_0^{\tilde{m}}g(x|\theta_g)dx \\
+      v_g &= \dfrac{N}{\sum_k g(k+\tilde{m}\cdot I(k>0)|\theta_g)}
+      \cdot \left( 1-\int_0^{\tilde{m}}g(x|\theta_g)dx \right)
+    \end{align*}
+
+  \end{itemize}
+\end{frame}
+
+\section{Results}
+\begin{frame}\frametitle{Observed Distribution}
+
+\begin{tabular}{lr}
+  \begin{minipage}[H]{0.4\textwidth}
+    \begin{itemize}
+      \item Full-sample application
+    \end{itemize}
+    \begin{figure}[H]
+      \includegraphics[keepaspectratio, scale = 0.4]{fig_tab/ARJ_F2}
+    \end{figure}
+  \end{minipage} &
+  \begin{minipage}[H]{0.45\textwidth}
+    \begin{itemize}
+
+      \item Sharp spike ofserved near zero balance-due:
+
+      excess mass range is -\$159.7(S.E.=27.00) to \$103.2(S.E.=36.20)
+
+      \item Estimated value of $\tilde{m} = 33.8$:
+
+      When facing losses, they made approximately \$34 additional tax
+      reduction,as opposed to facing gains.
+    \end{itemize}
+  \end{minipage}
+\end{tabular}
+
+\end{frame}
+
+\begin{frame}\frametitle{Difference among the Groups}
+  \begin{figure}[H]
+    \includegraphics[keepaspectratio, scale=0.78]{fig_tab/ARJ_T3.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \begin{figure}
+    \includegraphics[keepaspectratio, scale = 0.6]{fig_tab/ARJ_F3.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \begin{itemize}
+    \item By income levels
+    \begin{itemize}
+      \item Loss-aversion pattern was more pronounced among higher income
+      filers than those with lower ones:
+
+      higher income tax filers have more options of manipulation.
+
+      \item This supports the hypothesis that the observe behaviour is
+      caused by the income distribution, not by the financial sophistication.
+    \end{itemize}
+
+    \item By categories of reduction.
+
+    \begin{itemize}
+      \item When itemized reduction or adjustment to income are present, the tendency of loss aversion is more pronounced.
+
+      \item Claiming credit, however, showed the opposite pattern:
+
+      it may be relatively small component of overall tax manipulations,  or it is likely a less suitable proxy for total manipulation.
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{``Residual'' Tax Reductions Approach}
+
+    \begin{tabular}{lr}
+      \begin{minipage}[H]{0.4\textwidth}
+        \begin{itemize}
+          \footnotesize
+          \item $R$ = (credits) + (marginal tax rate) $\times$
+          (adjustments $+$ deductions).
+
+          \item Then, they regressed $R$ on filing-year dummies and individual fixed effects, and estimate the remaining residual.
+
+          $\Rightarrow$ Loss-averse tax reduction is strongly associated with
+          ``unusual'' tax reduction activity, rather than the year/
+          individual specific effect.
+        \end{itemize}
+      \end{minipage} &
+      \begin{minipage}[H]{0.4\textwidth}
+
+        \begin{figure}[H]
+          \includegraphics[keepaspectratio, scale =0.5]{fig_tab/ARJ_F5.png}
+        \end{figure}
+      \end{minipage}
+    \end{tabular}
+    %The proxy is still imperfect because it misses evvaded income.
+\end{frame}
+
+\begin{frame}\frametitle{Earlier Tax Payments}
+  \begin{itemize}
+    \item Individuals evaluate their balance due by that on the tax day, so the payment in advance can be interpreted as another opportunity of manipulation.
+
+    \item They made another regression, using total tax prepayment instead of $R$.
+
+    $\Rightarrow$ No association was observed(Figure 5).
+  \end{itemize}
+\end{frame}
+
+\section{Robustness}
+\begin{frame}\frametitle{Alternative Forms of Reference Dependence}
+  Two additional forms of reference dependence:
+
+  \begin{enumerate}
+    \item Notch
+
+    -- direct discontinuity in utility levels at the reference point, arise if there is a fixed psychological cost when making manipulation.
+
+    \item Diminishing Sensitivity
+
+    -- utility function which is concave over gains and convex over losses, making individual more loss-averse.
+  \end{enumerate}
+
+  Observed results did not support these two assumptins.
+\end{frame}
+
+\begin{frame}\frametitle{Financial Constraints}
+  \begin{itemize}
+    \item Tax Evasion
+
+    -- A risky substitute for a loan, implicitly trading present income for future penalties.
+
+    \item Tax filers with financial constraint may take such a loan, but low-income filers have low access to savings or credit.
+
+    \item Restricted sample: Tax filers with positive interest income, 41 \% of the whole sample
+
+    $\Rightarrow$ The estimate of loss averse manipulation is \$30.4, indicating little influence on the patterns.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Tax Preparer}
+  \begin{itemize}
+    \item Many taxpayers have paid tax preparer file their tax returns.
+
+    $\Rightarrow$ Conditional sample on whether filed by tax preparer also shows loss-averse result ($\tilde{m} = 22.6$), but the effect was weakened relative to self-filing sample ($\tilde{m} = 43.7$).
+
+    \item Possible Interpretation
+
+    \begin{enumerate}
+      \item Tax preparers themselves are also loss-averse.
+
+      \item They believe the cliants are loss-averse and so incorporate them.
+    \end{enumerate}
+
+    \item Distribution of tax preparers-sample has more sharp spike around zero balance due: they have greater access to manipulation.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \begin{figure}
+    \includegraphics[keepaspectratio, scale = 0.7]{fig_tab/ARJ_F7.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}\frametitle{Underwithholding Penalty}
+  \begin{itemize}
+    \item Underwithholding penarlty is not imposed until substantial one has occurred:
+
+    Observed balance-due is interpreted as the manipulation is not observed at zero.
+
+    \item Misunderstandings that any positive balance due leads to a penalty may lead the results
+    \begin{enumerate}
+      \item Manipulation still occurs for the tax preparers sample.
+
+      \item Restricted samples into those who previously have faced a loss show the same results.
+    \end{enumerate}
+  \end{itemize}
+\end{frame}
+
+\section{Conclusion}
+\begin{frame}\frametitle{Discussion}
+  \begin{itemize}
+    \item The nature of the observed reaction to loss framing has important implications for tax policy and behavioral economics.
+
+    -- Facing losses pursues \$34 of additional manipulation, resulting in \$3.7 billion of additional reduction.
+
+    \item Loss-aversion  provide a quantification of effect sizes tie to more concrete policies and accounts for a significant portion of the costs or benefits to changing withholding policy:
+
+    Incentives for early payment % $80 loss for interest income
+
+    \item Gain-loss framing can assist in controlling tax morale:
+
+    Gain framing could reduce evasion motives in a more cost-effective manner.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Beyond Tax Policy}
+  \begin{itemize}
+    \item Techniques to identify loss-averse behavior from bunching.
+
+    \begin{block}{Related Papers}
+      \begin{itemize}
+        \item Pope and Simonsohn (2011) ``round numbers as goals''
+
+        \item Abeler \textit{et al} (2011) ``effort provision in the lab''
+
+        \item Becker \textit{et al} (2012) ``price targets in mergers and acquisitions''
+
+        \item Allen \textit{et al} (2017) ``goal-setting behavior of marathon runners''
+      \end{itemize}
+    \end{block}
+  \end{itemize}
+\end{frame}
 \end{document}
