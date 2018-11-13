@@ -1,9 +1,9 @@
 # Fdb version 3
-["dvipdf"] 1541314904 "1113_review.dvi" "1113_review.pdf" "1113_review" 1541314909
+["dvipdf"] 1541314904 "1113_review.dvi" "1113_review.pdf" "1113_review" 1541678591
   "1113_review.dvi" 1541314904 145800 cf93ebf93ed6e813639e9ab07292f204 "latex"
   (generated)
   "1113_review.pdf"
-["latex"] 1541314892 "1113_review.tex" "1113_review.dvi" "1113_review" 1541314909
+["latex"] 1541314892 "1113_review.tex" "1113_review.dvi" "1113_review" 1541678591
   "1113_review.aux" 1541314904 7159 85ace42548663bac46c4f0b5dd0a8523 ""
   "1113_review.nav" 1541314904 3901 377ef3433fac3a4978414e8a5367659e ""
   "1113_review.out" 1541314904 334 b4107b28b30b6900800a94fe86a108a5 ""
@@ -218,10 +218,10 @@
   "fig_tab/ARJ_T3.PNG" 1541133133 51146 2f20acf1b2d81583acf0bf86f49a7e0e ""
   "fig_tab/ARJ_T3.png" 1541133133 51146 2f20acf1b2d81583acf0bf86f49a7e0e ""
   (generated)
-  "1113_review.out"
   "1113_review.dvi"
-  "1113_review.toc"
-  "1113_review.nav"
-  "1113_review.log"
   "1113_review.aux"
+  "1113_review.nav"
+  "1113_review.out"
+  "1113_review.toc"
   "1113_review.snm"
+  "1113_review.log"
