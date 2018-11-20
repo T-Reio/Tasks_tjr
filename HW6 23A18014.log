@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.11.1)  13 NOV 2018 19:51
+This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.11.1)  20 NOV 2018 17:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -140,12 +140,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen139
 \Gm@layoutvoffset=\dimen140
 \Gm@dimlist=\toks21
-)
-
-LaTeX Warning: Unused global option(s):
-    [11.5pt].
-
-(./HW6 23A18014.aux)
+) (./HW6 23A18014.aux)
 \openout1 = `"HW6 23A18014.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
@@ -177,26 +172,26 @@ File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
-* v-part:(T,H,B)=(71.13188pt, 688.5567pt, 85.35826pt)
-* \paperwidth=597.50787pt
-* \paperheight=845.04684pt
-* \textwidth=455.24411pt
-* \textheight=688.5567pt
-* \oddsidemargin=-1.1381pt
-* \evensidemargin=-1.1381pt
-* \topmargin=-36.8353pt
+* h-part:(L,W,R)=(64.96059pt, 415.74603pt, 64.96059pt)
+* v-part:(T,H,B)=(64.96059pt, 628.81602pt, 77.95271pt)
+* \paperwidth=597.49146pt
+* \paperheight=845.04272pt
+* \textwidth=415.74603pt
+* \textheight=628.81602pt
+* \oddsidemargin=-7.3094pt
+* \evensidemargin=-7.3094pt
+* \topmargin=-40.53754pt
 * \headheight=20.0pt
-* \headsep=15.69719pt
+* \headsep=13.22813pt
 * \topskip=12.76073pt
-* \footskip=28.45792pt
+* \footskip=25.98886pt
 * \marginparwidth=18.49374pt
 * \marginparsep=18.49374pt
 * \columnsep=18.49374pt
 * \skip\footins=16.0pt plus 5.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
+* \hoffset=6.27573pt
+* \voffset=6.27573pt
+* \mag=1095
 * \@twocolumnfalse
 * \@twosidefalse
 * \@mparswitchfalse
@@ -261,14 +256,14 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 17.
  [1
 
-] (./HW6 23A18014.aux) ) 
+] [2] [3] (./HW6 23A18014.aux) ) 
 Here is how much of TeX's memory you used:
- 2004 strings out of 493281
- 24449 string characters out of 6148126
- 96055 words of memory out of 5000000
- 5936 multiletter control sequences out of 15000+600000
+ 2003 strings out of 493281
+ 24440 string characters out of 6148126
+ 98048 words of memory out of 5000000
+ 5935 multiletter control sequences out of 15000+600000
  18571 words of font info for 72 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 27i,6n,27p,290b,240s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,6n,27p,671b,240s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on "HW6 23A18014.dvi" (1 page, 1044 bytes).
+Output written on "HW6 23A18014.dvi" (3 pages, 10328 bytes).
