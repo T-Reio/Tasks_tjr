@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.11.1)  20 NOV 2018 17:49
+This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.11.1)  21 NOV 2018 21:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -256,14 +256,41 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 17.
  [1
 
-] [2] [3] (./HW6 23A18014.aux) ) 
+] [2]
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 64.
+ (c:/texlive/2018/texmf-dist/tex/latex/psnfss/omsppl.fd
+File: omsppl.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 64.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 7.30359pt on input line 66.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 5.76599pt on input line 66.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 66.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 7.91925pt on input line 66.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 6.25204pt on input line 66.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 66.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.91925pt on input line 66.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 6.25204pt on input line 66.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 7.30359pt on input line 92.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 5.76599pt on input line 92.
+ [3] [4] (./HW6 23A18014.aux) ) 
 Here is how much of TeX's memory you used:
- 2003 strings out of 493281
- 24440 string characters out of 6148126
- 98048 words of memory out of 5000000
- 5935 multiletter control sequences out of 15000+600000
- 18571 words of font info for 72 fonts, out of 8000000 for 9000
+ 2043 strings out of 493281
+ 25055 string characters out of 6148126
+ 100048 words of memory out of 5000000
+ 5973 multiletter control sequences out of 15000+600000
+ 25600 words of font info for 96 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 27i,6n,27p,671b,240s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,10n,27p,671b,354s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on "HW6 23A18014.dvi" (3 pages, 10328 bytes).
+Output written on "HW6 23A18014.dvi" (4 pages, 15820 bytes).
