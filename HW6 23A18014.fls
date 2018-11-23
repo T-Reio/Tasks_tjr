@@ -95,8 +95,9 @@ INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
 OUTPUT HW6 23A18014.dvi
-INPUT c:/texlive/2018/texmf-dist/tex/latex/psnfss/omsppl.fd
-INPUT c:/texlive/2018/texmf-dist/tex/latex/psnfss/omsppl.fd
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplr7t.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplr7t.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7m.tfm

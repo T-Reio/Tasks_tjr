@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.11.1)  22 NOV 2018 18:03
+This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.11.1)  23 NOV 2018 17:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -257,12 +257,10 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
  [1
 
 ] [2]
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 64.
- (c:/texlive/2018/texmf-dist/tex/latex/psnfss/omsppl.fd
-File: omsppl.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 64.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 11.53198pt on input line 64.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 11.53198pt on input line 64.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 (Font)              scaled to size 7.30359pt on input line 66.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
@@ -283,14 +281,14 @@ LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
 (Font)              scaled to size 7.30359pt on input line 92.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
 (Font)              scaled to size 5.76599pt on input line 92.
- [3] [4] [5] (./HW6 23A18014.aux) ) 
+ [3] [4] [5] [6] [7] (./HW6 23A18014.aux) ) 
 Here is how much of TeX's memory you used:
- 2043 strings out of 493281
- 25055 string characters out of 6148126
+ 2028 strings out of 493281
+ 24790 string characters out of 6148126
  101048 words of memory out of 5000000
- 5973 multiletter control sequences out of 15000+600000
- 25600 words of font info for 96 fonts, out of 8000000 for 9000
+ 5960 multiletter control sequences out of 15000+600000
+ 26188 words of font info for 99 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 27i,10n,27p,848b,354s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,10n,27p,846b,305s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on "HW6 23A18014.dvi" (5 pages, 20948 bytes).
+Output written on "HW6 23A18014.dvi" (7 pages, 30916 bytes).
