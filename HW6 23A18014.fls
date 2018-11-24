@@ -122,4 +122,6 @@ INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
+INPUT c:/texlive/2018/texmf-dist/tex/latex/psnfss/omsppl.fd
+INPUT c:/texlive/2018/texmf-dist/tex/latex/psnfss/omsppl.fd
 INPUT HW6 23A18014.aux

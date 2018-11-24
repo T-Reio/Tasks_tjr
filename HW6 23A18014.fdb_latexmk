@@ -1,11 +1,11 @@
 # Fdb version 3
-["dvipdf"] 1542960914 "HW6 23A18014.dvi" "HW6 23A18014.pdf" "HW6 23A18014" 1542960917
-  "HW6 23A18014.dvi" 1542960914 30916 81ae53d061bbf5e043e03cf2f09eb52b "latex"
+["dvipdf"] 1543059894 "HW6 23A18014.dvi" "HW6 23A18014.pdf" "HW6 23A18014" 1543059895
+  "HW6 23A18014.dvi" 1543059894 38032 999c46348ef322a5d94bd62d44c86647 "latex"
   (generated)
   "HW6 23A18014.pdf"
-["latex"] 1542960912 "HW6 23A18014.tex" "HW6 23A18014.dvi" "HW6 23A18014" 1542960917
-  "HW6 23A18014.aux" 1542960914 1059 153c8716d5f399304a7816a24c77695d ""
-  "HW6 23A18014.tex" 1542960908 19598 d5411c72ef533ad32a2f8a374441adec ""
+["latex"] 1543059892 "HW6 23A18014.tex" "HW6 23A18014.dvi" "HW6 23A18014" 1543059895
+  "HW6 23A18014.aux" 1543059894 1059 7f5ba7a45b771616e2e6f68cce6dcdf9 ""
+  "HW6 23A18014.tex" 1543059891 24362 1cfd3c5abc087a1f2aa9c04dd6063866 ""
   "c:/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1541079023 3332 103109f5612ad95229751940c61aada0 ""
   "c:/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplr7t.tfm" 1541081124 1804 7b5f73028f6509167f47ace9d69509ed ""
   "c:/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplri7t.tfm" 1541081124 1732 3671a0e54806deb8b706eb5e53aba0a5 ""
@@ -49,5 +49,5 @@
   "c:/texlive/2018/texmf.cnf" 1541083614 673 2e5aa3ac564c6f70f54d6752d765c05d ""
   (generated)
   "HW6 23A18014.log"
-  "HW6 23A18014.aux"
   "HW6 23A18014.dvi"
+  "HW6 23A18014.aux"
