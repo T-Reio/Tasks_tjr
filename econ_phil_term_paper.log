@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.11.1)  9 JAN 2019 14:50
+This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.11.1)  21 JAN 2019 20:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -238,16 +238,24 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 9.37807pt on input line 10.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 7.29405pt on input line 10.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 13.83836pt on input line 12.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 13.83836pt on input line 12.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 13.83836pt on input line 12.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 13.83836pt on input line 12.
  [1
 
 ] (./econ_phil_term_paper.aux) ) 
 Here is how much of TeX's memory you used:
- 1991 strings out of 493281
- 24357 string characters out of 6148126
- 95048 words of memory out of 5000000
- 5926 multiletter control sequences out of 15000+600000
- 16866 words of font info for 65 fonts, out of 8000000 for 9000
+ 1999 strings out of 493281
+ 24460 string characters out of 6148126
+ 96048 words of memory out of 5000000
+ 5932 multiletter control sequences out of 15000+600000
+ 18162 words of font info for 71 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  27i,6n,27p,296b,240s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on econ_phil_term_paper.dvi (1 page, 488 bytes).
+Output written on econ_phil_term_paper.dvi (1 page, 1400 bytes).

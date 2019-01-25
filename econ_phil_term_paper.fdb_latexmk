@@ -1,16 +1,19 @@
 # Fdb version 3
-["dvipdf"] 1547013053 "econ_phil_term_paper.dvi" "econ_phil_term_paper.pdf" "econ_phil_term_paper" 1547013054
-  "econ_phil_term_paper.dvi" 1547013053 488 01c2485453b712d1228b0a69cac922f0 "latex"
+["dvipdf"] 1548070306 "econ_phil_term_paper.dvi" "econ_phil_term_paper.pdf" "econ_phil_term_paper" 1548070308
+  "econ_phil_term_paper.dvi" 1548070306 1400 4188fdab5afdb20d54eae326c5938a82 "latex"
   (generated)
   "econ_phil_term_paper.pdf"
-["latex"] 1547013051 "econ_phil_term_paper.tex" "econ_phil_term_paper.dvi" "econ_phil_term_paper" 1547013054
+["latex"] 1548070305 "econ_phil_term_paper.tex" "econ_phil_term_paper.dvi" "econ_phil_term_paper" 1548070308
   "c:/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1541079023 3332 103109f5612ad95229751940c61aada0 ""
   "c:/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplr7t.tfm" 1541081124 1804 7b5f73028f6509167f47ace9d69509ed ""
   "c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1541081721 468 53f854284f6afa6c36aaa2d1090ecc12 ""
+  "c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm" 1541081721 468 53f854284f6afa6c36aaa2d1090ecc12 ""
+  "c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm" 1541081721 856 7404843a5f798859944d7973a47821d5 ""
   "c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm" 1541081721 856 39c171483fe1bb7d0e1368980c0c205b ""
   "c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1541076798 916 f87d7c45f9c908e672703b83b72241a3 ""
   "c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm" 1541076798 908 2921f8a10601f252058503cc6570e581 ""
   "c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmr8.tfm" 1541077736 1292 21c1c5bfeaebccffdb478fd231a0997d ""
+  "c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmss12.tfm" 1541077736 1324 37b971caf729d7edd9cbb9f9b0ea76eb ""
   "c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7m.tfm" 1541080476 2080 40a71f65088bdd047622ce295520749e ""
   "c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7t.tfm" 1541080476 1828 bb8add3bd19426549f9267c88b0cb8bd ""
   "c:/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7v.tfm" 1541080476 1012 955c4ca523d7827d33db91a33412b048 ""
@@ -41,9 +44,9 @@
   "c:/texlive/2018/texmf-dist/tex/platex/jsclasses/jslogo.sty" 1541079774 6061 1242b5308ecb0db77c71c1ff6c687ace ""
   "c:/texlive/2018/texmf-var/web2c/eptex/platex.fmt" 1541083882 4472184 3331907170f2ede6ea63f6d37904ddf3 ""
   "c:/texlive/2018/texmf.cnf" 1541083614 673 2e5aa3ac564c6f70f54d6752d765c05d ""
-  "econ_phil_term_paper.aux" 1547013053 8 a94a2480d3289e625eea47cd1b285758 ""
-  "econ_phil_term_paper.tex" 1547013049 319 ba46b3fda0ade30ac484613478bdde10 ""
+  "econ_phil_term_paper.aux" 1548070306 408 e6ed9c7355478d2ea77a271bb467be97 ""
+  "econ_phil_term_paper.tex" 1548070302 1002 8e76b60aad4428107f87cb153ed5de8e ""
   (generated)
+  "econ_phil_term_paper.log"
   "econ_phil_term_paper.dvi"
   "econ_phil_term_paper.aux"
-  "econ_phil_term_paper.log"

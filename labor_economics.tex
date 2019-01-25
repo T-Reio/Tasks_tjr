@@ -1,0 +1,821 @@
+\documentclass[dvipdfmx, 12pt]{article}
+\usepackage{mathpazo}
+\usepackage{amsmath,amssymb}
+\usepackage{array}
+\usepackage[hiresbb]{graphicx}
+\usepackage{tikz}
+\usepackage{textcomp}
+\usepackage{dcolumn}
+\usepackage{here}
+\usepackage{lscape}
+\usepackage[top=25truemm,bottom=30truemm,left=25truemm,right=25truemm]{geometry}
+\begin{document}
+
+\parindent = 0pt
+
+\title{Labor Economics}
+\author{}
+\date{}
+\maketitle
+
+\section{Labor Supply}
+
+\section{Labor Demand}
+
+\section{Equilibrium}
+
+\section{Human Capital}
+
+\section{Compensating Wage Differential}
+pp88-94
+
+\section{Monopsony}
+pp95-99
+
+\section{Discrimination}
+pp100
+
+\section{Asymmetric Information}
+
+\section{Moral Hazard}
+
+\subsection{Principal-Agent Model with Moral Hazard}
+pp115-118
+
+: ex post asymmetric information
+
+$\rightarrow$ workers choose her/his effort level after the contract.
+
+\begin{enumerate}
+  \item Agent
+
+  Assume negatibe exponential utility:
+
+  \begin{align*}
+    U\left( W - \dfrac{c e^2}{2} \right) &= - \exp \left\{ -a \left( W - \dfrac{c e^2}{2} \right)\right\} \\
+    \text{where}& \\
+    U: & \text{CARA function} \\
+    a: & \text{ coefficient of absolute risk-aversion} \\
+    W: & \text{wage schedule} \\
+    c: & \text{effort cost constant}
+  \end{align*}
+
+  $W$ is defined by the fixed wage $w$, performance wage $b$ and productivity $y$ as follows:
+
+  \begin{align*}
+    W &= w + by \\
+    & \text{where} \\
+    y &= e + \epsilon, \epsilon \sim N(0, \sigma^2)
+  \end{align*}
+
+  The second equation implies that principal cannot monitor the effort level of the agent $e$. Substituting this into the first one, $W = w + b(e + \epsilon)$.
+
+  The object function of maximization problem of the agent is:
+
+  \begin{align*}
+    \max_e EU &= E \left\{ -\exp \left[-a\left(w + b (e + \epsilon) - \dfrac{ce^2}{2}\right)\right]\right\} \\
+    &= E \left\{ -\exp \left[-a\left(w + be - \dfrac{ce^2}{2}\right) -ab \epsilon \right]\right\} \\
+    &= E \left\{ -\exp \left[-a\left(w + be - \dfrac{ce^2}{2}\right) \right] \exp (- ab \epsilon)\right\} \\
+    &= -\exp \left[-a\left(w + be - \dfrac{ce^2}{2}\right) \right] E[\exp (- ab \epsilon)]
+  \end{align*}
+
+  Since $\exp (-ab \epsilon)$ follows log-normal distribution, the mean value is $\exp \left( - \dfrac{a^2 b^2 \sigma^2}{2}\right)$.
+
+  Thus, the maximization problem is rewritten as follows:
+
+  \begin{align*}
+    \max_e -\exp & \left[-a \left( w + be -\dfrac{c e^2}{2} - \dfrac{a b^2 \sigma^2}{2} \right)\right] \\
+    & \Longrightarrow e = \dfrac{b}{c}
+  \end{align*}
+
+  If $b$ goes up, then the effort level goes down. When $c$ increases, $e$ decreases.
+
+  \item Principal
+
+  The xProfit of the firm:
+
+  \begin{align*}
+    E(y-W) &= E[y - (w + by)] \\
+    &= E[(1-b)(e + \epsilon) - w] \\
+    &= (1 - b)e - w \hspace{1.5zw}(\because E(\epsilon) = 0)
+  \end{align*}
+\end{enumerate}
+
+
+\subsection{Double Moral Hazard}
+pp119-124
+
+\subsection{Shirking Model}
+
+pp125-130
+
+$\rightarrow$ deferred payment (Lazear, 1979, 1981) $\rightarrow$ efficiency wage model (Shapiro \& Stiglitz, 1984, AER)
+
+\begin{tabular}{cc}
+  \begin{minipage}{0.5\textwidth}
+    \begin{tikzpicture}[domain = 0:4, samples = 200, >= stealth]
+        \draw[->](-0.5, 0) -- (4.2, 0) node[right]{$x$};
+        \draw[->](0, -0.5) -- (0, 3.7) node[above]{$u(x)$};
+        \draw[-](2.2, -0.1) -- (2.2, 0.1);
+        \draw[domain=0:2.2,samples=200,>=stealth] plot (\x, {sqrt(\x)});
+        \draw[domain=2.2:4.1,samples=200,>=stealth] plot (\x, {sqrt(\x) + 0.8});
+        \draw (0, 0) node[below left]{O};
+        \draw (2.2, -0.3) node {$r$};
+      \end{tikzpicture}
+      \scriptsize
+  \end{minipage} &
+  \begin{minipage}{0.5\textwidth}
+      \begin{tikzpicture}[domain = 0:4, samples = 200, >= stealth]
+        \draw[->](-0.5, 0) -- (4.2, 0) node[right]{$L$};
+        \draw[->](0, -0.5) -- (0, 3.7) node[above]{$w$};
+        \draw[-](2.2, -0.1) -- (2.2, 0.1);
+        \draw[domain=0.2:4.1,samples=200,>=stealth] plot (\x, 2/3*\x + 0.2) node[right]{$LS$};
+        \draw[domain=0.2:4.1,samples=200,>=stealth] plot (\x, -2/3 *\x + 3.2) node[right]{$LD$};
+        \draw (0, 0) node[below left]{O};
+        \draw (2.2, -0.3) node {$L^*$};
+      \end{tikzpicture}
+      \scriptsize
+    \small
+
+    $w^*$ denotes the market clearing wage. When $w = w_E$, then, there exists involuntary worker.
+  \end{minipage}
+\end{tabular}
+
+\subsubsection{Value Function}
+
+Agents(workers)' value function is:
+
+\begin{itemize}
+  \item No shirking
+  \begin{align*}
+    V_t = w_t &- c_t + \delta [(1 - q)\max(V_{t+1}, V_{t+1}^s) + q \bar{V}_t] \\
+    \text{where }& \\
+    V_t &: \text{ the value of working hard at time }t \\
+    w_t &: \text{ wage} \\
+    c_t &: \text{ effort cost} \\
+    \delta &: \text{ discont factor} \\
+    q &: \text{ exogeneous probability separation} \\
+    \bar{V}_t &: \text{ value of outside opportunity} \\
+  \end{align*}
+
+  \item Shirking
+  \begin{align*}
+    V_t^s = w_t &+ (1 - p) \{ \delta' (1 - q) \max (V_{t+1}, V_{t+1}^s) + q \bar{V}_t \} + P \delta \bar{V}_t \\
+    \text{where }& \\
+    p: & \text{ probability of being detected and fired}
+  \end{align*}
+\end{itemize}
+
+\begin{enumerate}
+  \item Incentive Compatible
+
+  To prevent workers from shirking, the following condition must hold:
+  \[
+  V_t \geq V_t^s \text{ for } \forall t \geq 0
+  \]
+  The inequation is rewritten as:
+
+  \begin{align*}
+    V_t - V_t^s = -c + p \delta [(1 - q) \max (V_{t+1}, V_{t+1}^s) + q \bar{V}_{t+1}] - p \delta \bar{V}_{t+1} &\geq 0 \\
+    p \delta (1 - q)(V_{t+1} - \bar{V}_{t+1}) &\geq c \\
+    \Longrightarrow V_{t+1} - \bar{V}_{t+1} \geq \dfrac{c}{p \delta (1 - q)}, & \forall t \geq 0
+  \end{align*}
+
+  \begin{itemize}
+    \item Incentive mechanism is forward looking.
+
+    \item To give the worker an incentive to work hard today ($t$), the worker expects the positive rent tomorrow ($t+1$).
+
+    \item $w_t$ does not affect effort level at $t$ ($\because w_t$ is canceled out by $V_t - V_t^s$). The effort level at $t$ comes from the prospect of the gain at $t+1$.
+
+    \item The wage is NOT important for the incentive, but for the contract.
+  \end{itemize}
+
+  \item Participation Constraint
+
+  \begin{align*}
+    V_t \geq \bar{V}_t \hspace{1.5zw} & \\end{align*} \forall t \geq 0
+  \end{align*}
+
+  By the incentive compatible, $V_k \geq \bar{V}_k \forall k >0$ is satisfied($\because \frac{c}{p \delta (1 - q)} > 0$ by definition)
+
+  Thus, Participation only requires $V_0 \geq \bar{V}_0$
+\end{enumerate}
+
+In sum, the set of feasible contract is:
+
+\begin{align*}
+  \mathbb{P} &= \left\{ \Pi_t, V_t | \pi_t \geq \bar{\pi}_t, V_{t+1} - \bar{V}_{t+1} \geq \dfrac{c}{p \delta (1 - q)}, V_0 \geq \bar{V}_0, \forall \geq 0 \right\} \\
+  \Pi_t &= y_t - w_t + \delta [(1 - q) \pi_{t+1} + q \bar{\Pi}_{t+1}]
+\end{align*}
+$\Pi_t$ denotes the value of operation at period $t$.
+
+Now we define the total surplus.
+
+\begin{align*}
+  S_t & \equiv (V_y - \bar{V}_t) + (\Pi_t - \bar{\Pi}_t)
+\end{align*}
+Firms make a contract iff
+\begin{align*}
+  \Pi_t - \bar{\Pi}_t &= S_t - (V_t - \bar{V}_t) \geq 0
+\end{align*}
+the set of feasible contract can be rewritten as follows:
+\begin{align*}
+  \mathbb{P} &= \left \{ \pi_t, V_t | S_{t+1} \geq V_{t+1} - \bar{V}_{t+1} \geq \dfrac{c}{p \delta (1 - q)}, s_0 \geq V_0 - \bar{V}_0 \geq 0, \forall t \geq 0 \right \} \\
+  & \Longrightarrow \begin{cases}
+    S_0 \geq 0, & \\
+    S_{t+1} \geq \dfrac{c}{p \delta (1 - q)} & \forall t \geq 0
+\end{cases} \hspace{2zw}: \text{ Implicit self-enforcing contract. }
+\end{align*}
+
+To maximize $\Pi_t$: minimize $V_t$ subject to the implicit self-enforcing contract.
+
+\begin{align*}
+  V_0 - \bar{V}_0 = 0 & \Rightarrow \text{then, } \Pi_0 - \bar{\Pi}_0 = S_0 \\
+  V_{t + 1} - \bar{V}_{t+1} = \dfrac{c}{p \delta (1 - q)} & \Rightarrow \text{ then, } \Pi_{t+1} - \bar{\Pi}_{t + 1} = S_{t+1} - \dfrac{c}{p \delta (1 - q)}
+\end{align*}
+(note that $s_{t+1} \equiv (\Pi_{t+1} - \Pi_{t+1}) + V_{t + 1} - \bar{V}_{t+1})$)
+
+\begin{align*}
+  \forall t \geq 0, & \\
+  V_0 &= \bar{V}_0 \\
+  V_{t+1} &= \bar{V}_{t+1} + \dfrac{c}{p \delta (1 - q)} \\
+  V_t &= w_t - c + \delta [(1 - q) \max(V_{t+1}, V_{t+1}^s) + q \bar{V}] \\
+  w_0 &= \bar{V}_0 - \delta \bar{V}_1 + c \dfrac{c}{p} \\
+  w_{t + 1} &= \bar{V}_{t + 1} - \delta \bar{V}_{t+2} + c + \dfrac{c}{p} \left[ \dfrac{1}{\delta (1 - q)} - 1 \right]
+\end{align*}
+
+\subsubsection{Two Period}
+
+\begin{align*}
+  w_0 &= \bar{V}_0 - \delta \bar{V}_1 + c \dfrac{c}{p} \\
+  w_{1} &= \bar{V}_{1} - \delta \bar{V}_{2} + c + \dfrac{c}{p} \left[ \dfrac{1}{\delta (1 - q)} - 1 \right]
+\end{align*}
+
+Assume no capital accumulation and
+
+\begin{align*}
+  \bar{V}_t &= \sum_{i = 0}^{\infty} (\bar{w}_{t + 1}), \forall t \geq 0 \\
+  \bar{V}_0 &- \delta \bar{V}_1 = \bar{w}_0 - c \\
+  \bar{V}_1 &- \delta \bar{V}_2 = \bar{w}_1 - c
+\end{align*}
+
+Suppose $\bar{w}_0 = \bar{w}_1 = \bar{w}_2 = \ldots =\bar{w}$,
+
+\begin{align*}
+  w_0 &= \bar{w} - \dfrac{c}{p} \\
+  w_1 &= \bar{w} + \dfrac{c}{p} \left[ \dfrac{1}{\delta (1 - q) - 1} \right]
+\end{align*}
+
+\subsection{Efficiency wage Model}
+
+pp130-136
+
+Shapiro and Stiglitz (1984, AER).
+
+\begin{itemize}
+  \item Involuntary unemployment
+
+  \item wage downward rigidity
+
+  \item keep the wage high to prevent the employee from shirking.
+\end{itemize}
+
+\subsubsection{stationary case}
+
+\begin{align*}
+  V_0 = V_1 = V_2 = \ldots = V_t = V \\
+  \bar{V}_0 = \bar{V}_1 = \bar{V}_2 = \ldots = \bar{V}_t = \bar{V}
+\end{align*}
+
+By $w_{t + 1} = \bar{V}_{t + 1} - \delta \bar{V}_{t+2} + c + \frac{c}{p} \left[ \frac{1}{\delta (1 - q)} - 1 \right]$,
+
+\[
+w = (1 - \delta) \bar{V} + c + \dfrac{c}{p} \left[ \dfrac{1}{\delta (1 - q) - 1} \right]
+\]
+
+By $V - \bar{V} = \frac{c}{p \delta (1 - q)} > 0$, $V > \bar{V}$
+
+: involuntary unemployment occurs.
+
+Define $\bar{V} = z + \delta [sV + (1 - s) \bar{V}]$, where $z$ and $s$ is linear utility per period: unemployment benefit, and probability of finding a job, respectively.
+
+Then,
+
+\begin{align*}
+  (1 - \delta) \bar{V} &= z + \dfrac{sc}{p (1 - q)} \\
+  w = z + c + \dfrac{c}{p} \left[ \dfrac{1}{1 - q} \left( s + \dfrac{1}{\delta} - 1 \right) \right]
+\end{align*}
+
+Under steady state, $s(N-L) = qL$ holds: \# of the worker fired and that of those who find a job is equal. Then,
+
+\[
+s = \dfrac{q L}{N - L} < 1
+\]
+
+%図いれろ
+
+\[
+w = z + c + \dfrac{c}{p} \left[\left( \dfrac{1}{1-q} \right) \left(\dfrac{qL}{N - L} + \dfrac{1}{\delta} \right) - 1 \right] : \text{incentive curve}
+\]
+
+Firm side:
+
+\[
+\Pi = y - w + \delta [(1 - q) \Pi + q \bar{\Pi}]
+\]
+
+Free entry condition:$\Pi = \bar{\Pi} \equiv c_k$ Fixed entry cost.
+
+\[
+w^* = y -(1 - \delta)c_k
+\]
+
+\section{Search Model}
+
+\subsection{Sequential Search Model: Individual's decision making}
+pp. 134 - 141
+
+\subsubsection{Settings}
+
+Consider a representative agent (infinite living) to maximize the lifetime utility
+\[
+E \sum_{t=0}^{\infty} \delta^t u_t.
+\]
+Workers realize the time-invariant wage offer distribution (Firm's strategy is given).
+
+\[
+\text{draw }w \text{ with probability of }\alpha \Rightarrow
+\begin{cases}
+  \text{accept } (w \geq w_R) & \rightarrow \text{ finish searching} \\
+  \text{reject } (w < w_R)& \rightarrow \text{ go to the next round}
+\end{cases}
+\]
+
+\subsubsection{Value Function}
+
+\begin{enumerate}
+  \item Employment
+
+  \[
+  W(w) = w + \delta [(1-\lambda) W(w) + \lambda \bar{u}]
+  \]
+
+
+  where $lambda$ denotes the prob. of unemployment.
+
+  $\bar{u}$ is the value of unemployment
+
+  \item Unemployment
+
+  \[
+  \bar{u} = z + \delta \{ \alpha E \max [W(w), \bar{u}] + (1-\alpha)\bar{u} \}
+  \]
+
+  $z$ is the value of this period with unemployed.
+
+  $\alpha$ denotes the prob. of get offer.
+
+
+\end{enumerate}
+
+\begin{itemize}
+  \item Reservation Wage Property
+
+  \[
+  W(w_R) = \bar{u}
+  \]
+
+  Thus, the worker accept the offer if
+
+  \[
+  W(w) > \bar{u} \Leftrightarrow w > w_R
+  \]
+  And reject otherwise.
+
+\end{itemize}
+
+By (1), when $w = w_R$,
+
+\begin{align*}
+  W(w_R) &= w_R + \delta [(1-\lambda) W(w_R) + \lambda \bar{u}] \\
+  \bar{u} &= w_R + \delta \bar{u} \hspace{2zw}(\because W(w_R) = \bar{u}) \\
+  \Rightarrow & W(w_R) = \bar{u} = \dfrac{w_R}{1-\delta}
+\end{align*}
+
+By (2),
+\begin{align*}
+  &\bar{u} = z + \alpha \delta \left\{ \int_{\underline{w}}^{w_R} \bar{u}dF(w) + \int_{w_R}^{\bar{w}} W(w)dF(w) \right\} + \delta (1 - \alpha) \bar{u} \\
+  & (\because E \max[W(w), \bar{u}] \text{ is the expected value of the maximized utility}) \\
+  \\
+  \Longrightarrow &(1 - \delta)\bar{u} = z + \alpha \delta \int_{w_R}^{\bar{w}}[W(w) - \bar{u}]dF(w) \\
+  & \left(\because \int_{\underline{w}}^{w_R} \bar{u}dF(w) = \bar{u} \left[ 1 - \int_{w_R}^{\bar{w}} dF(w) \right] \right) \\
+\end{align*}
+Note that $(1 - \delta)\bar{u} = w_R$, and
+
+\begin{align*}
+  W(w) - \bar{u} &= \dfrac{w + \delta \lambda \bar{u}}{1 - \delta (1 - \lambda)} -\bar{u} \\
+  &= \dfrac{w - (1 - \delta) \bar{u}}{1 - \delta(1 - \lambda)} \\
+  &= \dfrac{w - w_R}{1 - \delta(1 - \lambda)},
+\end{align*}
+
+we obtain
+
+\[
+w_R - z = \dfrac{\alpha \delta}{1 - \delta(1- \lambda)} \int_{w_R}^{\bar{w}} (w - w_R) dF(w)
+\]
+
+The left-hand side indicates the marginal cost of additional search, while the right-hand side denotes the expected capital gain: expected benefit of additional search.
+
+\subsubsection{Competitive Static Analysis}
+
+\begin{align*}
+  \dfrac{d w_R}{dz} > 0 & & \dfrac{d w_R}{d \alpha} >0 \\
+  \dfrac{d w_R}{d \delta} > 0 & & \dfrac{d w_R}{d \lambda} >0
+\end{align*}
+
+\subsubsection{Expected Duration of Search}
+
+Define the Hazard rate $\tau \equiv \alpha [1 - F(w_R)]$
+
+The probability of finishing search at period $t$ is $(1-\tau)^{t-1} \tau$
+
+Then, the expected time to get a job is:
+
+\begin{align*}
+  T &= \sum_{t=1}{\infty} t \times (1 - t)^{t-1} \times \tau \\
+  &= \dfrac{1}{\tau}
+  & T \text{ follows the negative binominal distribution.}
+\end{align*}
+
+By the static analysis, When $z$ goes up, then $w_R$ goes up. $F(w_R)$ is increasing in $w_R$, so by definition, $\tau$ decreases. As a result, $T$: the expected duration gets longer.
+
+\begin{itemize}
+  \item Unemployment Insurance
+
+  If $w_R$ goes up, then the accepted wage also increases and it varies over serching time. With the existance of unemployment insurance, even when the worker gets a new job early, s/he tries to put off the start time, in order to receive the full payment (90 days).
+\end{itemize}
+
+\subsubsection{Continuous-Time Model}
+
+We begin with an environment whose multiple jobs arrive at unemployed with probabilty of $a(n, \Delta t)$, for $\Delta$.
+
+\[
+a(n, \Delta t) = \dfrac{e^{- \alpha \Delta t} (\alpha \Delta t)^n}{n!}: \text{Poisson Procedure}
+\]
+
+\begin{itemize}
+  \item Assumption
+
+  $\Delta t'\perp$ the arrival probability of the $n$th job offer.
+\end{itemize}
+
+Then, we can say
+
+\[
+a(n, \Delta t) = \begin{cases}
+  \alpha \Delta t + O(\Delta t) & \text{ if }n = 1 \\
+  O(\Delta t) & \text{ if }n \geq 2
+\end{cases}
+\]
+\[
+\text{where } \left( \lim_{\Delta t \to \infty} \dfrac{O(\Delta t)}{\Delta t} = 0 \right), O(\Delta t) + O(\Delta t) = O(\Delta t)
+\]
+
+$O(.)$ denotes a tiny change.
+
+\begin{itemize}
+  \item Value Function
+
+  \begin{align*}
+    &\bar{u} = \left( \dfrac{1}{1 + r \Delta t} \right) \left \{ z \Delta t + \sum_{n = 1}^{\infty} a(n, \Delta t) E \max[W(w), \bar{u}] + a(0, \Delta t) \right \} \\
+    & \text{RHS is rewritten as follows.} \\
+    & \left( \dfrac{r \Delta t}{1 + r \Delta t} \right) \bar{u} = \left( \dfrac{1}{1 + r \Delta t} \right) \left \{ z \Delta t + \sum_{n = 1}^{\infty} a (n, \Delta t) \times [E \max [W(w), \bar{u}] - \bar{u}] \right\}
+  \end{align*}
+
+  \begin{enumerate}
+    \item Multiply the both-hand side by $(1 + r \Delta t)$
+
+    \item Devide by $\Delta t$
+
+    \item $\Delta t \to 0$
+  \end{enumerate}
+
+  yields
+
+  \begin{align*}
+    r \bar{u} &= z + \alpha \left \{ E \max[W(w), \bar{u}] - \bar{u} \right \} \\
+    & \text{or} \\
+    r \bar{u} &= z + \alpha \int_{w_R}^{\bar{w}} [W(w)- \bar{u}] dF(w)
+  \end{align*}
+
+  \begin{align*}
+    & W(w) = \left( \dfrac{1}{1 + r \Delta t} \right ) \{ w \Delta t + \lambda \Delta t \bar{u} + (1 - \lambda \Delta t)W(w) \} \\
+    & r W(w) = w + \lambda [\bar{u} - W(w)]
+  \end{align*}
+
+  \begin{align*}
+    W(w) &= \dfrac{w + \lambda \bar{u}}{r + \lambda} \\
+    W(w_R) &= \bar{u}
+  \end{align*}
+
+  \begin{align*}
+    W(w) - \bar{u} &= \dfrac{w - r \bar{u}}{r + \lambda} \\
+    & = \dfrac{w - w_R}{r + \lambda}
+  \end{align*}
+
+  \[
+  w_R = z + \dfrac{\alpha \delta}{1 - \delta (1 -\lambda)} \int_{w_R}^{\bar{w}} (w - w_R) dF(w)
+  \]
+
+  (cf. instantaneous reservation wage)
+
+  \[
+  w_R  = z + \dfrac{\alpha \delta}{1 - \delta(1- \lambda)} \int_{w_R}^{\bar{w}} (w - w_R) dF(w)
+  \]
+
+\end{itemize}
+
+\subsection{Search Effort}
+
+pp143 - 146
+
+\begin{enumerate}
+  \item reseavation wage: constant (endogeneous)
+
+  \item search effort exists
+\end{enumerate}
+
+\subsubsection{Value Functions}
+
+\begin{itemize}
+  \item No search
+
+  \begin{align*}
+    r W(w) &= w + \lambda [\bar{u} - W(w)] \\
+    \\
+    \text{where} \\
+    & r: \text{ discount factor} \\
+    & w: \text{ linear instantaneous utility} \\
+    & \lambda: \text{ probability of separation} \\
+    \\
+    & \bar{u} - W(w) \text{ stands for the capital loss.} \\
+    & \text{Note that there is no search cost.}
+  \end{align*}
+
+  \item Search
+
+  \begin{align*}
+    r \bar{u} &= \max_e \left\{z - c(e) + \alpha(e) \int_{w_R}^{\bar{w}} [W(w) - \bar{u}] dF(w) \right\} \\
+    \\
+    &\text{where} \\
+    & z: \text{ instantaneous utility} \\
+    & c(e): \text{search cost, note that }c'(.) > 0, c"(.) > 0, c(0) = 0. \\
+    & \alpha(e): \text{job arrival rate, note that } \alpha'(.) > 0, \alpha"(.) < 0, c(0) = 0
+  \end{align*}
+
+  FOC yields
+
+  \begin{align*}
+    (r + \lambda)c'(e) = \alpha'(e) \int_{w_R}^{\bar{w}}[W(w) - \bar{u}]dF(w)
+  \end{align*}
+
+\end{itemize}
+
+Then, we obtain:
+\[
+\begin{cases}
+  w_R = z - c(e^*) + \dfrac{\alpha (e^*)}{r + \lambda} \int_{w_R}^{\bar{w}} (w - w_R) d F(w) \\
+  (r + \lambda)c'(e^*) = \alpha(e^*) \int_{w_R}^{\bar{w}} (w - w_R) dF(w)
+\end{cases}
+\]
+
+\subsubsection{Competitive Static Analysis}
+
+\[
+\begin{bmatrix}
+  a_{11} & a_{12} \\ a_{21} & a_{22}
+\end{bmatrix}
+\begin{bmatrix}
+  \frac{d w_R}{d z} \\ \frac{d e^*}{dz}
+\end{bmatrix}
+= \begin{bmatrix}
+  B_1 \\ B_2
+\end{bmatrix}
+\]
+
+\begin{align*}
+  \dfrac{d w_R}{d z} > 0, &\dfrac{d e^*}{dz} < 0
+\end{align*}
+
+\subsubsection{On-the-job Search}
+
+Both unemployed and employed workers search, with the different rate of arriving rate: $\alpha_0$ for unemployed and $\alpha_1$ for employed.
+
+\begin{itemize}
+  \item If there is severe time constraint for the employed, then $\alpha_0 > \alpha_1$.
+
+  \item If the employed worker have some connection about searching, then $\alpha_0 < \alpha_1$
+\end{itemize}
+
+The value function is:
+
+\begin{align*}
+  r \bar{u} &= z + \alpha_0 \int_{w_R}^{\bar{w}} [W(w)- \bar{u}] dF(w) \\
+  r \bar{u} &= w + \alpha_1 \int_{w_R}^{\bar{w}} [W(w)- \bar{u}] dF(w) + \lambda [\bar{u} - W(w)]
+\end{align*}
+
+By the reservation wage property,
+
+\begin{align*}
+  r \bar{u} &= r W(w_R) = w_R + \alpha_1 \int_{w_R}^{\bar{w}}[W(w') - \bar{u}]dF(w') \\
+  w_R &+ \alpha_1\int_{w_R}^{\bar{w}}[W(w') - \bar{u}]dF(w') = z + \alpha_0 \int_{w_R}^{\bar{w}} [W(w)- \bar{u}] dF(w) \\
+  \\
+  &\text{assume } w \text{ and } w' \text{ follow the same distribution. Then, }\\
+  w_R &= z + (\alpha_0 - \alpha_1) \int_{w_R}^{\bar{w}} [W(w)- \bar{u}] dF(w)
+\end{align*}
+
+\subsubsection{Implication}
+
+\begin{enumerate}
+  \item Relationship of $\alpha_i$ and $z$
+  \begin{align*}
+    \alpha_0 > \alpha_1 &\Longrightarrow w_R > z \\
+    \alpha_0 < \alpha_1 &\Longrightarrow w_R < z
+  \end{align*}
+
+  \item $z$ and $w_R$
+
+  \[
+  z \text{ increases } \Longrightarrow w_R \text{ increases } \Longrightarrow \text{ average } w \text{ goes up}
+  \]
+
+  Then, the probability that a higher wage offer than the current wage $w$ goes down. As a result, turnover of the employed workers gets less likely to occur.
+
+  \item positive assotiation between the wage level and the firm size:
+
+  High wage firms are more attractive to the workers, so those in lower wage firms move to them. Then, the size of the firm with high wage gets larger.
+\end{enumerate}
+
+\subsection{Duration Analysis}
+
+pp146 - 152
+
+Let $T(\geq 0)$ denote the search duration. The cumulative distribution function of the duration is:
+
+\[
+F(t) = \text{Pr}(T \leq t)
+\]
+
+Then, the survivor function: the probability of surviving after time $t$ is
+\[
+s(t) \equiv 1 - F(t)
+\]
+
+\subsubsection{Hazard function}
+
+Instantaneous rate of leaving from unemployment pool.
+
+\[
+\lambda(t) = \lim_{h \to 0} \dfrac{\text{Pr}(t \leq T \leq t + h | T \geq t)}{h}
+\]
+
+(If $\lambda'(t) < 0$, the harzard rate has negative dependence on search time, otherwise if $\lambda'(t) > 0$.)
+
+\begin{align*}
+  &\text{Pr}(t \leq T \leq t + h | T \geq t) \\
+  &= \dfrac{\text{Pr}(t \leq T \leq t + h)}{\text{Pr}(T \geq t)} \\
+  &= \dfrac{F(t + h) - F(t)}{1 - F(t)}
+\end{align*}
+
+Substituting this into $\lambda$,
+
+\begin{align*}
+  \lambda(t) &= \lim_{h \to 0}\dfrac{F(t + h) - F(t)}{h} \times \dfrac{1}{1 - F(t)} \\
+  & = \dfrac{f(t)}{1 - F(t)} \\
+  & = \dfrac{f(t)}{s(t)} \\
+  &\text{or} \\
+  \lambda(t) &= -\dfrac{d \ln s(t)}{dt} \\
+  & \left(\because \dfrac{d \ln s(t)}{d s(t)} \times \dfrac{d s(t)}{d t} = \dfrac{- f(t)}{s(t)}  \text{ by definition} \right)
+\end{align*}
+$\lambda'(t) > 0$: positive duration dependence (Weibull function)
+
+\begin{table}[H]
+  \caption{Two Kinds of Hazard Functions}
+  \label{Hazard_Func}
+  \begin{tabular}{ccccl} \hline
+    & $f(t)$ & $F(t)$ & $\lambda(t)$ & \\ \hline
+    exponential & $\lambda \exp (-\lambda t)$ & $1 - \exp (- \lambda t)$ & $\lambda$ & constant hazard rate \\
+    Weibull & $\gamma \alpha t^{\alpha - 1} \exp (-\gamma t^{\alpha})$ & $1 - \exp(- \gamma t^{\alpha})$ & $\gamma \alpha t^{\alpha - 1}$ & positive duration dependence \\ \hline
+  \end{tabular}
+\end{table}
+
+\begin{itemize}
+  \item Parametric Specification
+
+  Assume the searching duration follows the Weibull distribution.
+
+  \begin{align*}
+    \lambda(t: X) &= \exp(X \beta) \alpha t^{\alpha - 1} \\
+    & X \text{ denotes the time-invariant covariate} \\
+    \ln \lambda (t: X) = X \beta + \ln (\alpha t^{\alpha - 1})
+  \end{align*}
+
+  \item Semi-Parametric estimation
+
+  (Cox's proportional hazard): do not specify the distribution.
+
+  \[
+  \lambda (t: X) = \kappa (x) \lambda_0 (t)
+  \]
+
+  $kappa(.)$ is the non-negative function of $X$: $\exp (X \beta)$.
+
+  $\lambda_0$ stands for the baseline function $> 0$
+\end{itemize}
+
+\subsubsection{Data}
+
+\begin{enumerate}
+  \item Right-censoring
+
+  An individual enters the initial state: visit the job-search office during the interval $a_i \in [0, b]$
+
+  Then, those who does not finish her/his search until the end of the investigation cannot be observed: the obtained data is truncated.
+
+  \begin{itemize}
+    \item MLE
+
+    \begin{align*}
+      & a_i \in [0, b] \\
+      t^*_i &: \text{duration of search} \\
+      X_i &: \text{vector of observed covariates} \\
+      c_i &: \text{censoring time: time left for observation for the individual }i
+    \end{align*}
+
+    Assume
+    \[
+    F(t^* | X_i, a_i, c_i) = F(t | X_i)
+    \]
+    the duration is not affected by the time starting search.
+
+    \begin{itemize}
+      \item When the observation is complete one, then $f(t^*_i | X_i: \theta)$
+
+      \item If incomplete, $1 - F(c_i | X_i, \theta)$
+    \end{itemize}
+
+    The conditional likelihood function is:
+
+    \[
+    f(t^*_i)^{d_i} [1 - F(c_i | X_i, \theta)]^{1 - d_i}
+    \]
+    \[
+    d_i \text{ is the indicator}
+    \]
+
+    Therefore, the log-likelihood function
+    \begin{align*}
+      L(\theta) = \sum^N \{ d_i - F (c_i | X_i, \theta) + (1 - d_i) \ln [1 - F(c_i | X_i, \theta)] \}
+    \end{align*}
+
+    Maximizing this, we obtain consistent and asymptotical normal estimator $\hat{\theta}$.
+
+    \[
+    (\sqrt{\hat{\theta}} - \theta) \sim N \left( 0, - \left[\dfrac{1}{N} \dfrac{\partial^2 L(\hat{\theta})}{\partial \hat{\theta} \partial \hat{\theta}'} \right]\right)
+    \]
+  \end{itemize}
+
+  \item Left censoring
+
+  We missed observation of individuals who are not searching for a job at the point of $b\rightarrow$ sample selection problem may occur
+
+  We observe observations iff an individual is still unemployed at $b$
+
+  \begin{align*}
+    a_i & + t^*_i \geq b \\
+    \text{ or}& \\
+    t^*_i & \geq b - a_i
+  \end{align*}
+
+  The probability is obtained as follows:
+
+  \begin{align*}
+    &\text{Pr}(t^*_i \geq b - a_i | X_i, a_i, c_i) \\
+    = & 1 -F(b - a_i | X_i) \hspace{2zw} \because \text{assumption}
+  \end{align*}
+
+  Therefore, the likelihood function is:
+
+  \[
+  \dfrac{f(t^*_i | X_i \theta)^d_i [1 - F_(c_i | X_i, \theta)]^{1 - d_i}}{1 - F(b - a_i | X_i, \theta)}
+  \]
+
+\end{enumerate}
+
+\subsubsection{Empirical Example}
+
+\section{Equilibrium Matching Model}
+
+
+\end{document}
