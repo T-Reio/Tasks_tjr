@@ -1,13 +1,16 @@
 # Fdb version 3
-["dvipdf"] 1547865246 "labor_econ_term_paper.dvi" "labor_econ_term_paper.pdf" "labor_econ_term_paper" 1547865247
-  "labor_econ_term_paper.dvi" 1547865246 796 866924bd0c9cf8dc918fdf3b8b22b715 "latex"
+["dvipdf"] 1548762785 "labor_econ_term_paper.dvi" "labor_econ_term_paper.pdf" "labor_econ_term_paper" 1548762787
+  "labor_econ_term_paper.dvi" 1548762785 4028 e19047ceb39dc430c4d8a989b30101f2 "latex"
   (generated)
   "labor_econ_term_paper.pdf"
-["latex"] 1547865244 "labor_econ_term_paper.tex" "labor_econ_term_paper.dvi" "labor_econ_term_paper" 1547865247
+["latex"] 1548762781 "labor_econ_term_paper.tex" "labor_econ_term_paper.dvi" "labor_econ_term_paper" 1548762787
   "c:/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1541079023 3332 103109f5612ad95229751940c61aada0 ""
+  "c:/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplb7t.tfm" 1541081124 1616 371d1ee60c04b008c8fd760060cd34f1 ""
   "c:/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplr7t.tfm" 1541081124 1804 7b5f73028f6509167f47ace9d69509ed ""
   "c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/min10.tfm" 1541081721 1196 1be730212205a270378fba11a44765dc ""
+  "c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/min9.tfm" 1541081721 1196 415df3c165ce605a3c248afbbe3c844b ""
   "c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm" 1541081721 856 39c171483fe1bb7d0e1368980c0c205b ""
+  "c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin9.tfm" 1541081721 856 b22b8128b44bf8881977f2c74b361f47 ""
   "c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1541076798 916 f87d7c45f9c908e672703b83b72241a3 ""
   "c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm" 1541076798 908 2921f8a10601f252058503cc6570e581 ""
   "c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1541077736 1288 655e228510b4c2a1abe905c368440826 ""
@@ -117,9 +120,9 @@
   "c:/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty" 1541083381 55589 34128738f682d033422ca125f82e5d62 ""
   "c:/texlive/2018/texmf-var/web2c/eptex/platex.fmt" 1541083882 4472184 3331907170f2ede6ea63f6d37904ddf3 ""
   "c:/texlive/2018/texmf.cnf" 1541083614 673 2e5aa3ac564c6f70f54d6752d765c05d ""
-  "labor_econ_term_paper.aux" 1547865246 8 a94a2480d3289e625eea47cd1b285758 ""
-  "labor_econ_term_paper.tex" 1547865242 469 95fdbac8ee17afd97a9a240b6ae795d6 ""
+  "labor_econ_term_paper.aux" 1548762785 161 28083056ff6af567deae35877504cbb8 ""
+  "labor_econ_term_paper.tex" 1548762778 2481 85a9afbe60ea7b7668e06bf475b055ed ""
   (generated)
-  "labor_econ_term_paper.aux"
-  "labor_econ_term_paper.dvi"
   "labor_econ_term_paper.log"
+  "labor_econ_term_paper.dvi"
+  "labor_econ_term_paper.aux"
