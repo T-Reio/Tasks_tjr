@@ -63,24 +63,104 @@ which corresponds to the job creation condition.
 
 \vspace{1zw}
 
-(4)
+(4) First, we derive the equilibrium conditions: wage condition and steady state condition.
+
+First, we derive the wage curve.
+
+Given the value functions in (1) and (2), the wage is determined by Nash bargaining rule:
+
+\[
+w = \arg \max_w (W - \bar{u})^\beta (J - V)^{1 - \beta},
+\]
+note that $\beta$ stands for the bargaining power of the worker.
 
 \paragraph{Q2} \hspace{1zw}
 
-(1)
+(1)"Hazard Function" is an instantaneous rate of an individual moving from a certain state to another. In the settings of job searching, it corresponds to that of leaving from unemployment pool.
 
+Let $T \geq 0$ denote the duration and the cumulative distribution function $F(.)$ is defined as follows:
+
+\[
+F(t) = \text{Pr}(T \leq t).
+\]
+Then, the hazard function $\lambda(.)$ is:
+
+\[
+\lambda (t) \equiv \lim_{h \to 0} \dfrac{\text{Pr}(t \leq T \leq t + h | T \geq t)}{h},
+\]
+
+where $\text{Pr}(t \leq T \leq t + h | T \geq t)$ is given as:
+
+\[
+\text{Pr}(t \leq T \leq t + h | T \geq t) = \dfrac{F(t+h) - F(t)}{1 - F(t)}.
+\]
+
+Then, we can rewrite the hazard function by $F(t)$ and $f(t) = F'(t)$,
+
+\[
+\lambda(t) = \dfrac{f(t)}{1 - F(t)}.
+\]
+
+Now suppose the duration is distribution according to the Weibull distribution. Then, the cumulative distribution $F(t)$ is given as follows.
+
+\[
+F(t) = 1 - \exp (- \gamma t^{\alpha})
+\]
+
+$\gamma$ and $\alpha$ are parameters. Then the density function is obtained as
+
+\begin{align*}
+  f(t) = F'(t) & = \dfrac{d (1 - \exp (- \gamma t^{\alpha}))}{dt} \\
+  &= \dfrac{d (1 - \exp (- \gamma t^{\alpha}))}{d (- \gamma t^{\alpha})} \cdot \dfrac{d (- \gamma t^{\alpha})}{d t} \\
+  & = \gamma \alpha t^{\alpha - 1}
+\end{align*}
+
+Substituting this into $\gamma(t)$, we obtain the hazard function.
+
+\[
+\lambda(t) = \gamma \alpha t^{\alpha - 1}
+\]
+
+Positive/Negative dependence of the hazard function on the duration is found by checking the first-order differential of the hazard function: if $\lambda' (.) > 0$, then it has positive dependence, and negative if $\lambda(.) < 0$. When the duration has Weibull distribution, by $\lambda'(t) = (\alpha - 1) \gamma \alpha t^{\alpha - 2}$. Since $t > 0$ and $\gamma \geq 0$ is assumed, it depends on the value of $\alpha$. If $\alpha > 1$, then the hazard ratio has the positive dependence on the duration, and $\alpha < 1$ implies negative dependence.
 
 \vspace{1zw}
 
-(2)
+(2) Suppose observation of the worker who started job-searching after time 0. We observe unemployed workers who started job-searching until time $b$, and we stop observation at the cetain time: after then, we do not observe the worker, even though they have not finished searching. We define the time a worker $i$ enters the initial state (start searching) $a_i$, and time left for her/him until we stop the observation $c_i$.
 
+Then, we cannot observe the true duration $t_i$ if the worker have not finished searching at the censoring time. ``Right-censoring'' stands for possible bias caused by this problem.
+
+On the other hand, when we start observation of the workers who are searching at the time $b$: If s/he have finished searching at time $b$, then we cannot observe her/him, even if s/he started job searching after time $0$. Thus, obtained sample can be selected, that is, ``left-censoring'' problem occurs.
 
 \vspace{1zw}
-(3)
+(3) Denote the ``observed'' duration to be $t^*$. Assume $t^*$ is distributed independent of $a_i$ and $c_i$, then the conditional cumulative distribution function $F(.)$ on the vector of observed covariates $X_i$ is defined as:
 
+\[
+F(t^* | X_i, a_i, c_i | \theta) = F(t_i | X_i; \theta).
+\]
+$\theta$ is the vector of parameters.
+
+If there is no censoring problem discussed in (2), then the conditional density function of duration is $f(t^*_i | X_i; \theta)$. When an observation is completed, we can obtain the likelihood function of this.
+
+Then, we argue the observation with incomplete duration. First, we consider the right-censoring problem. The probability of  right-censored observation is given by $1 - F(c_i | X_i; \theta)$. Then, the conditional likelihood function is obtained as follows:
+
+\[
+f(t_i^* | X_i; \theta)^{d_i} [1 - F(c_i | X_i; \theta)]^{1 - d_i}
+\]
+
+Second, we consider the left-censoring. All the observed samples satisfy that the individual is still unemployed at time $b$. That is, $t^*_i \geq b_i - a_i$. The probability of this is expressed by $\text{Pr}(t^* \geq b - a_i | X_i, a_i, c_i) = 1 - F(b - a_i | X_i)$.
+
+By the Bayes Rule, the likelihood function including right and left-censoring is:
+
+\[
+L(\theta) = \prod_i^N \dfrac{f(t^*_i | X_i; \theta)^{d_i} [1 - F (c_i | X_i, \theta)]^{1 - d_i}}{1 - F(b - a_i | X_i; \theta)}
+\]
+
+Maximizing this (or log-likelihood function) with $\theta$, we obtain MLE: the consistent asymptotical normal estimated parameter $\hat{\theta}$.
 
 \vspace{1zw}
-(4)
+(4) Holm\r{a}s. 2002. Keeping nurses at work: a duration analysis \textit{Health Economics}. 11: 493 -- 503 (2002)
+
+
 
 \paragraph{Q3} \hspace{1zw}
 

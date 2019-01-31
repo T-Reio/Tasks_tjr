@@ -104,7 +104,7 @@ Portlandのセメント産業は非常に寡占的な市場で、生産量上位
 
 $C(q_i; \delta) = \delta_{i1}q_i + \delta 1 (q_i > v s_i) (q_i / s_i - v)^2$は生産に係るコスト関数で、生産量に関わらず一定のコストを表す第一項と、キャパシティの限界に近づくにつれて逓増する第二項に分解される。一方、$\phi(.,.,.)$は環境規制によって生じるコストであり、この項の表現形によってシミュレーションを行う政策を識別することが出来る。$\tau$は二酸化炭素の排出コストを規定する外生変数で、この論文では技術革新による変動を考慮せず、分析を行う全ての期間において一定であると仮定する。
 
-それぞれの政策における$\phi(.,.,.)$は以下のように表現される。
+それぞれの政策における関数形の仮定は以下の通り。
 
 \begin{enumerate}
   \item Emissions tax or emissions trading with auctioned permits
@@ -112,45 +112,151 @@ $C(q_i; \delta) = \delta_{i1}q_i + \delta 1 (q_i > v s_i) (q_i / s_i - v)^2$は�
   \[
   \phi(q_i, e_i, \tau) = \tau e_i q_i
   \]
+  一つ目の政策は、排出権の価格を、オークションによって決められた$\tau$に固定し、この価格で排出権取引を行う方法である。この場合、企業は$\tau$を所与として、排出量に対して一定のコストを負担する。
 
   \item Grandfathering
 
   \[
   \phi(q_i, e_i, \tau) = \tau(e_i q_i - A_i)
   \]
+  Grandfatheringは、各企業の過去のcapacityから、一定量の排出権を無料で割り当てる方式である。与えられた排出権は価格$\tau$で取引され、従って企業はその排出権を上回る分の生産について、従量コストを支払うことになる。無料で割り当てられる排出権は$A_i = \Psi_g \cdot e \min \{s_{i0}, s_i \}$で与えられ、値は過去のcapacityに依存する。一旦市場から退出すると、その企業に与えられる排出権はなくなり、また新規参入した企業には、無料の排出権は与えられないものとする。
 
   \item Output-based allocation updating/rebating
 
   \[
   \phi(q_i, e_i, \tau) = \tau \cdot (e_i - \Psi_d) \cdot q_i
   \]
+  3つ目は、その期の生産量に応じて、負担したコストに対する払い戻しを行う方法である。$\Psi_d$は払い戻しの割合を決めるパラメータである。この方法は、生産に対する補助金として捉えることも出来る。
 
   \item Border tax adjustment with auctioned permits
 
   \[
-  \phi(q_i, e_i, \tau) = \phi(q_i, e_i, \tau) = \tau e_i q_i
+  \phi(q_i, e_i, \tau) = \tau e_i q_i
   \]
-\end{enumerate}
-
-\begin{enumerate}
-  \item
-
-  \item
-
-  \item
-
-  \item BTA
-
+  4つめはBTAと呼ばれる方法で、国内企業に関してはオークション価格による方法と同じ$\phi$が与えられる。ここではそれに加えて、海外からの輸入に対する課税を行う。
   \[
   \ln M (P; \rho, \tau) = \rho_0 + \rho_1 \ln (P - \tau e_M)
   \]
+  この結果、同じ価格条件における国内企業に対する需要量が変化し、これが企業行動の変化をもたらす。
+
 \end{enumerate}
 
-\section{推定方法}
+以上から、各期における企業の利潤が決定される。
 
-\section{結果}
+\subsection{Dynamic Decisions}
+
+次に、企業の参入・退出と投資の意思決定に関するモデルを定義する。
+
+capacityに対する投資のコスト関数は、平均$\mu_{\gamma}$、分散$\sigma_{\gamma}^2$の正規分布$F_{\gamma}$に従うfixed cost、増設を行う場合・縮小を行う場合それぞれで異なる2次形式の可変費用で表現される。
+
+\[
+\Gamma(x_i;\gamma) = \gamma_{i1} + 1 (x_i > 0)(\gamma_2 x_i + \gamma_3 x_i^2) + 1 (x_i < 0)(\gamma_4 x_i + \gamma_5 x_i^2)
+\]
+
+一方・市場に参入・退出を行う際のコストは
+
+\[
+\Phi(a_i; \kappa_i, \phi_i) = \begin{cases}
+- \kappa_i & \text{ entry cost} \\
+\phi_i & \text{ exit cost}
+\end{cases}
+\]
+で与えられる。$\kappa$および$\phi$の値はそれぞれ既知の分布$F_{\kappa}, F_{\phi}$によって定まるが、その実現値は企業のみが観察できるものとする。exit costは正負いずれの値を取る可能性もある。
+
+以上から、企業の各期の利潤は
+
+\[
+\pi_i(a, x, s, e; \theta, \tau) = \bar{\pi}_i (s, e; \alpha, \rho, \delta, \tau) - \Gamma (x_i; \gamma_i) + \Phi (a_i; \kappa_i, \phi_i)
+\]
+で定義される。$\theta$はパラメータの集合である。この利潤関数を元に、paremetric approximation を用いて Markov Perfect Nash Equilibrium を導出する。
+
+\subsection{Welfare Meashures}
+
+総余剰は、国内の消費者・企業・政府の総余剰$w_1$、そこから温室効果ガスの排出による損失を引いた$w_2$、更に輸入によって海外に転嫁している分の排出の損失を減じた$w_3$の3つで記述される。
+
+\begin{align*}
+  w_1(s, e, \tau; \theta) &= \int_0^{Q^*} P(z; \alpha)dz - P(Q^*; \alpha)Q^*, \\
+  &+ \sum_i (\alpha^*, x^*, s, e, \tau; \theta) \\
+  &+ \sum_i \phi(q^*_i, e_i, \tau) + \tau_M e_M M \\
+  w_2(s, e, \tau; \theta) & = w_1(s, e, \tau; \theta) - \tau \sum_i e_i q_i^*, \\
+  w_3(s, e, \tau; \theta) & = w_2(s, e, \tau; \theta) - \tau e_M M(P^*; \rho)
+\end{align*}
+
+$w_1$の第三項は海外からの関税収入で、BTAを採用しているときのみ正の値を取るが、その他の政策においては0を取る。
+
+政策を行わない際の余剰を$w_0(s, e, \tau; \theta)$とし、これをbaselineとすると、現在価値で測った期間中の総余剰は
+
+\[
+Wi = \sum_{t=1}^T \beta^t_S (w_{it}(s, e, \tau; \theta) - w_{0t}(s, e, \tau; \theta))
+\]
+
+と定義される($i = 1, 2, 3$)。$\beta_S$は割引因子である。
+
+\section{推定}
+
+\subsection{Static Parameters}
+
+\paragraph{Demand}
+
+需要量の自然変数を被説明変数、対数価格と人口・マクロ経済指標などのdemand shifterを説明変数とする回帰式を推定する。操作変数には石油・天然ガスの価格、電力価格と賃金を用いる。推定は最尤法によって行う。推定された需要の弾力性は、導入する説明変数によって-0.9から-2.0の間で推移した。
+
+\paragraph{Imports}
+
+需要推定と同様に、操作変数法でそれぞれの市場における対数輸入量を回帰する。説明変数は輸入セメントの平均価格で、操作変数にはその州の生産量・建造物の新たな着工数、その州の失業率を用いる。その他の供給変動要因として、輸送に係る費用、燃料価格を導入している。また、地域ダミーによって市場間の固定効果をコントロールする。供給弾力性の推定値は2.5から3.0を取った。
+
+\paragraph{Production Costs}
+
+推定された需要・輸入のパラメータから、クールノー寡占モデルにおける国内企業のコスト関数を、(1)実際の供給量と予測値の差分(2)均衡における限界費用と限界利潤の差分の二つのモーメントを用いたGMM法で求める。1企業が同一の市場において複数の工場を稼働させている場合は、それぞれの合計のcapacityを有する一つの企業とみなして推定を行う。セメント1トン当たりのコストの推定値は\$47で、企業の利潤率は37\%と推定された。この結果は、大手の生産者が報告している利潤や、EPAによるコストの推定値とも近く、推定が現実から大きく逸脱しないことが確認された。
+
+\subsection{Dynamic Parameters}
+
+動学パラメータの推定は2段階に分けて行われる。1段階目では、state variableを投資と市場への参入・退出についての意思決定に写すpolicy functionを推定する。続いて2段階目では、forward simulationによってパラメータを推定する。
+
+\paragraph{Policy Functions}
+
+既存企業のcapacityに関する意思決定は
+
+\[
+s_{t+1} = \begin{cases}
+  T(s_t) & \text{ if }s_t < T(s_t) - B(s_t) \text{ or } s_t > T(s_t) + B(s_t) \\
+  s_t & \text{ else}
+\end{cases}
+\]
+
+で与えられる。$T(.)$および$B(.)$はそれぞれ企業のcapacity targetと、実際にadjustmentを行う閾値となる乖離を表す関数で、それぞれ線形回帰によって推定される。
+
+\begin{align*}
+  \ln T_{imt}(s) =& \eta_1 + \eta_2 1 (i \text{entrant}) + \eta_3 [1 - 1 (i \text{entrant})] \ln \text{Capacity}_i + \eta_4 MT_m + \epsilon_{Timt} \\
+  \ln B_{imt} = & \eta_5 + \eta_6 \ln \text{Capacity}_i + \eta_7 MT_m + \epsilon_{Bimt}
+\end{align*}
+
+$MT$は市場の混雑度を示す変数で、長期的に実現可能な市場サイズからの逸脱を示す。$T(.)$、$B(.)$の値はそれぞれ企業の参入・既存企業のcapacity adjustmentが起こった時のcapacityの値、そのcapacity adjustmentの大きさによって観察される。推定結果は「market tightnessが上がるとadjustmentが起こりにくくなる」「新規参入企業はより大きなcapacityを以て市場に参入する」という予想と整合的であった。
+
+一方、参入・退出の意思決定は、上記のモデルの被説明変数をそれぞれのイベントが起こったか否かの二値変数を取るプロビット回帰によって推定される。市場には常に最低でも1社のpotential entrantが存在すると仮定する。推定結果から、market tightnessが上昇すると新たな参入が起こる確率が大きく低下すること、逆に退出が起こる確率が上昇すること、また自社のcapacityが小さな企業はより市場から退出しやすいこと、そして参入・退出のいずれの行動も極めて起こりにくい事象であると推定された。
+
+\paragraph{Forward Estimation}
+
+時間割引率は$\beta = .90$とする。初めにforward simulationを用いて、すべての企業が均衡戦略を取った場合の将来のoutcomeについての期待値を計算し、それから企業の戦略を実際に観察されたものと符合するようなパラメータの値を求める。具体的には、実際に観察された戦略と、4つの代替的な戦略の下でのcontinuation valueを、continuation valueが必ず正値を取る、参入・退出を行う企業のcontinuation valueはしない場合のvalueに等しい、という仮定を置いた上で導出する。これによって、利潤関数に線形で導入されているパラメータを導くことができる。
+
+capacityの維持費用は生産1トン当たり\$197 で、先行研究とほぼ同じ推定値が得られた。capacityの変更についての固定費用の平均は\$48.5M、標準偏差は\$28.5M と推定された。
+
+参入コストの推定値は平均\$75M, 標準偏差\$27.9M で、実際に観察された参入確率近傍である2\%点の参入コストの値は\$17.6Mであった。一方、退出の固定費用の推定値は平均--\$152M、標準偏差はその約半分で、退出する企業はそれによって正の利潤を受け取っていること、したがってoutside optionは比較的魅力のある選択肢であることが分かった。
+
+\subsection{Goodness of fit}
+
+実際に観測されたデータ、およびBajari et al.のモデルで行ったシミュレーションの値との比較を行う。Bajari et al.のシミュレーションは実際のデータからpolicy functionを推定しているのに対し、この論文のシミュレーションはモデルの均衡から推定を行っている。市場規模に関する推定はどちらのモデルも実際の観測値に近い値を出しているが、Bajari et al.の方法が投資を過小評価している一方で、この論文の方法では規模の縮小が過大に見積もられている。また企業の参入・退出に関する推定は2つの推定の両方を考慮に入れる必要があるとしている。
 
 
+\subsection{Environmental Paremeters}
+
+最後に、環境への損失に関わるパラメータを推定する。温室効果ガスの排出に伴う単位当たり損失、社会的な割引因子、窯のタイプごとの温室効果ガスの単位当たり排出量を推定し、それぞれの政策について、最適なパラメータを設計するための分析を行う。
+
+Grandfatheringにおける無償の排出権の割合を、その企業のcapacityの42.5\%とすると、排出量はベースラインのおよそ半分になった。また、排出量に応じてリベートを行う政策について、ヨーロッパで実際に導入されていた0.716 permit per metric tonとすると、法令遵守のためのコストは旧タイプの窯で62\%、新しいタイプの窯で77\%と推定された。
+
+\subsection{Policy Parameters}
+
+
+\section{シミュレーション}
 
 \section{コメント}
 

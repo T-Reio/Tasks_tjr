@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.11.1)  29 JAN 2019 20:53
+This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.11.1)  31 JAN 2019 14:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -605,14 +605,32 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 7.29405pt on input line 24.
  [1
 
-] [2] (./labor_econ_term_paper.aux) ) 
-Here is how much of TeX's memory you used:
- 12651 strings out of 493281
- 246311 string characters out of 6148126
- 293378 words of memory out of 5000000
- 16340 multiletter control sequences out of 15000+600000
- 23793 words of font info for 82 fonts, out of 8000000 for 9000
- 929 hyphenation exceptions out of 8191
- 55i,10n,54p,461b,237s stack positions out of 5000i,500n,10000p,200000b,80000s
+] [2]
+Overfull \hbox (7.1745pt too wide) in paragraph at lines 144--145
+\OT1/ppl/m/n/12 censoring prob-lem. The prob-a-bil-ity of right-censored ob-ser-va-tion is given by $1 \OMS/zplm/m/n/12 ^^@ \OML/zplm/m/it/12 F\OT1/zplm/m/n/12 (\OML/zplm/m/it/12 c[]\OMS/zplm/m/n/12 j\OML/zplm/m/it/12 X[]\OT1/ppl/m/n/12 ; \OML/zplm/m/it/12 ^^R\OT1/zplm/m/n/12 )$\OT1/ppl/m/n/12 .
+ []
 
-Output written on labor_econ_term_paper.dvi (2 pages, 4028 bytes).
+[3]
+
+LaTeX Font Warning: Font shape `JT1/mc/m/it' undefined
+(Font)              using `JT1/mc/m/n' instead on input line 161.
+
+
+LaTeX Font Warning: Font shape `JY1/mc/m/it' undefined
+(Font)              using `JY1/mc/m/n' instead on input line 161.
+
+[4] (./labor_econ_term_paper.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 12658 strings out of 493281
+ 246391 string characters out of 6148126
+ 294378 words of memory out of 5000000
+ 16346 multiletter control sequences out of 15000+600000
+ 24202 words of font info for 83 fonts, out of 8000000 for 9000
+ 929 hyphenation exceptions out of 8191
+ 55i,10n,54p,578b,237s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on labor_econ_term_paper.dvi (4 pages, 11648 bytes).

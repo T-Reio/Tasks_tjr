@@ -222,4 +222,5 @@ INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin9.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/ptex-fonts/standard/min9.tfm
 OUTPUT labor_econ_term_paper.dvi
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplri7t.tfm
 INPUT labor_econ_term_paper.aux
