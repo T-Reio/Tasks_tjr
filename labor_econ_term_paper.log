@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.11.1)  31 JAN 2019 14:05
+This is e-pTeX, Version 3.14159265-p3.8.0-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex 2018.11.1)  1 FEB 2019 19:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -613,24 +613,29 @@ Overfull \hbox (7.1745pt too wide) in paragraph at lines 144--145
 [3]
 
 LaTeX Font Warning: Font shape `JT1/mc/m/it' undefined
-(Font)              using `JT1/mc/m/n' instead on input line 161.
+(Font)              using `JT1/mc/m/n' instead on input line 163.
 
 
 LaTeX Font Warning: Font shape `JY1/mc/m/it' undefined
-(Font)              using `JY1/mc/m/n' instead on input line 161.
+(Font)              using `JY1/mc/m/n' instead on input line 163.
 
-[4] (./labor_econ_term_paper.aux)
+
+Overfull \hbox (1.23169pt too wide) in paragraph at lines 175--176
+[]\OT1/ppl/m/n/12 Estimation used a semi-parametric pro-ce-dure. Cal-en-der time is de-v-ided into three-months
+ []
+
+[4] [5] [6] (./labor_econ_term_paper.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 12658 strings out of 493281
- 246391 string characters out of 6148126
+ 12662 strings out of 493281
+ 246441 string characters out of 6148126
  294378 words of memory out of 5000000
- 16346 multiletter control sequences out of 15000+600000
- 24202 words of font info for 83 fonts, out of 8000000 for 9000
+ 16349 multiletter control sequences out of 15000+600000
+ 25360 words of font info for 86 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 55i,10n,54p,578b,237s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,11n,54p,1144b,237s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on labor_econ_term_paper.dvi (4 pages, 11648 bytes).
+Output written on labor_econ_term_paper.dvi (6 pages, 20156 bytes).

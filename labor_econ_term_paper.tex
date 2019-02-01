@@ -121,7 +121,7 @@ Substituting this into $\gamma(t)$, we obtain the hazard function.
 \lambda(t) = \gamma \alpha t^{\alpha - 1}
 \]
 
-Positive/Negative dependence of the hazard function on the duration is found by checking the first-order differential of the hazard function: if $\lambda' (.) > 0$, then it has positive dependence, and negative if $\lambda(.) < 0$. When the duration has Weibull distribution, by $\lambda'(t) = (\alpha - 1) \gamma \alpha t^{\alpha - 2}$. Since $t > 0$ and $\gamma \geq 0$ is assumed, it depends on the value of $\alpha$. If $\alpha > 1$, then the hazard ratio has the positive dependence on the duration, and $\alpha < 1$ implies negative dependence.
+Positive/Negative dependence of the hazard function on the duration is found by checking the first-order differential of the hazard function: if $\lambda' (.) > 0$, then it has positive dependence, and negative if $\lambda'(.) < 0$. When the duration has Weibull distribution, by $\lambda'(t) = (\alpha - 1) \gamma \alpha t^{\alpha - 2}$. Since $t > 0$ and $\gamma \geq 0$ is assumed, it depends on the value of $\alpha$. If $\alpha > 1$, then the hazard ratio has the positive dependence on the duration, and $\alpha < 1$ implies negative dependence.
 
 \vspace{1zw}
 
@@ -158,13 +158,100 @@ L(\theta) = \prod_i^N \dfrac{f(t^*_i | X_i; \theta)^{d_i} [1 - F (c_i | X_i, \th
 Maximizing this (or log-likelihood function) with $\theta$, we obtain MLE: the consistent asymptotical normal estimated parameter $\hat{\theta}$.
 
 \vspace{1zw}
-(4) Holm\r{a}s. 2002. Keeping nurses at work: a duration analysis \textit{Health Economics}. 11: 493 -- 503 (2002)
+(4) I review the following paper.
 
+Holm\r{a}s. 2002. Keeping nurses at work: a duration analysis \textit{Health Economics}. 11: 493 -- 503 (2002)
 
+\vspace{1zw}
+
+This paper estimated the hazard function of nurses: instantaneous rate of leaving public health sector, using duration analysis. The contribution of this is a better understanding of nurses' labor supply and to answer a policy relevant question to increase it.
+
+\vspace{0.7zw}
+
+Their dataset consists of two administrative data in Norway. Information about wages, working time or specific occupation is obtained from Association of Local and Regional Authorities (NALRA). They restricted their sample to female workers worked for 34 public hospitals, which report information to the NALRA register. The dataset also includes the hospital-specific information, such as the number of beds or the average length of stay of the patients. Importantly, they restrict the samples to the hospitals that provide information including the shift work: duties at late, night and weekend. In addition, the obtained dataset includes the samples both right-censored and left censored, because they cannnot know the actual start time of working, and the maximum tracking period is five years (1993 to 1997). The final sample size is 5284 nurses. Other individual-specific information, such as children and spouse characteristics, and the location of the hospitals they work for, is obtained from Statistics Norway. They merged these two datasets. Hourly wages are calculated using basic income and all bonuses.
+
+\vspace{0.7zw}
+
+Estimation used a semi-parametric procedure. Calender time is devided into three-months period, and set the period for nurse $i$ to start working is $t=1$. Defining $\tau_1 \geq 1$ to be the period they start observation(January 1993), then for period $s_i$, the conditional probability of observing a nurse who had quit until 1997 is:
+\[
+\Pr(T_i = \tau_i + s_i | T_i > \tau_i - 1)  = \left( \dfrac{h_{i, \tau_i + s_i}}{1 - h_{i, \tau_i + s_i}}\right) \prod_{t = \tau_i}^{\tau_i + s_i}(1 - h_{i, t})
+\]
+
+$h_{i, t}$ is the hazard function. It considers the left-censoring. Then, the conditional probability of observing those who did not quit until 1997 (=right-censored sample) is:
+
+\[
+\Pr(T_i > \tau_i + s_i | T_i > \tau_i - 1) = \prod_{t = \tau_i}^{\tau_i + s_i}
+\]
+
+Therefore, the log-likelihood function is given as follows:
+
+\begin{align*}
+  \log L &= \sum_{i = 1}^n \sum_{t = \tau}^{\tau_i + s_i} y_{i, t} \log \left( \dfrac{h_{i,t}}{1 - h_{i, t}} \right) + \sum_{i = 1}^n \sum_{t = \tau_i}^{\tau_i + s_i} \log (1 - h_i)
+\end{align*}
+$y_{i, t}$ indicates whether nurse $i$ quit or not during the observation.
+
+They specify the hazard function $h_{i, t}$ by the complementary log-log model.
+
+\[
+h_{i, t} = 1 - \exp \{ - \exp[\theta(t) + \beta' \mathbf{X}_{i,t}] \}
+\]
+
+$\theta$ is the baseline hazard, or the dummy variable of each time-period. $\mathbf{X}_{i,t}$ is the observed characteristics of the individual. Additionally, they used alternative model that considers the unobserved heterogeneity by adding the random variable term $\epsilon_i$, which follows the gamma distribution. They also tried Heckman and Singer(1984)'s specification about the distribution of the heterogeneity.
+
+\vspace{0.7zw}
+
+Estimation results support the effect of wage to keep them in the labor supply, which is controversial to the previous studies. They argue that this is because the previous researches did not take shift work into consideration. The more the rate of wage from shift work increases, the more the hazard rate goes up. Years of experience, on the other hand, show negative effect to the hazard rate: consistent with the previous ones. Part-time workers are likely to quit compared to the full-time workers. The hospital-specific characteristics are also important: high occupancy rate or the number of beds increase the exit rate, while the average length of stay of the patients are negatively affect the exit rate.
+
+Moreover, family related variables influence on the hazard rate. Nurses with children older than seven years and those married show lower exit rate. They interpreted these are because they are allowed more flexible labor supply.
 
 \paragraph{Q3} \hspace{1zw}
 
-(1)
+(1)Value functions are:
+
+\begin{align*}
+  rV_e (w) &= w + q [V_u - V_e (w)] \\
+  rV_u &= \max \{b - c(e) + \lambda (e) \int_x^{\infty}[V_e - V_u] d F(w) \}
+\end{align*}
+
+By the reservation wage property, $V_e(x) = V_u$, when $w = x$, the first equation is:
+
+\begin{align*}
+  r V_e (x) &= x + q [V_u - V_e(x)] \\
+  x &= r V_u \\
+  x &= \max \{b - c(e) + \lambda (e) \int_x^{\infty}[V_e - V_u] d F(w) \}
+\end{align*}
+
+Moreover, the first equation can be rewritten as follows.
+
+\[
+V_e(w) = \dfrac{w + q V_u}{r + q}
+\]
+
+Then,
+
+\begin{align*}
+  V_e (w) - V_e (x) &= \dfrac{w - x}{r + q} \\
+  &= V_e(w) - V_u \hspace{1zw}(\because V_e (x) = V_u)
+\end{align*}
+
+Therefore, we obtain
+
+\[
+x = \max_e \left\{b - c(e) + \lambda (e) \int_x^{\infty} \left(\dfrac{w - x}{r + q} \right) d F(w) \right\}
+\]
+
+FOC yields the optimal effort level of $e$, or $e^*$ such that
+
+\[
+- c'(e^*) + \dfrac{\lambda'(e^*)}{r + q} \int_x^{\infty}(w - x) d F(w) = 0
+\]
+
+Then, we can obtain the reservation wage:
+
+\[
+x = b - c(e^*) + \lambda (e^*) \int_x^{\infty}(w - x) d F(w)
+\]
+
 
 \vspace{1zw}
 (2)
